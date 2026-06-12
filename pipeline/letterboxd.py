@@ -23,22 +23,56 @@ import time as _time
 
 import requests
 
+import os as _os
+
+_BROWSER_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+               "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15")
+_PROJECT_UA = "MovieFish/0.3 (personal score aggregator; low volume)"
+
+# The honest project UA is the default: it is what has worked from the
+# GitHub Actions runner. Set LBXD_BROWSER_HEADERS=1 to experiment locally.
 HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-        "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15"
-    ),
+    "User-Agent": _BROWSER_UA if _os.environ.get("LBXD_BROWSER_HEADERS") else _PROJECT_UA,
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
 }
 
 RUNTIME_TOLERANCE = 20  # minutes
 
+_OVERRIDES_PATH = __import__("pathlib").Path(__file__).resolve().parents[1] / "data" / "lbxd_overrides.json"
+
+
+def _overrides() -> dict:
+    """Manual pins for films Letterboxd's resolver maps wrongly.
+    Format in data/lbxd_overrides.json:
+      { "<tmdb_id>": "<letterboxd-slug>" }   -> slug hint, tried FIRST
+      { "<tmdb_id>": 4.1 }                   -> manual /5 rating, used LAST
+    A numeric pin is a last-resort fallback only: every live path is tried
+    first, so the pin self-retires the day Letterboxd fixes its data."""
+    try:
+        import json
+        return json.loads(_OVERRIDES_PATH.read_text())
+    except Exception:
+        return {}
+
 
 def rating(tmdb_id: int | None = None, title: str | None = None,
            year: str | None = None, runtime: int | None = None) -> float | None:
     """Return the Letterboxd average normalized to 0-100, or None."""
     tag = f"letterboxd[{title or tmdb_id}]"
+
+    # --- 0. manual override: a pinned slug beats everything ---
+    pinned = _overrides().get(str(tmdb_id)) if tmdb_id else None
+    if isinstance(pinned, str) and pinned:
+        path = f"/film/{pinned}/"
+        html = _fetch(f"https://letterboxd.com{path}", tag, f"OVERRIDE {path}")
+        if html is not None and _runtime_ok(html, runtime, tag, f"OVERRIDE {path}"):
+            raw = _extract(html)
+            if raw is not None:
+                print(f"   {tag}: OVERRIDE {path} -> rating {raw}, returning {round(raw*20,1)}")
+                return round(raw * 20, 1)
+            print(f"   {tag}: OVERRIDE {path} -> no published rating on pinned page")
+        # fall through to normal resolution if the override fails
 
     # --- 1. primary: exact tmdb-id redirect, with one cache-busted retry ---
     if tmdb_id:
@@ -82,6 +116,11 @@ def rating(tmdb_id: int | None = None, title: str | None = None,
             print(f"   {tag}: {path} -> rating {raw} (year {page_year or '?'}), "
                   f"returning {round(raw*20,1)}")
             return round(raw * 20, 1)
+
+    if isinstance(pinned, (int, float)) and 0 < pinned <= 5:
+        print(f"   {tag}: all live paths failed -> using MANUAL PIN {pinned} "
+              f"from lbxd_overrides.json, returning {round(pinned*20,1)}")
+        return round(float(pinned) * 20, 1)
 
     print(f"   {tag}: exhausted all attempts, no rating")
     return None
