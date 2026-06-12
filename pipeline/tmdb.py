@@ -1,15 +1,22 @@
 from __future__ import annotations
-from __future__ import annotations
 """Fetch movies currently in theaters from TMDB (free API key: themoviedb.org/settings/api)."""
 import os
+from datetime import date, timedelta
+
 import requests
 
 BASE = "https://api.themoviedb.org/3"
 
 
 def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
-    """Return a list of movies currently in theaters."""
+    """Return movies currently in theaters, excluding re-releases.
+
+    TMDB's now_playing feed includes anniversary/re-release screenings of old
+    films (Shrek, Top Gun: Maverick, etc.). Anything whose original release
+    date is older than ~6 months is dropped so the board stays "new this week".
+    """
     key = os.environ["TMDB_API_KEY"]
+    cutoff = (date.today() - timedelta(days=180)).isoformat()
     movies = []
     for page in range(1, max_pages + 1):
         r = requests.get(
@@ -20,6 +27,9 @@ def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
         r.raise_for_status()
         data = r.json()
         for m in data.get("results", []):
+            rd = m.get("release_date", "")
+            if rd and rd < cutoff:
+                continue  # re-release of an older film
             movies.append(
                 {
                     "tmdb_id": m["id"],
@@ -43,6 +53,22 @@ def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
             seen.add(m["tmdb_id"])
             out.append(m)
     return out
+
+
+def movie_details(tmdb_id: int) -> dict:
+    """One call for the fields other modules need: imdb_id + runtime (mins)."""
+    key = os.environ["TMDB_API_KEY"]
+    r = requests.get(
+        f"{BASE}/movie/{tmdb_id}",
+        params={"api_key": key, "append_to_response": "external_ids"},
+        timeout=15,
+    )
+    r.raise_for_status()
+    j = r.json()
+    return {
+        "imdb_id": (j.get("external_ids") or {}).get("imdb_id"),
+        "runtime": j.get("runtime") or None,
+    }
 
 
 def imdb_id_for(tmdb_id: int) -> str | None:

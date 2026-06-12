@@ -1,32 +1,34 @@
 from __future__ import annotations
-from __future__ import annotations
-"""Run the full pipeline: theaters -> scores -> sentiment -> data/movies.json.
+"""Run the full pipeline: theaters -> review scores + fan buzz -> data/movies.json.
+
+The composite GRADE is built from review sites only: IMDb, Rotten Tomatoes,
+Metacritic, Letterboxd, TMDB. Fan buzz (YouTube trailer-comment sentiment)
+is a separate display object and does NOT affect the grade.
+
+Reddit is removed for now (API access pending approval); the module file
+remains in the repo for if/when that changes.
 
 Usage:
-    cp config.example.env .env   # add your keys
-    pip install -r requirements.txt
     python -m pipeline.run
     python dashboard/build.py    # -> output/index.html
-
-Lookups are cached for ~20h (data/cache.json), so re-running after a crash
-or a template tweak is cheap and polite.
 """
 import json
+import os
 import pathlib
 import sys
 import time
 
 from dotenv import load_dotenv
 
-from . import tmdb, omdb, letterboxd, reddit, cache
+from . import tmdb, omdb, letterboxd, youtube, cache
 from .aggregate import aggregate
 
 OUT = pathlib.Path(__file__).resolve().parents[1] / "data" / "movies.json"
 
 
 def cached(key: str, fn):
-    """Memoize fn() in the TTL cache. Failures return None and are NOT cached,
-    so a flaky source gets retried on the next run."""
+    """Memoize fn() in the TTL cache. Exceptions return None and are NOT
+    cached, so a flaky source gets retried on the next run."""
     val = cache.get(key)
     if val is not cache.MISS:
         return val
@@ -41,7 +43,10 @@ def cached(key: str, fn):
 
 def main(limit: int = 20):
     load_dotenv()
-    print("Fetching now-playing movies from TMDB...")
+    if not os.environ.get("YOUTUBE_API_KEY"):
+        print("note: YOUTUBE_API_KEY not set — buzz section will be empty")
+
+    print("Fetching now-playing movies from TMDB (re-releases filtered)...")
     movies = tmdb.now_playing()[:limit]
     print(f"  {len(movies)} movies")
 
@@ -52,17 +57,20 @@ def main(limit: int = 20):
         year = m["release_date"][:4] if m.get("release_date") else None
         sources: dict[str, float | None] = {"tmdb": m["tmdb_score"] or None}
 
-        omdb_scores = cached(f"omdb:{mid}", lambda: _omdb_for(mid)) or {}
-        sources.update(omdb_scores)
+        det = cached(f"tmdbdet:{mid}", lambda: tmdb.movie_details(mid)) or {}
+
+        if det.get("imdb_id"):
+            sources.update(
+                cached(f"omdb:{mid}", lambda: omdb.scores(det["imdb_id"])) or {}
+            )
 
         sources["letterboxd"] = cached(
             f"lbxd:{mid}",
-            lambda: letterboxd.rating(tmdb_id=mid, title=m["title"], year=year),
+            lambda: letterboxd.rating(tmdb_id=mid, title=m["title"],
+                                      year=year, runtime=det.get("runtime")),
         )
 
-        red = cached(f"reddit:{mid}", lambda: reddit.sentiment(m["title"]))
-        if red:
-            sources["reddit"] = red["score"]
+        buzz = cached(f"yt:{mid}", lambda: youtube.sentiment(m["title"]))
 
         agg = aggregate(sources)
         results.append(
@@ -70,11 +78,11 @@ def main(limit: int = 20):
                 "title": m["title"],
                 "release_date": m["release_date"],
                 "poster": m["poster"],
-                "reddit_posts": red["n_posts"] if red else 0,
+                "buzz": buzz,
                 **agg,
             }
         )
-        time.sleep(0.5)  # global politeness delay
+        time.sleep(0.5)
 
     results.sort(key=lambda r: (r["composite"] is None, -(r["composite"] or 0)))
     OUT.parent.mkdir(exist_ok=True)
@@ -89,11 +97,6 @@ def main(limit: int = 20):
         )
     )
     print(f"Wrote {OUT}")
-
-
-def _omdb_for(tmdb_id: int) -> dict:
-    imdb_id = tmdb.imdb_id_for(tmdb_id)
-    return omdb.scores(imdb_id) if imdb_id else {}
 
 
 if __name__ == "__main__":

@@ -1,5 +1,4 @@
 from __future__ import annotations
-from __future__ import annotations
 """Combine per-source scores into a composite, and measure disagreement.
 
 All sources are normalized to 0-100 upstream:
@@ -22,7 +21,6 @@ WEIGHTS = {
     "metacritic": 1.0,
     "letterboxd": 1.0,
     "tmdb": 0.6,    # overlaps heavily with IMDb's audience
-    "reddit": 0.7,  # noisy, smaller n
 }
 
 CONTESTED_SPREAD = 25  # points
