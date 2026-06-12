@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 14:53 UTC",
+  "generated_at": "2026-06-12 16:32 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,11 +7,11 @@
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
       "reddit_posts": 0,
-      "composite": 84.9,
+      "composite": 84.7,
       "spread": 25.0,
       "contested": true,
       "sources": {
-        "tmdb": 86,
+        "tmdb": 84,
         "imdb": 77,
         "rotten_tomatoes": 100,
         "metacritic": 87,
@@ -23,14 +23,15 @@
       "release_date": "2026-05-15",
       "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
       "reddit_posts": 0,
-      "composite": 83.7,
+      "composite": 83.6,
       "spread": 18,
       "contested": false,
       "sources": {
         "tmdb": 79,
         "imdb": 82,
         "rotten_tomatoes": 95,
-        "metacritic": 77
+        "metacritic": 77,
+        "letterboxd": 83.0
       }
     },
     {
@@ -114,13 +115,13 @@
     {
       "title": "Disclosure Day",
       "release_date": "2026-06-12",
-      "poster": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
       "reddit_posts": 0,
-      "composite": 70.8,
-      "spread": 6.8,
+      "composite": 70.4,
+      "spread": 5.8,
       "contested": false,
       "sources": {
-        "tmdb": 75,
+        "tmdb": 74,
         "letterboxd": 68.2
       }
     },
@@ -167,11 +168,11 @@
       "release_date": "2026-05-08",
       "poster": "https://image.tmdb.org/t/p/w342/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
       "reddit_posts": 0,
-      "composite": 61.6,
-      "spread": 33,
+      "composite": 61.7,
+      "spread": 34,
       "contested": true,
       "sources": {
-        "tmdb": 79,
+        "tmdb": 80,
         "imdb": 67,
         "rotten_tomatoes": 64,
         "metacritic": 46,
@@ -207,19 +208,6 @@
       }
     },
     {
-      "title": "Peddi",
-      "release_date": "2026-06-03",
-      "poster": "https://image.tmdb.org/t/p/w342/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
-      "reddit_posts": 0,
-      "composite": 57.4,
-      "spread": 12.2,
-      "contested": false,
-      "sources": {
-        "tmdb": 65,
-        "letterboxd": 52.8
-      }
-    },
-    {
       "title": "Chand Mera Dil",
       "release_date": "2026-05-22",
       "poster": "https://image.tmdb.org/t/p/w342/9LPkXJustudEBgPZEm9tgDx5KtC.jpg",
@@ -249,6 +237,19 @@
       }
     },
     {
+      "title": "Peddi",
+      "release_date": "2026-06-03",
+      "poster": "https://image.tmdb.org/t/p/w342/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
+      "reddit_posts": 0,
+      "composite": 56.6,
+      "spread": 10.2,
+      "contested": false,
+      "sources": {
+        "tmdb": 63,
+        "letterboxd": 52.8
+      }
+    },
+    {
       "title": "Scary Movie",
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/reZ8NInXjMkkaOpUHcI3Pn7iaRN.jpg",
@@ -266,11 +267,11 @@
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/xdZ8k5s8DTwWyPBMIcflrYLgcAK.jpg",
       "reddit_posts": 0,
-      "composite": 50.0,
-      "spread": 22.4,
+      "composite": 49.8,
+      "spread": 21.4,
       "contested": false,
       "sources": {
-        "tmdb": 64,
+        "tmdb": 63,
         "imdb": 50,
         "letterboxd": 41.6
       }
