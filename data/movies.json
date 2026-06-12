@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-06-12 14:53 UTC",
+  "sample": false,
+  "movies": [
+    {
+      "title": "The Furious",
+      "release_date": "2026-06-12",
+      "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "reddit_posts": 0,
+      "composite": 84.9,
+      "spread": 25.0,
+      "contested": true,
+      "sources": {
+        "tmdb": 86,
+        "imdb": 77,
+        "rotten_tomatoes": 100,
+        "metacritic": 87,
+        "letterboxd": 75.0
+      }
+    },
+    {
+      "title": "Obsession",
+      "release_date": "2026-05-15",
+      "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "reddit_posts": 0,
+      "composite": 83.7,
+      "spread": 18,
+      "contested": false,
+      "sources": {
+        "tmdb": 79,
+        "imdb": 82,
+        "rotten_tomatoes": 95,
+        "metacritic": 77
+      }
+    },
+    {
+      "title": "Top Gun: Maverick",
+      "release_date": "2022-05-27",
+      "poster": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
+      "reddit_posts": 0,
+      "composite": 83.6,
+      "spread": 18,
+      "contested": false,
+      "sources": {
+        "tmdb": 82,
+        "imdb": 82,
+        "rotten_tomatoes": 96,
+        "metacritic": 78,
+        "letterboxd": 79.4
+      }
+    },
+    {
+      "title": "Shrek",
+      "release_date": "2001-05-18",
+      "poster": "https://image.tmdb.org/t/p/w342/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
+      "reddit_posts": 0,
+      "composite": 82.7,
+      "spread": 10,
+      "contested": false,
+      "sources": {
+        "tmdb": 78,
+        "imdb": 79,
+        "rotten_tomatoes": 88,
+        "metacritic": 84,
+        "letterboxd": 82.4
+      }
+    },
+    {
+      "title": "The Sheep Detectives",
+      "release_date": "2026-05-08",
+      "poster": "https://image.tmdb.org/t/p/w342/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
+      "reddit_posts": 0,
+      "composite": 79.4,
+      "spread": 22,
+      "contested": false,
+      "sources": {
+        "tmdb": 77,
+        "imdb": 77,
+        "rotten_tomatoes": 94,
+        "metacritic": 72,
+        "letterboxd": 76.2
+      }
+    },
+    {
+      "title": "The Last Viking",
+      "release_date": "2026-05-29",
+      "poster": "https://image.tmdb.org/t/p/w342/92ztdPsf98i0tLcONIX92yuh3MQ.jpg",
+      "reddit_posts": 0,
+      "composite": 75.1,
+      "spread": 10,
+      "contested": false,
+      "sources": {
+        "tmdb": 73,
+        "imdb": 72,
+        "metacritic": 82,
+        "letterboxd": 72.6
+      }
+    },
+    {
+      "title": "Backrooms",
+      "release_date": "2026-05-29",
+      "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "reddit_posts": 0,
+      "composite": 71.2,
+      "spread": 9.4,
+      "contested": false,
+      "sources": {
+        "tmdb": 68,
+        "imdb": 71,
+        "metacritic": 77,
+        "letterboxd": 67.6
+      }
+    },
+    {
+      "title": "Disclosure Day",
+      "release_date": "2026-06-12",
+      "poster": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "reddit_posts": 0,
+      "composite": 70.8,
+      "spread": 6.8,
+      "contested": false,
+      "sources": {
+        "tmdb": 75,
+        "letterboxd": 68.2
+      }
+    },
+    {
+      "title": "Masters of the Universe",
+      "release_date": "2026-06-05",
+      "poster": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
+      "reddit_posts": 0,
+      "composite": 67.5,
+      "spread": 10.4,
+      "contested": false,
+      "sources": {
+        "tmdb": 74,
+        "letterboxd": 63.6
+      }
+    },
+    {
+      "title": "Signal One",
+      "release_date": "2026-06-05",
+      "poster": "https://image.tmdb.org/t/p/w342/bi7Aeaozl51cd5K6vAn8tI1lOW0.jpg",
+      "reddit_posts": 0,
+      "composite": 66.0,
+      "spread": 0,
+      "contested": false,
+      "sources": {
+        "tmdb": 66
+      }
+    },
+    {
+      "title": "Karuppu",
+      "release_date": "2026-05-14",
+      "poster": "https://image.tmdb.org/t/p/w342/4KZXlZ5tTT6ghbW77gS4hSLkCd7.jpg",
+      "reddit_posts": 0,
+      "composite": 65.5,
+      "spread": 16.8,
+      "contested": false,
+      "sources": {
+        "tmdb": 76,
+        "letterboxd": 59.2
+      }
+    },
+    {
+      "title": "Mortal Kombat II",
+      "release_date": "2026-05-08",
+      "poster": "https://image.tmdb.org/t/p/w342/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+      "reddit_posts": 0,
+      "composite": 61.6,
+      "spread": 33,
+      "contested": true,
+      "sources": {
+        "tmdb": 79,
+        "imdb": 67,
+        "rotten_tomatoes": 64,
+        "metacritic": 46,
+        "letterboxd": 58.8
+      }
+    },
+    {
+      "title": "The Mandalorian and Grogu",
+      "release_date": "2026-05-22",
+      "poster": "https://image.tmdb.org/t/p/w342/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "reddit_posts": 0,
+      "composite": 60.6,
+      "spread": 13,
+      "contested": false,
+      "sources": {
+        "tmdb": 68,
+        "rotten_tomatoes": 60,
+        "metacritic": 55,
+        "letterboxd": 62.2
+      }
+    },
+    {
+      "title": "Kattalan",
+      "release_date": "2026-05-28",
+      "poster": "https://image.tmdb.org/t/p/w342/9OA6y2GdbXuJ5PAMMMawNBIkrZA.jpg",
+      "reddit_posts": 0,
+      "composite": 58.4,
+      "spread": 20.2,
+      "contested": false,
+      "sources": {
+        "tmdb": 71,
+        "letterboxd": 50.8
+      }
+    },
+    {
+      "title": "Peddi",
+      "release_date": "2026-06-03",
+      "poster": "https://image.tmdb.org/t/p/w342/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
+      "reddit_posts": 0,
+      "composite": 57.4,
+      "spread": 12.2,
+      "contested": false,
+      "sources": {
+        "tmdb": 65,
+        "letterboxd": 52.8
+      }
+    },
+    {
+      "title": "Chand Mera Dil",
+      "release_date": "2026-05-22",
+      "poster": "https://image.tmdb.org/t/p/w342/9LPkXJustudEBgPZEm9tgDx5KtC.jpg",
+      "reddit_posts": 0,
+      "composite": 57.2,
+      "spread": 5.2,
+      "contested": false,
+      "sources": {
+        "tmdb": 54,
+        "letterboxd": 59.2
+      }
+    },
+    {
+      "title": "In the Grey",
+      "release_date": "2026-05-15",
+      "poster": "https://image.tmdb.org/t/p/w342/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
+      "reddit_posts": 0,
+      "composite": 56.7,
+      "spread": 20,
+      "contested": false,
+      "sources": {
+        "tmdb": 66,
+        "imdb": 66,
+        "rotten_tomatoes": 46,
+        "metacritic": 53,
+        "letterboxd": 56.4
+      }
+    },
+    {
+      "title": "Scary Movie",
+      "release_date": "2026-06-05",
+      "poster": "https://image.tmdb.org/t/p/w342/reZ8NInXjMkkaOpUHcI3Pn7iaRN.jpg",
+      "reddit_posts": 0,
+      "composite": 52.8,
+      "spread": 6.8,
+      "contested": false,
+      "sources": {
+        "tmdb": 57,
+        "letterboxd": 50.2
+      }
+    },
+    {
+      "title": "Kraken",
+      "release_date": "2026-06-12",
+      "poster": "https://image.tmdb.org/t/p/w342/xdZ8k5s8DTwWyPBMIcflrYLgcAK.jpg",
+      "reddit_posts": 0,
+      "composite": 50.0,
+      "spread": 22.4,
+      "contested": false,
+      "sources": {
+        "tmdb": 64,
+        "imdb": 50,
+        "letterboxd": 41.6
+      }
+    },
+    {
+      "title": "Chum",
+      "release_date": "2026-06-05",
+      "poster": "https://image.tmdb.org/t/p/w342/uJOW6pWxJ0i5sji9VXRR6Y1wXyE.jpg",
+      "reddit_posts": 0,
+      "composite": 45.1,
+      "spread": 9.4,
+      "contested": false,
+      "sources": {
+        "tmdb": 51,
+        "letterboxd": 41.6
+      }
+    }
+  ]
+}

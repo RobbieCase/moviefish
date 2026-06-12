@@ -1,0 +1,58 @@
+name: Update scoreboard
+
+on:
+  schedule:
+    - cron: "30 13 * * *"   # daily, 13:30 UTC = 6:30am Pacific
+  workflow_dispatch:         # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write   # to commit data/movies.json back to the repo
+  pages: write      # to publish output/ to GitHub Pages
+  id-token: write
+
+concurrency:
+  group: scoreboard
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+        run: python -m pipeline.run
+
+      - name: Build dashboard
+        run: python dashboard/build.py
+
+      # Committing the daily JSON means git history doubles as your
+      # score-over-time archive: `git log -p data/movies.json`
+      - name: Commit data snapshot
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add data/movies.json
+          git commit -m "data: $(date -u +%Y-%m-%d)" || echo "no changes to commit"
+          git push
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: output
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
