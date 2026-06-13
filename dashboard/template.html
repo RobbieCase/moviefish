@@ -83,7 +83,7 @@
   .rtop .sp{font-family:'DM Mono';font-size:9px;letter-spacing:.1em;text-transform:uppercase;
     color:var(--amber);border:1px solid var(--amber);border-radius:2px;padding:0 5px;white-space:nowrap}
 
-  .scale{position:relative;height:80px;margin-left:38px;margin-right:6px;margin-top:30px;overflow:visible}
+  .scale{position:relative;height:74px;margin-left:38px;margin-right:6px;margin-top:30px;overflow:visible}
   .track{position:absolute;left:0;right:0;top:56px;height:3px;background:rgba(125,244,154,.18);border-radius:2px}
   .band{position:absolute;top:55.5px;height:4px;border-radius:2px;background:rgba(125,244,154,.34)}
   .band.warn{background:rgba(242,193,78,.4)}
@@ -96,17 +96,17 @@
   .mk .ico img.rnd{border-radius:50%}
   .mk .ico .em{width:14px;height:14px;line-height:14px;font-size:11px;text-align:center;display:block}
   .mk .pin{position:absolute;left:-1px;top:-4px;width:2px;height:9px;background:var(--phos);opacity:.7;
-    transform:translateY(var(--dy,0px))}
+    transform:translate(var(--px,0px), var(--dy,0px))}
   /* number rides under its logo (both lift together on stagger), clear of track */
-  .mk .lb{position:absolute;left:0;top:-14px;transform:translateX(calc(-50% + var(--dx,0px)));
+  .mk .lb{position:absolute;left:0;top:-14px;transform:translateX(calc(-50% + var(--lx,0px)));
     font-family:'DM Mono';font-weight:500;font-size:9px;color:var(--ink);line-height:1}
-  .comp{position:absolute;top:18px;border-left:5px solid transparent;border-right:5px solid transparent;
-    border-top:8px solid var(--phos);filter:drop-shadow(0 0 5px rgba(125,244,154,.8));margin-left:-5px;z-index:4}
-  /* dotted stem connecting the composite arrow down to the track */
-  .compstem{position:absolute;top:26px;width:1px;background:rgba(125,244,154,.45);margin-left:0;z-index:2}
-  .compnum{position:absolute;top:0px;transform:translateX(-50%);
+  .comp{position:absolute;border-left:5px solid transparent;border-right:5px solid transparent;
+    border-top:8px solid var(--phos);filter:drop-shadow(0 0 5px rgba(125,244,154,.8));margin-left:-5px;z-index:5}
+  /* stem connecting the composite arrow down to the track */
+  .compstem{position:absolute;width:1px;background:rgba(125,244,154,.45);margin-left:0;z-index:3}
+  .compnum{position:absolute;transform:translateX(-50%);
     font-family:'Space Grotesk';font-weight:700;font-size:13px;color:var(--phos);
-    text-shadow:0 0 7px rgba(125,244,154,.7);white-space:nowrap;z-index:4}
+    text-shadow:0 0 7px rgba(125,244,154,.7);white-space:nowrap;z-index:5}
   .ends{position:absolute;top:64px;font-family:'DM Mono';font-size:8px;color:var(--faint)}
 
   .bz{display:flex;align-items:center;gap:8px;margin:9px 0 0 38px}
@@ -235,7 +235,7 @@ function bar(m){
   }).join('');
   const comp = m.composite!=null
     ? `<div class="compnum" style="left:${m.composite}%">${Math.round(m.composite)}</div>
-       <div class="comp" style="left:${m.composite}%" title="Grade ${Math.round(m.composite)}"></div>
+       <div class="comp" data-v="${m.composite}" style="left:${m.composite}%" title="Grade ${Math.round(m.composite)}"></div>
        <div class="compstem" style="left:${m.composite}%;height:30px"></div>` : '';
   return `<div class="scale">
     <div class="track"></div>
@@ -273,55 +273,91 @@ function rowHTML(m){
 
 let current='composite';
 function dodge(scale){
-  const mks=[...scale.querySelectorAll('.mk')];
-  if(!mks.length) return;
   const W=scale.clientWidth||300;
-  const NEAR=20;   // px: closer than this and markers would visually collide
-  const STEP=22;   // px: vertical lift added per stair tier
-  // measure each marker's true x and score, sorted left to right
+  const STEP=30, NEAR=24, TIE_GAP=18, TRACK=56, LOGO_TOP=26, COMPNUM_TOP=0, COMP_ARROW_TOP=18;
+
+  // ---- 1. source markers: stair tiers (rounded ties share a tier) ----
+  const mks=[...scale.querySelectorAll('.mk')];
   const items=mks.map(el=>({
     el, v:parseFloat(el.dataset.v),
-    x:(parseFloat(el.style.left)/100)*W
+    x:(parseFloat(el.style.left)/100)*W, dx:0, tier:0
   })).sort((a,b)=>a.x-b.x);
 
-  // assign tiers: walk left to right; identical scores share a tier (side by
-  // side), near-but-different scores step up one tier each to clear numbers
-  let tier=0, lastX=-1e9, lastV=null;
+  let tier=0,lastX=-1e9,lastR=null;
   for(const it of items){
-    if(lastV!==null && it.v===lastV){
-      // exact tie -> same tier, sit beside the previous one
-      it.tier=tier; it.tie=true;
-    } else if(it.x-lastX < NEAR){
-      // close but not equal -> stair up
-      tier++; it.tier=tier; it.tie=false;
-    } else {
-      // enough room -> reset to the baseline tier
-      tier=0; it.tier=0; it.tie=false;
-    }
-    lastX=it.x; lastV=it.v;
+    const r=Math.round(it.v);
+    if(lastR!==null && r===lastR){ it.tier=tier; }
+    else if(it.x-lastX < NEAR){ tier++; it.tier=tier; }
+    else { tier=0; it.tier=0; }
+    lastX=it.x; lastR=r;
   }
 
-  // side-by-side nudge for exact ties: offset duplicates within a tier
-  const tieGroups={};
-  for(const it of items){
-    if(it.tie || items.some(o=>o!==it && o.v===it.v)){
-      (tieGroups[it.v]=tieGroups[it.v]||[]).push(it);
-    }
-  }
-  for(const v in tieGroups){
-    const g=tieGroups[v]; const n=g.length;
-    g.forEach((it,i)=>{ it.dx=(i-(n-1)/2)*16; });  // spread ties horizontally
+  // ties: spread the LOGOS apart, but show the shared number ONCE (centered)
+  const groups={};
+  for(const it of items){ const r=Math.round(it.v); (groups[r]=groups[r]||[]).push(it); }
+  for(const r in groups){
+    const g=groups[r];
+    if(g.length<2) continue;
+    const cx=g.reduce((a,it)=>a+it.x,0)/g.length;
+    g.forEach((it,i)=>{
+      it.dx=(cx + (i-(g.length-1)/2)*TIE_GAP) - it.x;  // logo dodge
+      const lb=it.el.querySelector('.lb'), pin=it.el.querySelector('.pin');
+      if(i===0){
+        if(lb){ lb.style.display='block'; lb.style.setProperty('--lx',(cx-it.x).toFixed(1)+'px'); }
+        if(pin){ pin.style.display='block'; pin.style.setProperty('--px',(cx-it.x).toFixed(1)+'px'); }
+      } else {
+        if(lb) lb.style.display='none';                 // one number per tie
+        if(pin) pin.style.display='none';               // one tick per tie
+      }
+    });
   }
 
+  let maxSourceTier=0;
   for(const it of items){
+    maxSourceTier=Math.max(maxSourceTier,it.tier);
     const lift=it.tier*STEP;
-    it.el.style.setProperty('--dy', lift.toFixed(0)+'px');
-    const ico=it.el.querySelector('.ico');
-    if(ico) ico.style.setProperty('--dx', (it.dx||0).toFixed(1)+'px');
-    // stem bridges from the lifted marker back down to the track
-    const stem=it.el.querySelector('.stem');
-    if(stem) stem.style.height=(lift+5)+'px';
+    it.el.style.setProperty('--dy',lift+'px');
+    it.el.querySelector('.ico')?.style.setProperty('--dx',it.dx.toFixed(1)+'px');
+    const stem=it.el.querySelector('.stem'); if(stem) stem.style.height=(lift+6)+'px';
   }
+
+  // ---- 2. composite ----
+  const comp=scale.querySelector('.comp'),
+        cnum=scale.querySelector('.compnum'),
+        cstem=scale.querySelector('.compstem');
+  let compLift=0;
+  if(comp){
+    const cv=parseFloat(comp.dataset.v), cr=Math.round(cv);
+    // does the grade equal a source score? point the arrow at THAT logo, no line.
+    let match=null, best=1e9;
+    for(const it of items){
+      if(Math.round(it.v)===cr){ const d=Math.abs(it.x-cv/100*W); if(d<best){best=d;match=it;} }
+    }
+    if(match){
+      const effX=match.x+match.dx, lift=match.tier*STEP, logoTop=LOGO_TOP-lift;
+      const pct=(effX/W*100);
+      comp.style.left=pct+'%'; cnum.style.left=pct+'%';
+      comp.style.top=(logoTop-12)+'px';        // arrow tip sits just above the logo
+      cnum.style.top=(logoTop-12-14)+'px';     // grade number above the arrow
+      cstem.style.display='none';              // <-- no connecting line in this case
+      compLift=lift+26;
+    } else {
+      // grade is on its own: lift above any nearby source, draw stem to the track
+      const cx=cv/100*W;
+      let nearTier=-1;
+      for(const it of items){ if(Math.abs(it.x-cx)<NEAR+8) nearTier=Math.max(nearTier,it.tier); }
+      compLift=(nearTier+1)*STEP;
+      cstem.style.display='block';
+      comp.style.top =(COMP_ARROW_TOP - compLift)+'px';
+      cnum.style.top =(COMPNUM_TOP   - compLift)+'px';
+      cstem.style.top=(COMP_ARROW_TOP+8 - compLift)+'px';
+      cstem.style.height=(TRACK-(COMP_ARROW_TOP+8)+compLift)+'px';
+    }
+  }
+
+  // ---- 3. reserve headroom so lifted elements clear the row above ----
+  const topMost=Math.min(LOGO_TOP-maxSourceTier*STEP, COMPNUM_TOP-compLift);
+  scale.style.marginTop=(Math.max(0,-topMost)+14)+'px';
 }
 
 function render(){
