@@ -3,276 +3,343 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MoviePulse — The Scoreboard</title>
+<title>MovieFish</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#F6F3EC; --ink:#161513; --rule:#1A1915; --rule-lt:#D9D4C7;
-    --red:#C8102E; --grey:#6E685C; --band:#E9E3D4; --band-hot:#F4D9D3;
+    --cab1:#5B3A21; --cab2:#3F2716; --cab-edge:#2A190D;
+    --knob1:#D9C7A6; --knob2:#9C8458; --knob-edge:#4A3C24;
+    --screen:#0C140E; --speaker:#241912;
+    --phos:#7DF49A; --phos-dim:#3E8C56; --amber:#F2C14E; --rose:#FF7A6B;
+    --ink:#DFF5E4; --dim:#6F9C7C; --faint:#456B52;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--paper);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
-  .wrap{max-width:960px;margin:0 auto;padding:0 22px 70px}
+  html,body{height:100%}
+  body{
+    background:linear-gradient(160deg,var(--cab1),var(--cab2));
+    color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;overflow:hidden;
+  }
+  /* the whole viewport is the cabinet; wood-grain veil over it */
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:repeating-linear-gradient(96deg,rgba(0,0,0,.05) 0 3px,transparent 3px 10px);opacity:.5}
 
-  /* ---- masthead ---- */
-  .topbar{border-top:6px solid var(--ink);display:flex;justify-content:space-between;
-    font-family:Oswald,sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;
-    color:var(--grey);padding:7px 2px}
-  .masthead{text-align:center;padding:10px 0 14px;border-bottom:1px solid var(--ink);position:relative}
-  .masthead::after{content:"";display:block;border-bottom:3px solid var(--ink);margin-top:3px}
-  .kicker{font-family:Oswald,sans-serif;font-weight:600;font-size:13px;letter-spacing:.34em;
-    text-transform:uppercase;color:var(--red)}
-  h1{font-family:Oswald,sans-serif;font-weight:700;font-size:clamp(54px,10vw,92px);
-    line-height:.95;letter-spacing:.01em;text-transform:uppercase}
-  h1 .pulse{color:var(--red)}
-  .dek{font-style:italic;font-size:15px;color:var(--grey);margin-top:6px}
-  .sample-badge{display:inline-block;font-family:Oswald,sans-serif;font-style:normal;font-size:10px;
-    letter-spacing:.14em;text-transform:uppercase;border:1.5px solid var(--red);color:var(--red);
-    padding:1px 7px;margin-left:8px;transform:rotate(-2deg)}
+  /* cabinet = full screen, with the set laid out as screen | controls */
+  .set{position:fixed;inset:0;z-index:1;display:grid;
+    grid-template-columns:1fr 120px;gap:18px;padding:20px;
+    box-shadow:inset 0 3px 4px rgba(255,220,170,.22), inset 0 -6px 16px rgba(0,0,0,.45);}
 
-  /* ---- section tabs ---- */
-  .tabs{display:flex;align-items:baseline;gap:0;border-bottom:3px double var(--ink);margin-top:18px}
-  .tabs .label{font-family:Oswald,sans-serif;font-weight:700;font-size:14px;letter-spacing:.2em;
-    text-transform:uppercase;background:var(--ink);color:var(--paper);padding:6px 14px;margin-right:14px}
-  .tabs button{font-family:Oswald,sans-serif;font-weight:500;font-size:13px;letter-spacing:.12em;
-    text-transform:uppercase;background:none;border:none;color:var(--grey);padding:8px 12px;cursor:pointer}
-  .tabs button:hover{color:var(--ink)}
-  .tabs button.active{color:var(--red);box-shadow:inset 0 -3px 0 var(--red)}
-  .tabs button:focus-visible{outline:2px solid var(--red);outline-offset:-2px}
+  /* screen bezel fills the left region */
+  .bezel{background:radial-gradient(120% 120% at 50% 42%,#1B130C,#0E0A06);
+    border-radius:42px;padding:22px;min-height:0;
+    box-shadow:inset 0 0 0 2px #0A0805, inset 0 8px 26px rgba(0,0,0,.75),
+      inset 0 -4px 12px rgba(0,0,0,.5)}
+  .screen{height:100%;position:relative;overflow:hidden;padding:26px 30px;
+    display:flex;flex-direction:column;
+    /* the bulge: tight, rounded corners that pull the rectangle toward a dome */
+    border-radius:46px/64px;
+    background:
+      radial-gradient(130% 120% at 50% 38%, #11381F 0%, #0C140E 72%, #070C09 100%);
+    box-shadow:
+      inset 0 0 120px rgba(0,0,0,.78),
+      inset 0 0 26px rgba(125,244,154,.07);
+  }
+  /* convex curvature: a soft barrel via a scaled pseudo-overlay highlight */
+  .screen{transform:perspective(1400px)}
+  .screen::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:5;
+    border-radius:46px/64px;
+    background:repeating-linear-gradient(to bottom,transparent 0 2px,rgba(0,0,0,.20) 2px 4px);opacity:.5}
+  /* glass dome: bright reflection top-left, deep edge vignette = convex read */
+  .screen::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:8;border-radius:46px/64px;
+    background:
+      radial-gradient(80% 55% at 30% 18%, rgba(190,255,210,.10) 0%, transparent 55%),
+      radial-gradient(150% 130% at 50% 50%, transparent 58%, rgba(0,0,0,.5) 100%);
+    box-shadow:inset 0 0 60px rgba(0,0,0,.55)}
+  @media(prefers-reduced-motion:reduce){.screen::before{display:none}}
 
-  /* ---- review rows ---- */
-  .row{display:grid;grid-template-columns:78px 1fr;gap:0 20px;padding:26px 0 22px;
-    border-bottom:1px solid var(--rule-lt)}
-  .row:last-child{border-bottom:3px double var(--ink)}
+  .osd{display:flex;justify-content:space-between;align-items:center;flex-shrink:0;
+    border-bottom:1px solid var(--phos-dim);padding-bottom:9px;margin-bottom:4px;position:relative;z-index:7}
+  .osd .br{font-family:'Space Grotesk';font-weight:700;font-size:18px;letter-spacing:.01em;color:var(--ink)}
+  .osd .br b{color:var(--phos)}
+  .osd .ch{font-family:'DM Mono';font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--phos)}
+  .osd .live{font-family:'DM Mono';font-size:9px;letter-spacing:.1em;color:var(--dim)}
+  .osd .live b{color:var(--phos)}
+  .osd .right{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
 
-  .gradebox{text-align:center}
-  .grade{width:64px;height:64px;border:3px solid var(--ink);display:flex;align-items:center;
-    justify-content:center;font-family:Oswald,sans-serif;font-weight:700;font-size:34px;
-    background:#fff;box-shadow:3px 3px 0 var(--ink)}
-  .grade.hot{color:var(--red)}
-  .gradenum{font-family:Oswald,sans-serif;font-size:11px;letter-spacing:.1em;color:var(--grey);margin-top:7px}
+  .feed{position:relative;z-index:7;flex:1;overflow-y:auto;scrollbar-width:thin;
+    scrollbar-color:var(--phos-dim) transparent;padding-right:4px}
+  .feed::-webkit-scrollbar{width:6px}
+  .feed::-webkit-scrollbar-thumb{background:var(--phos-dim);border-radius:3px}
 
-  .head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
-  .title{font-family:Oswald,sans-serif;font-weight:600;font-size:27px;line-height:1.05;
-    text-transform:uppercase;letter-spacing:.015em}
-  .rankno{color:var(--rule-lt);-webkit-text-stroke:1px var(--grey);font-weight:700;margin-right:4px}
-  .byline{font-style:italic;font-size:13.5px;color:var(--grey)}
-  .divided{font-family:Oswald,sans-serif;font-style:normal;font-size:10px;letter-spacing:.14em;
-    text-transform:uppercase;color:var(--red);border:1.5px solid var(--red);padding:1px 6px;
-    margin-left:8px;white-space:nowrap;display:inline-block;transform:rotate(-1.5deg)}
+  .row{padding:11px 2px 13px;border-bottom:1px dashed rgba(125,244,154,.16)}
+  .row:last-child{border-bottom:none}
+  .rtop{display:flex;align-items:baseline;gap:9px;margin-bottom:9px}
+  .rtop .gr{font-family:'Space Grotesk';font-weight:700;font-size:17px;color:var(--phos);
+    text-shadow:0 0 8px rgba(125,244,154,.5);min-width:30px}
+  .rtop .gr.warn{color:var(--amber);text-shadow:0 0 8px rgba(242,193,78,.5)}
+  .rtop .nm{font-family:'Space Grotesk';font-weight:600;font-size:16px;color:var(--ink);flex:1;min-width:0;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .rtop .sp{font-family:'DM Mono';font-size:9px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--amber);border:1px solid var(--amber);border-radius:2px;padding:0 5px;white-space:nowrap}
 
-  /* ---- the scoreboard strip ---- */
-  .strip{position:relative;height:96px;margin-top:10px;grid-column:1 / 3}
-  .axis{position:absolute;left:0;right:0;bottom:24px;height:2px;background:var(--ink)}
-  .axis-end{position:absolute;bottom:14px;font-family:Oswald,sans-serif;font-size:10px;
-    letter-spacing:.08em;color:var(--grey)}
-  .band{position:absolute;bottom:21px;height:8px;background:var(--band);border:1px solid var(--rule-lt)}
-  .band.hot{background:var(--band-hot);border-color:var(--red)}
-  .tick{position:absolute;bottom:20px;width:2px;height:10px;background:var(--ink)}
-  .leader{position:absolute;border-left:1px solid var(--grey);opacity:.55;width:0}
-  .src{position:absolute;top:6px;width:52px;margin-left:-26px;text-align:center;cursor:default}
-  .src img{width:24px;height:24px;border-radius:4px;border:1.5px solid var(--ink);
-    background:#fff;padding:2px;display:block;margin:0 auto}
-  .src .num{font-family:Oswald,sans-serif;font-weight:600;font-size:11.5px;margin-top:2px}
-  .src .abbr{display:none;width:28px;height:28px;border:1.5px solid var(--ink);background:#fff;
-    font-family:Oswald,sans-serif;font-size:9px;font-weight:600;line-height:25px;margin:0 auto}
-  .src.noimg img{display:none}.src.noimg .abbr{display:block}
-  .comp-mark{position:absolute;bottom:10px;margin-left:-7px;width:0;height:0;
-    border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:11px solid var(--red)}
-  .comp-lbl{position:absolute;bottom:-2px;transform:translateX(-50%);font-family:Oswald,sans-serif;
-    font-weight:700;font-size:11px;letter-spacing:.06em;color:var(--red);text-transform:uppercase;white-space:nowrap}
+  .scale{position:relative;height:80px;margin-left:38px;margin-right:6px;margin-top:30px;overflow:visible}
+  .track{position:absolute;left:0;right:0;top:56px;height:3px;background:rgba(125,244,154,.18);border-radius:2px}
+  .band{position:absolute;top:55.5px;height:4px;border-radius:2px;background:rgba(125,244,154,.34)}
+  .band.warn{background:rgba(242,193,78,.4)}
+  .mk{position:absolute;top:56px;transform:translateY(calc(-1 * var(--dy,0px)))}
+  /* .ico (logo only) dodges sideways without moving the pin or its number */
+  .mk .ico{position:absolute;top:-30px;left:0;transform:translateX(calc(-50% + var(--dx,0px)))}
+  /* connector from a lifted marker down to the track */
+  .mk .stem{position:absolute;left:-0.5px;top:-6px;width:1px;background:rgba(125,244,154,.3)}
+  .mk .ico img{width:14px;height:14px;border-radius:2px;display:block}
+  .mk .ico img.rnd{border-radius:50%}
+  .mk .ico .em{width:14px;height:14px;line-height:14px;font-size:11px;text-align:center;display:block}
+  .mk .pin{position:absolute;left:-1px;top:-4px;width:2px;height:9px;background:var(--phos);opacity:.7;
+    transform:translateY(var(--dy,0px))}
+  /* number rides under its logo (both lift together on stagger), clear of track */
+  .mk .lb{position:absolute;left:0;top:-14px;transform:translateX(calc(-50% + var(--dx,0px)));
+    font-family:'DM Mono';font-weight:500;font-size:9px;color:var(--ink);line-height:1}
+  .comp{position:absolute;top:18px;border-left:5px solid transparent;border-right:5px solid transparent;
+    border-top:8px solid var(--phos);filter:drop-shadow(0 0 5px rgba(125,244,154,.8));margin-left:-5px;z-index:4}
+  /* dotted stem connecting the composite arrow down to the track */
+  .compstem{position:absolute;top:26px;width:1px;background:rgba(125,244,154,.45);margin-left:0;z-index:2}
+  .compnum{position:absolute;top:0px;transform:translateX(-50%);
+    font-family:'Space Grotesk';font-weight:700;font-size:13px;color:var(--phos);
+    text-shadow:0 0 7px rgba(125,244,154,.7);white-space:nowrap;z-index:4}
+  .ends{position:absolute;top:64px;font-family:'DM Mono';font-size:8px;color:var(--faint)}
 
-  /* ---- legend / footer ---- */
-  .legend{display:flex;gap:20px;flex-wrap:wrap;align-items:center;padding:16px 2px 0;
-    font-family:Oswald,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey)}
-  .legend img{width:16px;height:16px;vertical-align:-3px;margin-right:5px;border-radius:3px}
-  footer{margin-top:26px;font-size:13px;font-style:italic;color:var(--grey);line-height:1.65;
-    border-top:1px solid var(--rule-lt);padding-top:12px}
-  footer b{color:var(--red)}
+  .bz{display:flex;align-items:center;gap:8px;margin:9px 0 0 38px}
+  .bz .l{font-family:'DM Mono';font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+  .bz .seg{flex:0 0 120px;height:5px;border-radius:3px;display:flex;overflow:hidden;border:1px solid rgba(125,244,154,.2)}
+  .bz .seg i{height:100%}
+  .bz .t{font-family:'DM Mono';font-size:9px;color:var(--dim)}
 
-  @media(max-width:600px){
-    .row{grid-template-columns:64px 1fr}
-    .grade{width:52px;height:52px;font-size:27px}
-    .title{font-size:21px}
-    .strip{height:104px}
-    .src{width:44px;margin-left:-22px}
+  /* control column pinned to the cabinet's right edge */
+  .panel{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+    position:relative;z-index:2;overflow-y:auto}
+  .brandtag{font-family:'DM Mono';font-size:8px;letter-spacing:.16em;color:#C9A86E;text-align:center;
+    border:1px solid #7A5B33;border-radius:3px;padding:3px 5px;text-transform:uppercase}
+  .kwrap{display:flex;flex-direction:column;align-items:center;gap:5px}
+  .knob{width:56px;height:56px;border-radius:50%;cursor:pointer;position:relative;
+    background:radial-gradient(circle at 38% 32%,var(--knob1),var(--knob2) 70%,var(--knob-edge));
+    box-shadow:0 3px 6px rgba(0,0,0,.5), inset 0 1px 2px rgba(255,255,255,.4);
+    border:2px solid var(--knob-edge);transition:transform .12s}
+  .knob::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:17px;border-radius:2px;
+    background:#3A2C16;transform:translateX(-50%)}
+  .knob:hover{transform:scale(1.05)}
+  .knob.on{box-shadow:0 0 16px rgba(125,244,154,.55),0 3px 6px rgba(0,0,0,.5),inset 0 1px 2px rgba(255,255,255,.4)}
+  .knob.on::after{background:#1E6B38}
+  .knob:focus-visible{outline:2px solid var(--phos);outline-offset:3px}
+  .klabel{font-family:'DM Mono';font-size:8px;letter-spacing:.05em;text-transform:uppercase;
+    color:#C9A86E;text-align:center;max-width:84px;line-height:1.3}
+  .speaker{width:60px;height:70px;border-radius:6px;background:var(--speaker);
+    background-image:radial-gradient(circle,#000 1px,transparent 1.4px);background-size:8px 8px;
+    box-shadow:inset 0 2px 6px rgba(0,0,0,.6)}
+
+  /* footer/legend live as a thin OSD strip pinned to screen bottom */
+  .ticker{flex-shrink:0;position:relative;z-index:7;border-top:1px solid var(--phos-dim);
+    margin-top:4px;padding-top:7px;display:flex;flex-wrap:wrap;gap:5px 12px;align-items:center;
+    font-family:'DM Mono';font-size:9px;letter-spacing:.03em;color:var(--dim)}
+  .ticker img{width:11px;height:11px;border-radius:2px;vertical-align:-2px;margin-right:3px}
+  .ticker img.rnd{border-radius:50%}
+  .ticker .em{margin-right:3px}
+
+  @media(max-width:720px){
+    .set{grid-template-columns:1fr;grid-template-rows:1fr auto;gap:14px;padding:12px}
+    .panel{flex-direction:row;flex-wrap:wrap;gap:12px}
+    .panel .brandtag,.panel .speaker{display:none}
+    .klabel{max-width:64px}
   }
   @media(prefers-reduced-motion:no-preference){
-    .row{animation:settle .4s ease both}
-    @keyframes settle{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    .row{animation:warmup .4s ease both}
+    @keyframes warmup{from{opacity:0}to{opacity:1}}
   }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="topbar"><span>The week in theaters</span><span id="dateline"></span></div>
-  <div class="masthead">
-    <div class="kicker">Critics · Audiences · The Internet</div>
-    <h1>Movie<span class="pulse">Pulse</span></h1>
-    <div class="dek">Six scoring systems. One axis. The grade is ours; the fights are theirs.<span id="samplespot"></span></div>
+<div class="set">
+  <div class="bezel">
+    <div class="screen">
+      <div class="osd">
+        <span class="br">Movie<b>Fish</b></span>
+        <div class="right">
+          <span class="ch">CH 01 &middot; NOW SHOWING</span>
+          <span class="live" id="osd-live"></span>
+        </div>
+      </div>
+      <div class="feed" id="feed"></div>
+      <div class="ticker" id="ticker"></div>
+    </div>
   </div>
 
-  <div class="tabs" role="toolbar" aria-label="Sort movies">
-    <span class="label">The Scoreboard</span>
-    <button data-sort="composite" class="active">Top Rated</button>
-    <button data-sort="spread">Most Divisive</button>
-    <button data-sort="buzz">Reddit Buzz</button>
+  <div class="panel">
+    <div class="brandtag">Movie&middot;Fish</div>
+    <div class="kwrap">
+      <button class="knob on" data-sort="composite" aria-label="Sort by rating"></button>
+      <span class="klabel">Top Rated</span>
+    </div>
+    <div class="kwrap">
+      <button class="knob" data-sort="spread" aria-label="Sort by disagreement"></button>
+      <span class="klabel">Split Decision</span>
+    </div>
+    <div class="kwrap">
+      <button class="knob" data-sort="buzz" aria-label="Sort by buzz"></button>
+      <span class="klabel">Loudest</span>
+    </div>
+    <div class="speaker"></div>
   </div>
-
-  <div id="board"></div>
-
-  <div class="legend" id="legend"></div>
-
-  <footer>
-    Grades reflect a weighted composite of all available sources, normalized to 100.
-    The shaded band runs from a film's lowest score to its highest — when it stretches past
-    25 points we stamp it <b>Critics Divided</b>, which is usually your cue to see it anyway.
-    Reddit numbers are sentiment from recent r/movies and r/boxoffice chatter: a vibe, not a verdict.
-  </footer>
 </div>
 
 <script>
 const DATA = /*__DATA__*/;
 
 const SOURCES = {
-  rotten_tomatoes:{name:"Rotten Tomatoes",domain:"rottentomatoes.com",abbr:"RT"},
-  metacritic:{name:"Metacritic",domain:"metacritic.com",abbr:"MC"},
+  rotten_tomatoes:{name:"Tomatometer",domain:"rottentomatoes.com",abbr:"RT"},
+  rt_audience:{name:"Popcornmeter",domain:"rottentomatoes.com",abbr:"RT-A",icon:"\u{1F37F}"},
+  metacritic:{name:"Metacritic",domain:"metacritic.com",abbr:"MC",round:true},
   imdb:{name:"IMDb",domain:"imdb.com",abbr:"IMDb"},
   letterboxd:{name:"Letterboxd",domain:"letterboxd.com",abbr:"LBXD"},
-  tmdb:{name:"TMDB",domain:"themoviedb.org",abbr:"TMDB"},
-  reddit:{name:"Reddit sentiment",domain:"reddit.com",abbr:"RDT"}
+  tmdb:{name:"TMDB",domain:"themoviedb.org",abbr:"TMDB"}
 };
+const ORDER = ["rotten_tomatoes","rt_audience","metacritic","imdb","letterboxd","tmdb"];
 const favicon = d => `https://www.google.com/s2/favicons?domain=${d}&sz=64`;
+const fmt = n => n>=1000 ? n.toLocaleString('en-US') : String(n);
 
 function grade(c){
-  if(c==null) return "–";
+  if(c==null) return "\u2013";
   if(c>=93)return"A+";if(c>=88)return"A";if(c>=83)return"A-";if(c>=78)return"B+";
   if(c>=73)return"B";if(c>=68)return"B-";if(c>=63)return"C+";if(c>=58)return"C";
   if(c>=53)return"C-";if(c>=48)return"D+";if(c>=43)return"D";if(c>=38)return"D-";return"F";
 }
 
-document.getElementById('dateline').textContent =
-  DATA.sample ? "Preview Edition" : "Updated " + DATA.generated_at;
-if(DATA.sample) document.getElementById('samplespot').innerHTML =
-  '<span class="sample-badge">Sample data</span>';
+document.getElementById('osd-live').innerHTML = DATA.sample
+  ? 'PREVIEW' : 'UPD <b>'+DATA.generated_at+'</b>';
 
-document.getElementById('legend').innerHTML =
-  Object.values(SOURCES).map(s=>`<span><img src="${favicon(s.domain)}" alt="">${s.name}</span>`).join('') +
-  `<span style="color:var(--red)">▲ composite</span>`;
+document.getElementById('ticker').innerHTML =
+  ORDER.map(k=>{const s=SOURCES[k];return `<span>${s.icon?`<span class="em">${s.icon}</span>`:`<img class="${s.round?'rnd':''}" src="${favicon(s.domain)}" alt="">`}${s.name}</span>`}).join('')
+  + `<span style="color:var(--faint)">\u25B2 grade</span>`;
 
-function rowHTML(m,i){
-  const g = grade(m.composite);
-  return `<div class="row" style="animation-delay:${i*40}ms">
-    <div class="gradebox">
-      <div class="grade ${m.contested?'hot':''}">${g}</div>
-      <div class="gradenum">${m.composite==null?'':m.composite.toFixed(0)+' / 100'}</div>
-    </div>
-    <div>
-      <div class="head">
-        <div class="title"><span class="rankno">${String(i+1).padStart(2,'0')}</span>${m.title}</div>
-        <div class="byline">${m.release_date||''} · ${Object.keys(m.sources).length} sources · ${m.reddit_posts} Reddit posts
-          ${m.contested?`<span class="divided">Critics Divided · ${Math.round(m.spread)} pts</span>`:''}
-        </div>
-      </div>
-    </div>
-    <div class="strip" data-idx="${m._idx}">
-      <div class="axis"></div>
-      <span class="axis-end" style="left:0">0</span>
-      <span class="axis-end" style="right:0">100</span>
-    </div>
+function bar(m){
+  const present = ORDER.filter(k=>m.sources[k]!=null);
+  if(!present.length) return '<div class="scale"></div>';
+  const vals = present.map(k=>m.sources[k]);
+  const lo = Math.min(...vals), hi = Math.max(...vals);
+  let marks = present.map(k=>{
+    const s=SOURCES[k], v=m.sources[k];
+    const mk = s.icon
+      ? `<span class="em">${s.icon}</span>`
+      : `<img class="${s.round?'rnd':''}" src="${favicon(s.domain)}" alt="${s.name}">`;
+    return `<div class="mk" data-v="${v}" style="left:${v}%" title="${s.name}: ${Math.round(v)}">
+      <span class="ico">${mk}</span><span class="stem"></span><span class="pin"></span><span class="lb">${Math.round(v)}</span></div>`;
+  }).join('');
+  const comp = m.composite!=null
+    ? `<div class="compnum" style="left:${m.composite}%">${Math.round(m.composite)}</div>
+       <div class="comp" style="left:${m.composite}%" title="Grade ${Math.round(m.composite)}"></div>
+       <div class="compstem" style="left:${m.composite}%;height:30px"></div>` : '';
+  return `<div class="scale">
+    <div class="track"></div>
+    <div class="band ${m.contested?'warn':''}" style="left:${lo}%;width:${Math.max(hi-lo,1)}%"></div>
+    <span class="ends" style="left:0">0</span><span class="ends" style="right:0">100</span>
+    ${marks}${comp}
   </div>`;
 }
 
-/* Lay out logos with collision dodging: each logo's true score is a tick on the
-   axis; logos are nudged apart horizontally and tied back with a leader line. */
-function layoutStrip(el, m){
-  el.querySelectorAll('.band,.tick,.leader,.src,.comp-mark,.comp-lbl').forEach(n=>n.remove());
-  const entries = Object.entries(m.sources)
-    .filter(([,v])=>v!=null)
-    .map(([k,v])=>({...SOURCES[k], v}))
-    .sort((a,b)=>a.v-b.v);
-  if(!entries.length) return;
+function buzzLine(m){
+  if(!m.buzz) return '';
+  const b=m.buzz;
+  return `<div class="bz">
+    <span class="l">Buzz</span>
+    <div class="seg" title="${b.pos}% excited \u00b7 ${b.neu}% neutral \u00b7 ${b.neg}% negative">
+      <i style="width:${b.pos}%;background:var(--phos)"></i>
+      <i style="width:${b.neu}%;background:#2C5C3C"></i>
+      <i style="width:${b.neg}%;background:var(--rose)"></i>
+    </div>
+    <span class="t">${b.pos}% excited \u00b7 ${fmt(b.total)}</span>
+  </div>`;
+}
 
-  const w = el.clientWidth, pad = 16, span = w - pad*2;
-  const X = v => pad + (v/100)*span;
+function rowHTML(m){
+  return `<div class="row">
+    <div class="rtop">
+      <span class="gr ${m.contested?'warn':''}">${grade(m.composite)}</span>
+      <span class="nm">${m.title}</span>
+      ${m.contested?`<span class="sp">Split ${Math.round(m.spread)}</span>`:''}
+    </div>
+    ${bar(m)}
+    ${buzzLine(m)}
+  </div>`;
+}
 
-  const lo = entries[0].v, hi = entries[entries.length-1].v;
-  const band = document.createElement('div');
-  band.className = 'band' + (m.contested?' hot':'');
-  band.style.left = X(lo)+'px'; band.style.width = Math.max(X(hi)-X(lo),3)+'px';
-  el.appendChild(band);
+let current='composite';
+function dodge(scale){
+  const mks=[...scale.querySelectorAll('.mk')];
+  if(!mks.length) return;
+  const W=scale.clientWidth||300;
+  const NEAR=20;   // px: closer than this and markers would visually collide
+  const STEP=22;   // px: vertical lift added per stair tier
+  // measure each marker's true x and score, sorted left to right
+  const items=mks.map(el=>({
+    el, v:parseFloat(el.dataset.v),
+    x:(parseFloat(el.style.left)/100)*W
+  })).sort((a,b)=>a.x-b.x);
 
-  // true tick positions, then dodge logo positions to a minimum gap
-  const minGap = Math.min(56, Math.max(40, w/entries.length - 4));
-  const tickX = entries.map(e=>X(e.v));
-  const logoX = [...tickX];
-  for(let i=1;i<logoX.length;i++) if(logoX[i]-logoX[i-1]<minGap) logoX[i]=logoX[i-1]+minGap;
-  const maxX = w - 28;
-  if(logoX[logoX.length-1]>maxX){
-    logoX[logoX.length-1]=maxX;
-    for(let i=logoX.length-2;i>=0;i--) if(logoX[i+1]-logoX[i]<minGap) logoX[i]=logoX[i+1]-minGap;
+  // assign tiers: walk left to right; identical scores share a tier (side by
+  // side), near-but-different scores step up one tier each to clear numbers
+  let tier=0, lastX=-1e9, lastV=null;
+  for(const it of items){
+    if(lastV!==null && it.v===lastV){
+      // exact tie -> same tier, sit beside the previous one
+      it.tier=tier; it.tie=true;
+    } else if(it.x-lastX < NEAR){
+      // close but not equal -> stair up
+      tier++; it.tier=tier; it.tie=false;
+    } else {
+      // enough room -> reset to the baseline tier
+      tier=0; it.tier=0; it.tie=false;
+    }
+    lastX=it.x; lastV=it.v;
   }
-  if(logoX[0]<28){ logoX[0]=28;
-    for(let i=1;i<logoX.length;i++) if(logoX[i]-logoX[i-1]<minGap) logoX[i]=logoX[i-1]+minGap; }
 
-  entries.forEach((e,i)=>{
-    const tick = document.createElement('div');
-    tick.className='tick'; tick.style.left=(tickX[i]-1)+'px'; el.appendChild(tick);
+  // side-by-side nudge for exact ties: offset duplicates within a tier
+  const tieGroups={};
+  for(const it of items){
+    if(it.tie || items.some(o=>o!==it && o.v===it.v)){
+      (tieGroups[it.v]=tieGroups[it.v]||[]).push(it);
+    }
+  }
+  for(const v in tieGroups){
+    const g=tieGroups[v]; const n=g.length;
+    g.forEach((it,i)=>{ it.dx=(i-(n-1)/2)*16; });  // spread ties horizontally
+  }
 
-    // leader from logo bottom down to the tick (slanted via a thin rotated line)
-    const dx = tickX[i]-logoX[i], topY = 50, botY = el.clientHeight-32;
-    const len = Math.hypot(dx, botY-topY);
-    const leader = document.createElement('div');
-    leader.className='leader';
-    leader.style.left = logoX[i]+'px'; leader.style.top = topY+'px';
-    leader.style.height = len+'px';
-    leader.style.transformOrigin='top left';
-    leader.style.transform = `rotate(${Math.atan2(dx, botY-topY)*-180/Math.PI}deg)`;
-    el.appendChild(leader);
-
-    const src = document.createElement('div');
-    src.className='src'; src.style.left=logoX[i]+'px';
-    src.title = `${e.name}: ${Math.round(e.v)}`;
-    src.innerHTML = `<img src="${favicon(e.domain)}" alt="${e.name}"
-        onerror="this.parentElement.classList.add('noimg')">
-      <div class="abbr">${e.abbr}</div><div class="num">${Math.round(e.v)}</div>`;
-    el.appendChild(src);
-  });
-
-  if(m.composite!=null){
-    const cm=document.createElement('div');
-    cm.className='comp-mark'; cm.style.left=X(m.composite)+'px';
-    cm.title=`Composite: ${m.composite}`;
-    el.appendChild(cm);
-    const cl=document.createElement('div');
-    cl.className='comp-lbl'; cl.style.left=X(m.composite)+'px';
-    cl.textContent = m.composite.toFixed(0);
-    el.appendChild(cl);
+  for(const it of items){
+    const lift=it.tier*STEP;
+    it.el.style.setProperty('--dy', lift.toFixed(0)+'px');
+    const ico=it.el.querySelector('.ico');
+    if(ico) ico.style.setProperty('--dx', (it.dx||0).toFixed(1)+'px');
+    // stem bridges from the lifted marker back down to the track
+    const stem=it.el.querySelector('.stem');
+    if(stem) stem.style.height=(lift+5)+'px';
   }
 }
 
-let current = 'composite';
 function render(){
-  const movies = [...DATA.movies].sort((a,b)=>{
+  const movies=[...DATA.movies].sort((a,b)=>{
     if(current==='spread') return (b.spread??-1)-(a.spread??-1);
-    if(current==='buzz')   return (b.reddit_posts??0)-(a.reddit_posts??0);
+    if(current==='buzz')   return (b.buzz?.total??-1)-(a.buzz?.total??-1);
     return (b.composite??-1)-(a.composite??-1);
   });
-  movies.forEach((m,i)=>m._idx=i);
-  document.getElementById('board').innerHTML = movies.map(rowHTML).join('');
-  requestAnimationFrame(()=>{
-    document.querySelectorAll('.strip').forEach((el,i)=>layoutStrip(el, movies[i]));
-  });
+  document.getElementById('feed').innerHTML = movies.map(rowHTML).join('');
+  requestAnimationFrame(()=>document.querySelectorAll('.scale').forEach(dodge));
 }
 
-document.querySelectorAll('.tabs button').forEach(b=>{
-  b.addEventListener('click',()=>{
-    document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));
-    b.classList.add('active'); current=b.dataset.sort; render();
+document.querySelectorAll('.knob').forEach(k=>{
+  k.addEventListener('click',()=>{
+    document.querySelectorAll('.knob').forEach(x=>x.classList.remove('on'));
+    k.classList.add('on'); current=k.dataset.sort; render();
   });
 });
-let rT; window.addEventListener('resize',()=>{clearTimeout(rT);rT=setTimeout(render,150)});
 render();
 </script>
 </body>
