@@ -20,7 +20,7 @@ import time
 
 from dotenv import load_dotenv
 
-from . import tmdb, omdb, letterboxd, youtube, cache
+from . import tmdb, omdb, letterboxd, youtube, rottentomatoes, metacritic, cache
 from .aggregate import aggregate
 
 OUT = pathlib.Path(__file__).resolve().parents[1] / "data" / "movies.json"
@@ -63,6 +63,17 @@ def main(limit: int = 20):
             sources.update(
                 cached(f"omdb:{mid}", lambda: omdb.scores(det["imdb_id"])) or {}
             )
+
+        rt = cached(f"rt:{mid}",
+                    lambda: rottentomatoes.scores(m["title"], year)) or {}
+        mc = cached(f"mc:{mid}",
+                    lambda: metacritic.score(m["title"], year))
+        if mc is not None:
+            sources["metacritic"] = mc          # scrape beats OMDb's metacritic
+        if rt.get("critic") is not None:
+            sources["rotten_tomatoes"] = rt["critic"]   # scrape beats OMDb's RT
+        if rt.get("audience") is not None:
+            sources["rt_audience"] = rt["audience"]     # new: audience score
 
         sources["letterboxd"] = cached(
             f"lbxd:{mid}",

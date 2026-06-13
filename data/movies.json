@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 20:36 UTC",
+  "generated_at": "2026-06-12 21:03 UTC",
   "sample": false,
   "movies": [
     {
@@ -22,22 +22,39 @@
       "title": "Obsession",
       "release_date": "2026-05-15",
       "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "buzz": null,
-      "composite": 83.7,
+      "buzz": {
+        "pos": 47,
+        "neu": 32,
+        "neg": 21,
+        "score": 59.6,
+        "analyzed": 400,
+        "total": 1179,
+        "video_id": "xJYoN-fX2j0"
+      },
+      "composite": 83.3,
       "spread": 18,
       "contested": false,
       "sources": {
         "tmdb": 79,
         "imdb": 82,
         "rotten_tomatoes": 95,
-        "metacritic": 77
+        "metacritic": 77,
+        "letterboxd": 82.0
       }
     },
     {
       "title": "The Sheep Detectives",
       "release_date": "2026-05-08",
       "poster": "https://image.tmdb.org/t/p/w342/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
-      "buzz": null,
+      "buzz": {
+        "pos": 72,
+        "neu": 23,
+        "neg": 5,
+        "score": 73.3,
+        "analyzed": 400,
+        "total": 2185,
+        "video_id": "pyZI5oM6hWk"
+      },
       "composite": 79.4,
       "spread": 22,
       "contested": false,
@@ -83,7 +100,15 @@
       "title": "Disclosure Day",
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "buzz": null,
+      "buzz": {
+        "pos": 43,
+        "neu": 44,
+        "neg": 13,
+        "score": 60.0,
+        "analyzed": 400,
+        "total": 7540,
+        "video_id": "SCYT8vb2siQ"
+      },
       "composite": 70.1,
       "spread": 6.2,
       "contested": false,
@@ -121,7 +146,15 @@
       "title": "Karuppu",
       "release_date": "2026-05-14",
       "poster": "https://image.tmdb.org/t/p/w342/4KZXlZ5tTT6ghbW77gS4hSLkCd7.jpg",
-      "buzz": null,
+      "buzz": {
+        "pos": 42,
+        "neu": 23,
+        "neg": 35,
+        "score": 53.1,
+        "analyzed": 400,
+        "total": 16760,
+        "video_id": "JpVl_-1YgIo"
+      },
       "composite": 65.4,
       "spread": 17.0,
       "contested": false,
@@ -163,7 +196,15 @@
       "title": "The Mandalorian and Grogu",
       "release_date": "2026-05-22",
       "poster": "https://image.tmdb.org/t/p/w342/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
-      "buzz": null,
+      "buzz": {
+        "pos": 50,
+        "neu": 38,
+        "neg": 13,
+        "score": 62.3,
+        "analyzed": 400,
+        "total": 9872,
+        "video_id": "IHWlvwu8t1w"
+      },
       "composite": 60.6,
       "spread": 13,
       "contested": false,
@@ -178,7 +219,15 @@
       "title": "Kattalan",
       "release_date": "2026-05-28",
       "poster": "https://image.tmdb.org/t/p/w342/9OA6y2GdbXuJ5PAMMMawNBIkrZA.jpg",
-      "buzz": null,
+      "buzz": {
+        "pos": 37,
+        "neu": 27,
+        "neg": 36,
+        "score": 53.5,
+        "analyzed": 400,
+        "total": 1052,
+        "video_id": "iQMvxXmCk9I"
+      },
       "composite": 58.4,
       "spread": 20.2,
       "contested": false,
@@ -204,7 +253,15 @@
       "title": "In the Grey",
       "release_date": "2026-05-15",
       "poster": "https://image.tmdb.org/t/p/w342/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
-      "buzz": null,
+      "buzz": {
+        "pos": 52,
+        "neu": 39,
+        "neg": 9,
+        "score": 64.4,
+        "analyzed": 400,
+        "total": 2323,
+        "video_id": "nufP15iN4GE"
+      },
       "composite": 56.7,
       "spread": 20,
       "contested": false,
@@ -233,7 +290,15 @@
       "title": "Scary Movie",
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/reZ8NInXjMkkaOpUHcI3Pn7iaRN.jpg",
-      "buzz": null,
+      "buzz": {
+        "pos": 53,
+        "neu": 30,
+        "neg": 17,
+        "score": 61.2,
+        "analyzed": 400,
+        "total": 15192,
+        "video_id": "0fZ58S-7QP0"
+      },
       "composite": 52.6,
       "spread": 7.0,
       "contested": false,
@@ -246,7 +311,15 @@
       "title": "Passenger",
       "release_date": "2026-05-22",
       "poster": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
-      "buzz": null,
+      "buzz": {
+        "pos": 33,
+        "neu": 41,
+        "neg": 26,
+        "score": 51.5,
+        "analyzed": 400,
+        "total": 859,
+        "video_id": "URYNySesCJA"
+      },
       "composite": 52.1,
       "spread": 15.8,
       "contested": false,

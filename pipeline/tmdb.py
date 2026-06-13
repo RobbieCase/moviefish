@@ -13,7 +13,8 @@ def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
 
     TMDB's now_playing feed includes anniversary/re-release screenings of old
     films (Shrek, Top Gun: Maverick, etc.). Anything whose original release
-    date is older than ~6 months is dropped so the board stays "new this week".
+    date is older than ~6 months is dropped, and non-English-language releases
+    are excluded, so the board stays focused on new US/English films.
     """
     key = os.environ["TMDB_API_KEY"]
     cutoff = (date.today() - timedelta(days=180)).isoformat()
@@ -30,6 +31,8 @@ def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
             rd = m.get("release_date", "")
             if rd and rd < cutoff:
                 continue  # re-release of an older film
+            if m.get("original_language") != "en":
+                continue  # non-English release (keeps the board US-focused)
             movies.append(
                 {
                     "tmdb_id": m["id"],
@@ -68,6 +71,8 @@ def movie_details(tmdb_id: int) -> dict:
     return {
         "imdb_id": (j.get("external_ids") or {}).get("imdb_id"),
         "runtime": j.get("runtime") or None,
+        "vote_average": j.get("vote_average") or None,
+        "vote_count": j.get("vote_count") or 0,
     }
 
 

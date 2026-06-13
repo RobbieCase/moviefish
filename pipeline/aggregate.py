@@ -21,6 +21,7 @@ WEIGHTS = {
     "metacritic": 1.0,
     "letterboxd": 1.0,
     "tmdb": 0.6,    # overlaps heavily with IMDb's audience
+    "rt_audience": 0.8,  # RT Popcornmeter — real audience signal
 }
 
 CONTESTED_SPREAD = 25  # points
