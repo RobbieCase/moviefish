@@ -83,7 +83,7 @@
   .rtop .sp{font-family:'DM Mono';font-size:9px;letter-spacing:.1em;text-transform:uppercase;
     color:var(--amber);border:1px solid var(--amber);border-radius:2px;padding:0 5px;white-space:nowrap}
 
-  .scale{position:relative;height:74px;margin-left:38px;margin-right:6px;margin-top:30px;overflow:visible}
+  .scale{position:relative;height:92px;margin-left:38px;margin-right:6px;margin-top:30px;overflow:visible}
   .track{position:absolute;left:0;right:0;top:56px;height:3px;background:rgba(125,244,154,.18);border-radius:2px}
   .band{position:absolute;top:55.5px;height:4px;border-radius:2px;background:rgba(125,244,154,.34)}
   .band.warn{background:rgba(242,193,78,.4)}
@@ -101,14 +101,15 @@
   /* number rides under its logo (both lift together on stagger), clear of track */
   .mk .lb{position:absolute;left:0;top:-14px;transform:translateX(calc(-50% + var(--lx,0px)));
     font-family:'DM Mono';font-weight:500;font-size:9px;color:var(--ink);line-height:1}
-  .comp{position:absolute;border-left:5px solid transparent;border-right:5px solid transparent;
-    border-top:8px solid var(--phos);filter:drop-shadow(0 0 5px rgba(125,244,154,.8));margin-left:-5px;z-index:5}
-  /* stem connecting the composite arrow down to the track */
-  .compstem{position:absolute;width:1px;background:rgba(125,244,154,.45);margin-left:0;z-index:3}
-  .compnum{position:absolute;transform:translateX(-50%);
+  /* composite (mean) lives BELOW the track: a small green tick + up-arrow + number */
+  .comptick{position:absolute;top:53px;width:2px;height:9px;background:var(--phos);
+    box-shadow:0 0 5px rgba(125,244,154,.8);margin-left:-1px;z-index:4}
+  .comp{position:absolute;top:63px;border-left:5px solid transparent;border-right:5px solid transparent;
+    border-bottom:8px solid var(--phos);filter:drop-shadow(0 0 5px rgba(125,244,154,.8));margin-left:-5px;z-index:5}
+  .compnum{position:absolute;top:73px;transform:translateX(-50%);
     font-family:'Space Grotesk';font-weight:700;font-size:13px;color:var(--phos);
     text-shadow:0 0 7px rgba(125,244,154,.7);white-space:nowrap;z-index:5}
-  .ends{position:absolute;top:64px;font-family:'DM Mono';font-size:8px;color:var(--faint)}
+  .ends{position:absolute;top:63px;font-family:'DM Mono';font-size:8px;color:var(--faint)}
 
   .bz{display:flex;align-items:center;gap:8px;margin:9px 0 0 38px}
   .bz .l{font-family:'DM Mono';font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
@@ -235,9 +236,9 @@ function bar(m){
       <span class="ico">${mk}</span><span class="stem"></span><span class="pin"></span><span class="lb">${Math.round(v)}</span></div>`;
   }).join('');
   const comp = m.composite!=null
-    ? `<div class="compnum" style="left:${m.composite}%">${Math.round(m.composite)}</div>
-       <div class="comp" data-v="${m.composite}" style="left:${m.composite}%" title="Grade ${Math.round(m.composite)}"></div>
-       <div class="compstem" style="left:${m.composite}%;height:30px"></div>` : '';
+    ? `<div class="comptick" style="left:${m.composite}%"></div>
+       <div class="comp" style="left:${m.composite}%" title="Grade ${Math.round(m.composite)}"></div>
+       <div class="compnum" style="left:${m.composite}%">${Math.round(m.composite)}</div>` : '';
   return `<div class="scale">
     <div class="track"></div>
     <div class="band ${m.contested?'warn':''}" style="left:${lo}%;width:${Math.max(hi-lo,1)}%"></div>
@@ -275,7 +276,7 @@ function rowHTML(m){
 let current='composite';
 function dodge(scale){
   const W=scale.clientWidth||300;
-  const STEP=30, NEAR=18, TIE_GAP=18, TRACK=56, LOGO_TOP=26, COMPNUM_TOP=0, COMP_ARROW_TOP=18;
+  const STEP=30, NEAR=18, TIE_GAP=18, TRACK=56, LOGO_TOP=26;
 
   // ---- 1. source markers: stair tiers (rounded ties share a tier) ----
   const mks=[...scale.querySelectorAll('.mk')];
@@ -323,46 +324,8 @@ function dodge(scale){
     const stem=it.el.querySelector('.stem'); if(stem) stem.style.height=(lift+6)+'px';
   }
 
-  // ---- 2. composite ----
-  const comp=scale.querySelector('.comp'),
-        cnum=scale.querySelector('.compnum'),
-        cstem=scale.querySelector('.compstem');
-  let compLift=0;
-  if(comp){
-    const cv=parseFloat(comp.dataset.v), cr=Math.round(cv);
-    // does the grade equal a source score? point the arrow at THAT logo, no line.
-    let match=null, best=1e9;
-    for(const it of items){
-      if(Math.round(it.v)===cr){ const d=Math.abs(it.x-cv/100*W); if(d<best){best=d;match=it;} }
-    }
-    if(match){
-      const effX=match.x+match.dx, lift=match.tier*STEP, logoTop=LOGO_TOP-lift;
-      const pct=(effX/W*100);
-      comp.style.left=pct+'%'; cnum.style.left=pct+'%';
-      comp.style.top=(logoTop-12)+'px';        // arrow tip sits just above the logo
-      cnum.style.top=(logoTop-12-14)+'px';     // grade number above the arrow
-      cstem.style.display='none';              // <-- no connecting line in this case
-      compLift=lift+26;
-    } else {
-      // grade is on its own: lift above any nearby source, draw stem to the track
-      const cx=cv/100*W;
-      let nearTier=-1;
-      for(const it of items){ if(Math.abs(it.x-cx)<NEAR+8) nearTier=Math.max(nearTier,it.tier); }
-      compLift=(nearTier+1)*STEP;
-      comp.style.top =(COMP_ARROW_TOP - compLift)+'px';
-      cnum.style.top =(COMPNUM_TOP   - compLift)+'px';
-      if(nearTier>=0){
-        cstem.style.display='none';        // grade is beside markers -> no line over them
-      } else {
-        cstem.style.display='block';       // grade is in open space -> short line to track
-        cstem.style.top=(COMP_ARROW_TOP+8)+'px';
-        cstem.style.height=(TRACK-(COMP_ARROW_TOP+8))+'px';
-      }
-    }
-  }
-
-  // ---- 3. reserve headroom so lifted elements clear the row above ----
-  const topMost=Math.min(LOGO_TOP-maxSourceTier*STEP, COMPNUM_TOP-compLift);
+  // ---- 2. reserve headroom above so lifted source logos clear the row above ----
+  const topMost=LOGO_TOP - maxSourceTier*STEP;
   scale.style.marginTop=(Math.max(0,-topMost)+14)+'px';
 }
 
