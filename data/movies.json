@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-06-13 20:49 UTC",
+  "generated_at": "2026-06-13 20:53 UTC",
   "sample": false,
   "movies": [
+    {
+      "title": "The Furious",
+      "release_date": "2026-06-12",
+      "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "buzz": null,
+      "composite": 85.1,
+      "spread": 21.0,
+      "contested": false,
+      "sources": {
+        "tmdb": 80,
+        "imdb": 77,
+        "rotten_tomatoes": 97,
+        "metacritic": 85,
+        "rt_audience": 96,
+        "letterboxd": 76.0
+      }
+    },
     {
       "title": "Obsession",
       "release_date": "2026-05-15",
@@ -17,23 +34,6 @@
         "metacritic": 77,
         "rt_audience": 94,
         "letterboxd": 83.0
-      }
-    },
-    {
-      "title": "The Furious",
-      "release_date": "2026-06-12",
-      "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
-      "buzz": null,
-      "composite": 84.8,
-      "spread": 21.0,
-      "contested": false,
-      "sources": {
-        "tmdb": 77,
-        "imdb": 77,
-        "rotten_tomatoes": 97,
-        "metacritic": 85,
-        "rt_audience": 96,
-        "letterboxd": 76.0
       }
     },
     {
@@ -190,11 +190,11 @@
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
       "buzz": null,
-      "composite": 45.2,
-      "spread": 51,
+      "composite": 45.0,
+      "spread": 50,
       "contested": true,
       "sources": {
-        "tmdb": 74,
+        "tmdb": 73,
         "metacritic": 35,
         "rotten_tomatoes": 23,
         "rt_audience": 41,
