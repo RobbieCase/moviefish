@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12 20:50 UTC",
+  "generated_at": "2026-06-13 15:18 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,15 +7,15 @@
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
       "buzz": null,
-      "composite": 84.7,
-      "spread": 25.0,
-      "contested": true,
+      "composite": 84.3,
+      "spread": 24.2,
+      "contested": false,
       "sources": {
-        "tmdb": 84,
+        "tmdb": 80,
         "imdb": 77,
         "rotten_tomatoes": 100,
         "metacritic": 87,
-        "letterboxd": 75.0
+        "letterboxd": 75.8
       }
     },
     {
@@ -39,11 +39,11 @@
       "release_date": "2026-05-08",
       "poster": "https://image.tmdb.org/t/p/w342/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
       "buzz": null,
-      "composite": 79.4,
+      "composite": 79.3,
       "spread": 22,
       "contested": false,
       "sources": {
-        "tmdb": 77,
+        "tmdb": 76,
         "imdb": 77,
         "rotten_tomatoes": 94,
         "metacritic": 72,
@@ -70,14 +70,14 @@
       "release_date": "2026-05-29",
       "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
       "buzz": null,
-      "composite": 71.2,
-      "spread": 9.4,
+      "composite": 71.3,
+      "spread": 9.6,
       "contested": false,
       "sources": {
-        "tmdb": 68,
+        "tmdb": 69,
         "imdb": 71,
         "metacritic": 77,
-        "letterboxd": 67.6
+        "letterboxd": 67.4
       }
     },
     {
@@ -85,12 +85,12 @@
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
       "buzz": null,
-      "composite": 70.1,
-      "spread": 6.2,
+      "composite": 68.6,
+      "spread": 3.8,
       "contested": false,
       "sources": {
-        "tmdb": 74,
-        "letterboxd": 67.8
+        "tmdb": 71,
+        "letterboxd": 67.2
       }
     },
     {
@@ -98,11 +98,11 @@
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
       "buzz": null,
-      "composite": 67.5,
-      "spread": 10.4,
+      "composite": 67.1,
+      "spread": 9.4,
       "contested": false,
       "sources": {
-        "tmdb": 74,
+        "tmdb": 73,
         "letterboxd": 63.6
       }
     },
@@ -123,12 +123,12 @@
       "release_date": "2026-05-14",
       "poster": "https://image.tmdb.org/t/p/w342/4KZXlZ5tTT6ghbW77gS4hSLkCd7.jpg",
       "buzz": null,
-      "composite": 65.4,
-      "spread": 17.0,
+      "composite": 64.7,
+      "spread": 16.4,
       "contested": false,
       "sources": {
-        "tmdb": 76,
-        "letterboxd": 59.0
+        "tmdb": 75,
+        "letterboxd": 58.6
       }
     },
     {
@@ -176,6 +176,19 @@
       }
     },
     {
+      "title": "Peddi",
+      "release_date": "2026-06-03",
+      "poster": "https://image.tmdb.org/t/p/w342/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
+      "buzz": null,
+      "composite": 58.4,
+      "spread": 15.4,
+      "contested": false,
+      "sources": {
+        "tmdb": 68,
+        "letterboxd": 52.6
+      }
+    },
+    {
       "title": "Kattalan",
       "release_date": "2026-05-28",
       "poster": "https://image.tmdb.org/t/p/w342/9OA6y2GdbXuJ5PAMMMawNBIkrZA.jpg",
@@ -215,19 +228,6 @@
         "rotten_tomatoes": 46,
         "metacritic": 53,
         "letterboxd": 56.4
-      }
-    },
-    {
-      "title": "Peddi",
-      "release_date": "2026-06-03",
-      "poster": "https://image.tmdb.org/t/p/w342/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
-      "buzz": null,
-      "composite": 56.5,
-      "spread": 10.4,
-      "contested": false,
-      "sources": {
-        "tmdb": 63,
-        "letterboxd": 52.6
       }
     },
     {
@@ -275,12 +275,12 @@
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/uJOW6pWxJ0i5sji9VXRR6Y1wXyE.jpg",
       "buzz": null,
-      "composite": 44.9,
-      "spread": 9.8,
+      "composite": 44.5,
+      "spread": 10.4,
       "contested": false,
       "sources": {
         "tmdb": 51,
-        "letterboxd": 41.2
+        "letterboxd": 40.6
       }
     }
   ]
