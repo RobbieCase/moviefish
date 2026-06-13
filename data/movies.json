@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 19:27 UTC",
+  "generated_at": "2026-06-13 19:46 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,7 +7,7 @@
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
       "buzz": null,
-      "composite": 85.0,
+      "composite": 85.1,
       "spread": 21.2,
       "contested": false,
       "sources": {
@@ -15,7 +15,7 @@
         "imdb": 77,
         "rotten_tomatoes": 97,
         "metacritic": 85,
-        "rt_audience": 95,
+        "rt_audience": 96,
         "letterboxd": 75.8
       }
     },
