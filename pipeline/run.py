@@ -83,6 +83,16 @@ def main(limit: int = 20):
 
         buzz = cached(f"yt:{mid}", lambda: youtube.sentiment(m["title"]))
 
+        # Require at least 3 *review* sources (critic/aggregate sites), else the
+        # composite isn't meaningful. rt_audience is an audience signal, not a
+        # review source, so it doesn't count toward the minimum.
+        REVIEW_KEYS = ("imdb", "rotten_tomatoes", "metacritic", "letterboxd", "tmdb")
+        n_review = sum(1 for k in REVIEW_KEYS if sources.get(k) is not None)
+        if n_review < 3:
+            print(f"   skipping {m['title']}: only {n_review} review sources")
+            time.sleep(0.5)
+            continue
+
         agg = aggregate(sources)
         results.append(
             {

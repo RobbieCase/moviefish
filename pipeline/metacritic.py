@@ -79,5 +79,9 @@ def _slugs(title: str, year: str | None) -> list[str]:
     base = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
     out = [base]
     if year:
-        out.append(f"{base}-{year}")
+        try:
+            y = int(year)
+            out += [f"{base}-{y}", f"{base}-{y - 1}"]
+        except ValueError:
+            out.append(f"{base}-{year}")
     return out

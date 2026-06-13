@@ -122,5 +122,12 @@ def _slug_candidates(title: str, year: str | None) -> list[str]:
     base = re.sub(r"[^a-z0-9]+", "_", title.lower()).strip("_")
     out = [base]
     if year:
-        out.append(f"{base}_{year}")
+        try:
+            y = int(year)
+            # RT slugs by release year, but festival-circuit films are often
+            # slugged a year earlier than their wide-release date (e.g. The
+            # Furious is the_furious_2025 despite a 2026 theatrical date).
+            out += [f"{base}_{y}", f"{base}_{y - 1}"]
+        except ValueError:
+            out.append(f"{base}_{year}")
     return out
