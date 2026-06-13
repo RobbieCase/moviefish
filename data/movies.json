@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13 19:21 UTC",
+  "generated_at": "2026-06-13 19:46 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,14 +7,15 @@
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
       "buzz": null,
-      "composite": 83.9,
-      "spread": 24.2,
+      "composite": 85.1,
+      "spread": 21.2,
       "contested": false,
       "sources": {
         "tmdb": 80,
         "imdb": 77,
-        "rotten_tomatoes": 100,
+        "rotten_tomatoes": 97,
         "metacritic": 85,
+        "rt_audience": 96,
         "letterboxd": 75.8
       }
     },
@@ -23,14 +24,15 @@
       "release_date": "2026-05-15",
       "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
       "buzz": null,
-      "composite": 83.6,
-      "spread": 18,
+      "composite": 84.9,
+      "spread": 17,
       "contested": false,
       "sources": {
         "tmdb": 79,
         "imdb": 82,
-        "rotten_tomatoes": 95,
+        "rotten_tomatoes": 94,
         "metacritic": 77,
+        "rt_audience": 94,
         "letterboxd": 83.0
       }
     },
@@ -99,18 +101,6 @@
         "rotten_tomatoes": 80,
         "rt_audience": 74,
         "letterboxd": 67.2
-      }
-    },
-    {
-      "title": "Signal One",
-      "release_date": "2026-06-05",
-      "poster": "https://image.tmdb.org/t/p/w342/bi7Aeaozl51cd5K6vAn8tI1lOW0.jpg",
-      "buzz": null,
-      "composite": 66.0,
-      "spread": 0,
-      "contested": false,
-      "sources": {
-        "tmdb": 66
       }
     },
     {
