@@ -7,6 +7,10 @@ import requests
 
 BASE = "https://api.themoviedb.org/3"
 
+# Tuning for the "big releases people care about" filter:
+MIN_POPULARITY = 15   # TMDB popularity floor (festival/limited tail sits below)
+MIN_RESULTS = 6       # safety floor so a quiet week is never near-empty
+
 
 def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
     """Return movies currently in theaters, excluding re-releases.
@@ -18,7 +22,7 @@ def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
     """
     key = os.environ["TMDB_API_KEY"]
     cutoff = (date.today() - timedelta(days=180)).isoformat()
-    movies = []
+    raw = []  # collect with popularity so we can gate by it below
     for page in range(1, max_pages + 1):
         r = requests.get(
             f"{BASE}/movie/now_playing",
@@ -33,7 +37,7 @@ def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
                 continue  # re-release of an older film
             if m.get("original_language") != "en":
                 continue  # non-English release (keeps the board US-focused)
-            movies.append(
+            raw.append(
                 {
                     "tmdb_id": m["id"],
                     "title": m["title"],
@@ -45,17 +49,31 @@ def now_playing(region: str = "US", max_pages: int = 2) -> list[dict]:
                     ),
                     "tmdb_score": round(m.get("vote_average", 0) * 10),  # 0-100
                     "tmdb_votes": m.get("vote_count", 0),
+                    "popularity": m.get("popularity", 0),
                 }
             )
         if page >= data.get("total_pages", 1):
             break
     # Dedupe by id, keep order
-    seen, out = set(), []
-    for m in movies:
+    seen, deduped = set(), []
+    for m in raw:
         if m["tmdb_id"] not in seen:
             seen.add(m["tmdb_id"])
-            out.append(m)
-    return out
+            deduped.append(m)
+
+    # Popularity gate: drop the festival/limited tail, keep solid mid-size films.
+    # TMDB 'popularity' is a daily-decaying engagement score; wide/major current
+    # releases sit well above the long tail. We favor a quality floor over filling
+    # slots, so a quiet week legitimately shows fewer (but "real") releases.
+    gated = [m for m in deduped if m.get("popularity", 0) >= MIN_POPULARITY]
+
+    # Safety floor: if the gate is so strict that a slow week leaves almost
+    # nothing, fall back to the top titles by popularity so it's never empty.
+    if len(gated) < MIN_RESULTS:
+        gated = sorted(deduped, key=lambda m: m.get("popularity", 0),
+                       reverse=True)[:MIN_RESULTS]
+
+    return gated
 
 
 def movie_details(tmdb_id: int) -> dict:
