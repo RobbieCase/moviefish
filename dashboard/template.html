@@ -91,7 +91,8 @@
   /* .ico (logo only) dodges sideways without moving the pin or its number */
   .mk .ico{position:absolute;top:-30px;left:0;transform:translateX(calc(-50% + var(--dx,0px)))}
   /* connector from a lifted marker down to the track */
-  .mk .stem{position:absolute;left:-0.5px;top:-6px;width:1px;background:rgba(125,244,154,.3)}
+  .mk .stem{position:absolute;left:-0.5px;top:-6px;width:1px;background:rgba(125,244,154,.3);
+    transform:translateX(var(--px,0px))}
   .mk .ico img{width:14px;height:14px;border-radius:2px;display:block}
   .mk .ico img.rnd{border-radius:50%}
   .mk .ico .em{width:14px;height:14px;line-height:14px;font-size:11px;text-align:center;display:block}
@@ -274,7 +275,7 @@ function rowHTML(m){
 let current='composite';
 function dodge(scale){
   const W=scale.clientWidth||300;
-  const STEP=30, NEAR=24, TIE_GAP=18, TRACK=56, LOGO_TOP=26, COMPNUM_TOP=0, COMP_ARROW_TOP=18;
+  const STEP=30, NEAR=18, TIE_GAP=18, TRACK=56, LOGO_TOP=26, COMPNUM_TOP=0, COMP_ARROW_TOP=18;
 
   // ---- 1. source markers: stair tiers (rounded ties share a tier) ----
   const mks=[...scale.querySelectorAll('.mk')];
@@ -301,13 +302,14 @@ function dodge(scale){
     const cx=g.reduce((a,it)=>a+it.x,0)/g.length;
     g.forEach((it,i)=>{
       it.dx=(cx + (i-(g.length-1)/2)*TIE_GAP) - it.x;  // logo dodge
-      const lb=it.el.querySelector('.lb'), pin=it.el.querySelector('.pin');
+      const lb=it.el.querySelector('.lb'), pin=it.el.querySelector('.pin'), stem=it.el.querySelector('.stem');
       if(i===0){
+        it.el.style.setProperty('--px',(cx-it.x).toFixed(1)+'px');   // center tick+stem on the group
         if(lb){ lb.style.display='block'; lb.style.setProperty('--lx',(cx-it.x).toFixed(1)+'px'); }
-        if(pin){ pin.style.display='block'; pin.style.setProperty('--px',(cx-it.x).toFixed(1)+'px'); }
       } else {
         if(lb) lb.style.display='none';                 // one number per tie
         if(pin) pin.style.display='none';               // one tick per tie
+        if(stem) stem.style.display='none';             // one line per tie
       }
     });
   }
@@ -347,11 +349,15 @@ function dodge(scale){
       let nearTier=-1;
       for(const it of items){ if(Math.abs(it.x-cx)<NEAR+8) nearTier=Math.max(nearTier,it.tier); }
       compLift=(nearTier+1)*STEP;
-      cstem.style.display='block';
       comp.style.top =(COMP_ARROW_TOP - compLift)+'px';
       cnum.style.top =(COMPNUM_TOP   - compLift)+'px';
-      cstem.style.top=(COMP_ARROW_TOP+8 - compLift)+'px';
-      cstem.style.height=(TRACK-(COMP_ARROW_TOP+8)+compLift)+'px';
+      if(nearTier>=0){
+        cstem.style.display='none';        // grade is beside markers -> no line over them
+      } else {
+        cstem.style.display='block';       // grade is in open space -> short line to track
+        cstem.style.top=(COMP_ARROW_TOP+8)+'px';
+        cstem.style.height=(TRACK-(COMP_ARROW_TOP+8))+'px';
+      }
     }
   }
 
