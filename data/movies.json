@@ -1,20 +1,12 @@
 {
-  "generated_at": "2026-06-13 19:11 UTC",
+  "generated_at": "2026-06-13 19:21 UTC",
   "sample": false,
   "movies": [
     {
       "title": "The Furious",
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
-      "buzz": {
-        "pos": 41,
-        "neu": 39,
-        "neg": 20,
-        "score": 56.7,
-        "analyzed": 496,
-        "total": 799,
-        "video_id": "xLmf1KUd0UA"
-      },
+      "buzz": null,
       "composite": 83.9,
       "spread": 24.2,
       "contested": false,
@@ -30,15 +22,7 @@
       "title": "Obsession",
       "release_date": "2026-05-15",
       "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "buzz": {
-        "pos": 53,
-        "neu": 26,
-        "neg": 21,
-        "score": 61.4,
-        "analyzed": 480,
-        "total": 5480,
-        "video_id": "gMC8kkwbIQQ"
-      },
+      "buzz": null,
       "composite": 83.6,
       "spread": 18,
       "contested": false,
@@ -54,15 +38,7 @@
       "title": "The Sheep Detectives",
       "release_date": "2026-05-08",
       "poster": "https://image.tmdb.org/t/p/w342/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
-      "buzz": {
-        "pos": 73,
-        "neu": 24,
-        "neg": 4,
-        "score": 74.8,
-        "analyzed": 400,
-        "total": 2186,
-        "video_id": "pyZI5oM6hWk"
-      },
+      "buzz": null,
       "composite": 82.0,
       "spread": 24,
       "contested": false,
@@ -76,43 +52,10 @@
       }
     },
     {
-      "title": "Is God Is",
-      "release_date": "2026-05-15",
-      "poster": "https://image.tmdb.org/t/p/w342/c3nN8XnbYfj2ZEBcNqqlTbtLiQy.jpg",
-      "buzz": {
-        "pos": 52,
-        "neu": 34,
-        "neg": 15,
-        "score": 61.4,
-        "analyzed": 400,
-        "total": 1090,
-        "video_id": "pgtdkuNFoKk"
-      },
-      "composite": 80.4,
-      "spread": 39,
-      "contested": true,
-      "sources": {
-        "tmdb": 58,
-        "imdb": 73,
-        "rotten_tomatoes": 97,
-        "metacritic": 84,
-        "rt_audience": 90,
-        "letterboxd": 73.6
-      }
-    },
-    {
       "title": "Tuner",
       "release_date": "2026-05-22",
       "poster": "https://image.tmdb.org/t/p/w342/kyM60vcgf7lfofmZB4F5Rj7OrHW.jpg",
-      "buzz": {
-        "pos": 54,
-        "neu": 33,
-        "neg": 13,
-        "score": 63.7,
-        "analyzed": 108,
-        "total": 171,
-        "video_id": "AKfGU0kUHQc"
-      },
+      "buzz": null,
       "composite": 80.1,
       "spread": 26,
       "contested": true,
@@ -126,43 +69,10 @@
       }
     },
     {
-      "title": "Pressure",
-      "release_date": "2026-05-25",
-      "poster": "https://image.tmdb.org/t/p/w342/9RkDrI8V8QJBjhtyRX7y6Qow3aq.jpg",
-      "buzz": {
-        "pos": 65,
-        "neu": 26,
-        "neg": 9,
-        "score": 69.0,
-        "analyzed": 400,
-        "total": 2214,
-        "video_id": "zdM4tdLQBg0"
-      },
-      "composite": 78.7,
-      "spread": 26,
-      "contested": true,
-      "sources": {
-        "tmdb": 78,
-        "imdb": 77,
-        "metacritic": 69,
-        "rotten_tomatoes": 86,
-        "rt_audience": 95,
-        "letterboxd": 70.4
-      }
-    },
-    {
       "title": "Backrooms",
       "release_date": "2026-05-29",
       "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "buzz": {
-        "pos": 45,
-        "neu": 40,
-        "neg": 15,
-        "score": 60.0,
-        "analyzed": 487,
-        "total": 36886,
-        "video_id": "0HjdiohVOik"
-      },
+      "buzz": null,
       "composite": 74.8,
       "spread": 20.6,
       "contested": false,
@@ -176,68 +86,10 @@
       }
     },
     {
-      "title": "The Breadwinner",
-      "release_date": "2026-05-29",
-      "poster": "https://image.tmdb.org/t/p/w342/4apG9Xk6HQvV48JKEjSUeiebju7.jpg",
-      "buzz": {
-        "pos": 38,
-        "neu": 37,
-        "neg": 25,
-        "score": 54.3,
-        "analyzed": 496,
-        "total": 1779,
-        "video_id": "19PLc6hpTvA"
-      },
-      "composite": 74.2,
-      "spread": 42.6,
-      "contested": true,
-      "sources": {
-        "tmdb": 68,
-        "imdb": 64,
-        "metacritic": 78,
-        "rotten_tomatoes": 95,
-        "rt_audience": 88,
-        "letterboxd": 52.4
-      }
-    },
-    {
-      "title": "Power Ballad",
-      "release_date": "2026-05-29",
-      "poster": "https://image.tmdb.org/t/p/w342/lsDLLagSIyTu0Gi06QjVKDp2LI2.jpg",
-      "buzz": {
-        "pos": 51,
-        "neu": 34,
-        "neg": 15,
-        "score": 61.9,
-        "analyzed": 86,
-        "total": 143,
-        "video_id": "Um_WWbB8Tm0"
-      },
-      "composite": 73.6,
-      "spread": 21.8,
-      "contested": false,
-      "sources": {
-        "tmdb": 67,
-        "imdb": 70,
-        "metacritic": 67,
-        "rotten_tomatoes": 87,
-        "rt_audience": 85,
-        "letterboxd": 65.2
-      }
-    },
-    {
       "title": "Disclosure Day",
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "buzz": {
-        "pos": 41,
-        "neu": 44,
-        "neg": 14,
-        "score": 59.2,
-        "analyzed": 486,
-        "total": 7641,
-        "video_id": "SCYT8vb2siQ"
-      },
+      "buzz": null,
       "composite": 73.4,
       "spread": 12.8,
       "contested": false,
@@ -253,15 +105,7 @@
       "title": "Signal One",
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/bi7Aeaozl51cd5K6vAn8tI1lOW0.jpg",
-      "buzz": {
-        "pos": 39,
-        "neu": 36,
-        "neg": 25,
-        "score": 54.8,
-        "analyzed": 244,
-        "total": 402,
-        "video_id": "BuvyY8YlC9A"
-      },
+      "buzz": null,
       "composite": 66.0,
       "spread": 0,
       "contested": false,
@@ -273,15 +117,7 @@
       "title": "Passenger",
       "release_date": "2026-05-22",
       "poster": "https://image.tmdb.org/t/p/w342/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
-      "buzz": {
-        "pos": 30,
-        "neu": 40,
-        "neg": 30,
-        "score": 49.4,
-        "analyzed": 444,
-        "total": 860,
-        "video_id": "URYNySesCJA"
-      },
+      "buzz": null,
       "composite": 66.0,
       "spread": 41.8,
       "contested": true,
@@ -297,15 +133,7 @@
       "title": "The Mandalorian and Grogu",
       "release_date": "2026-05-22",
       "poster": "https://image.tmdb.org/t/p/w342/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
-      "buzz": {
-        "pos": 50,
-        "neu": 38,
-        "neg": 13,
-        "score": 62.4,
-        "analyzed": 400,
-        "total": 9875,
-        "video_id": "IHWlvwu8t1w"
-      },
+      "buzz": null,
       "composite": 65.8,
       "spread": 32,
       "contested": true,
@@ -321,15 +149,7 @@
       "title": "Mortal Kombat II",
       "release_date": "2026-05-08",
       "poster": "https://image.tmdb.org/t/p/w342/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
-      "buzz": {
-        "pos": 54,
-        "neu": 31,
-        "neg": 16,
-        "score": 62.9,
-        "analyzed": 400,
-        "total": 29923,
-        "video_id": "ZdC5mFHPldg"
-      },
+      "buzz": null,
       "composite": 65.4,
       "spread": 41,
       "contested": true,
@@ -346,15 +166,7 @@
       "title": "In the Grey",
       "release_date": "2026-05-15",
       "poster": "https://image.tmdb.org/t/p/w342/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
-      "buzz": {
-        "pos": 50,
-        "neu": 40,
-        "neg": 10,
-        "score": 63.7,
-        "analyzed": 497,
-        "total": 2327,
-        "video_id": "nufP15iN4GE"
-      },
+      "buzz": null,
       "composite": 61.2,
       "spread": 34,
       "contested": true,
@@ -368,38 +180,10 @@
       }
     },
     {
-      "title": "The Passenger",
-      "release_date": "2026-06-05",
-      "poster": "https://image.tmdb.org/t/p/w342/i9XqCdF0jrgqveYUaLjOSiRepIq.jpg",
-      "buzz": {
-        "pos": 45,
-        "neu": 24,
-        "neg": 32,
-        "score": 52.9,
-        "analyzed": 38,
-        "total": 76,
-        "video_id": "jMOow9j8oEw"
-      },
-      "composite": 57.0,
-      "spread": 0,
-      "contested": false,
-      "sources": {
-        "tmdb": 57
-      }
-    },
-    {
       "title": "Scary Movie",
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/reZ8NInXjMkkaOpUHcI3Pn7iaRN.jpg",
-      "buzz": {
-        "pos": 52,
-        "neu": 31,
-        "neg": 17,
-        "score": 61.2,
-        "analyzed": 400,
-        "total": 15223,
-        "video_id": "0fZ58S-7QP0"
-      },
+      "buzz": null,
       "composite": 49.7,
       "spread": 14,
       "contested": false,
@@ -412,40 +196,10 @@
       }
     },
     {
-      "title": "Speed Demon",
-      "release_date": "2026-05-31",
-      "poster": "https://image.tmdb.org/t/p/w342/1qeO6qbbOXFkwN19aCWQAlmpbHQ.jpg",
-      "buzz": {
-        "pos": 29,
-        "neu": 49,
-        "neg": 22,
-        "score": 51.4,
-        "analyzed": 239,
-        "total": 347,
-        "video_id": "DHWrb3uVi1g"
-      },
-      "composite": 46.5,
-      "spread": 12.6,
-      "contested": false,
-      "sources": {
-        "tmdb": 42,
-        "rt_audience": 41,
-        "letterboxd": 53.6
-      }
-    },
-    {
       "title": "Masters of the Universe",
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
-      "buzz": {
-        "pos": 56,
-        "neu": 35,
-        "neg": 8,
-        "score": 67.2,
-        "analyzed": 491,
-        "total": 11559,
-        "video_id": "X21JsHLHnY8"
-      },
+      "buzz": null,
       "composite": 45.0,
       "spread": 50,
       "contested": true,
@@ -461,15 +215,7 @@
       "title": "Chum",
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/uJOW6pWxJ0i5sji9VXRR6Y1wXyE.jpg",
-      "buzz": {
-        "pos": 26,
-        "neu": 38,
-        "neg": 37,
-        "score": 46.5,
-        "analyzed": 136,
-        "total": 211,
-        "video_id": "VUdPlZgXOjE"
-      },
+      "buzz": null,
       "composite": 34.7,
       "spread": 32,
       "contested": true,
