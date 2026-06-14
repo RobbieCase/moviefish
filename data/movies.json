@@ -1,24 +1,7 @@
 {
-  "generated_at": "2026-06-13 20:53 UTC",
+  "generated_at": "2026-06-14 15:26 UTC",
   "sample": false,
   "movies": [
-    {
-      "title": "The Furious",
-      "release_date": "2026-06-12",
-      "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
-      "buzz": null,
-      "composite": 85.1,
-      "spread": 21.0,
-      "contested": false,
-      "sources": {
-        "tmdb": 80,
-        "imdb": 77,
-        "rotten_tomatoes": 97,
-        "metacritic": 85,
-        "rt_audience": 96,
-        "letterboxd": 76.0
-      }
-    },
     {
       "title": "Obsession",
       "release_date": "2026-05-15",
@@ -37,15 +20,32 @@
       }
     },
     {
+      "title": "The Furious",
+      "release_date": "2026-06-12",
+      "poster": "https://image.tmdb.org/t/p/w342/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "buzz": null,
+      "composite": 84.9,
+      "spread": 20.4,
+      "contested": false,
+      "sources": {
+        "tmdb": 78,
+        "imdb": 77,
+        "rotten_tomatoes": 97,
+        "metacritic": 85,
+        "rt_audience": 95,
+        "letterboxd": 76.6
+      }
+    },
+    {
       "title": "The Sheep Detectives",
       "release_date": "2026-05-08",
-      "poster": "https://image.tmdb.org/t/p/w342/hTirV44jiLh6NqdiB6jtxPsDIoG.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
       "buzz": null,
-      "composite": 82.0,
+      "composite": 82.1,
       "spread": 24,
       "contested": false,
       "sources": {
-        "tmdb": 76,
+        "tmdb": 77,
         "imdb": 77,
         "rotten_tomatoes": 95,
         "metacritic": 72,
@@ -58,16 +58,16 @@
       "release_date": "2026-05-22",
       "poster": "https://image.tmdb.org/t/p/w342/kyM60vcgf7lfofmZB4F5Rj7OrHW.jpg",
       "buzz": null,
-      "composite": 80.1,
-      "spread": 26,
+      "composite": 80.3,
+      "spread": 25,
       "contested": true,
       "sources": {
-        "tmdb": 68,
+        "tmdb": 69,
         "imdb": 73,
         "rotten_tomatoes": 94,
         "metacritic": 75,
         "rt_audience": 94,
-        "letterboxd": 74.8
+        "letterboxd": 75.0
       }
     },
     {
@@ -92,15 +92,15 @@
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
       "buzz": null,
-      "composite": 73.4,
-      "spread": 13.0,
+      "composite": 73.0,
+      "spread": 13.4,
       "contested": false,
       "sources": {
-        "tmdb": 71,
+        "tmdb": 70,
         "metacritic": 74,
         "rotten_tomatoes": 80,
-        "rt_audience": 74,
-        "letterboxd": 67.0
+        "rt_audience": 73,
+        "letterboxd": 66.6
       }
     },
     {
@@ -153,15 +153,32 @@
       }
     },
     {
+      "title": "Saccharine",
+      "release_date": "2026-05-22",
+      "poster": "https://image.tmdb.org/t/p/w342/wTlqMc4Jt8ZBtHh8CREblU3ajAB.jpg",
+      "buzz": null,
+      "composite": 63.4,
+      "spread": 12,
+      "contested": false,
+      "sources": {
+        "tmdb": 64,
+        "imdb": 65,
+        "metacritic": 60,
+        "rotten_tomatoes": 70,
+        "rt_audience": 58,
+        "letterboxd": 62.4
+      }
+    },
+    {
       "title": "In the Grey",
       "release_date": "2026-05-15",
       "poster": "https://image.tmdb.org/t/p/w342/dQgIcW6Th08kMRf2HBoYWoFE6OD.jpg",
       "buzz": null,
-      "composite": 61.2,
+      "composite": 61.3,
       "spread": 34,
       "contested": true,
       "sources": {
-        "tmdb": 66,
+        "tmdb": 67,
         "imdb": 66,
         "rotten_tomatoes": 49,
         "metacritic": 53,
@@ -174,15 +191,15 @@
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/reZ8NInXjMkkaOpUHcI3Pn7iaRN.jpg",
       "buzz": null,
-      "composite": 49.7,
-      "spread": 14,
+      "composite": 49.5,
+      "spread": 13,
       "contested": false,
       "sources": {
-        "tmdb": 57,
+        "tmdb": 56,
         "metacritic": 48,
         "rotten_tomatoes": 52,
         "rt_audience": 43,
-        "letterboxd": 50.0
+        "letterboxd": 49.8
       }
     },
     {
@@ -190,11 +207,11 @@
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
       "buzz": null,
-      "composite": 45.0,
-      "spread": 50,
+      "composite": 45.2,
+      "spread": 51,
       "contested": true,
       "sources": {
-        "tmdb": 73,
+        "tmdb": 74,
         "metacritic": 35,
         "rotten_tomatoes": 23,
         "rt_audience": 41,
@@ -206,13 +223,13 @@
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/uJOW6pWxJ0i5sji9VXRR6Y1wXyE.jpg",
       "buzz": null,
-      "composite": 34.5,
+      "composite": 34.3,
       "spread": 32,
       "contested": true,
       "sources": {
         "tmdb": 51,
         "rotten_tomatoes": 19,
-        "letterboxd": 40.0
+        "letterboxd": 39.6
       }
     }
   ]
