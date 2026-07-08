@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07 16:08 UTC",
+  "generated_at": "2026-07-08 15:47 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,36 +7,36 @@
       "release_date": "2026-06-26",
       "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "buzz": {
-        "pos": 50,
-        "neu": 40,
+        "pos": 52,
+        "neu": 38,
         "neg": 10,
-        "score": 62.8,
+        "score": 63.8,
         "analyzed": 400,
-        "total": 2096,
+        "total": 2106,
         "video_id": "OJ19I9q_hOQ"
       },
-      "composite": 86.6,
+      "composite": 86.4,
       "spread": 17,
       "contested": false,
       "sources": {
         "tmdb": 79,
         "metacritic": 82,
         "rotten_tomatoes": 96,
-        "rt_audience": 91,
+        "rt_audience": 90,
         "letterboxd": 82.8
       }
     },
     {
       "title": "Toy Story 5",
       "release_date": "2026-06-19",
-      "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/wLvUuBF2Yj0JmMGLUdRRVu7LvNB.jpg",
       "buzz": {
-        "pos": 50,
-        "neu": 38,
+        "pos": 52,
+        "neu": 36,
         "neg": 12,
-        "score": 62.0,
+        "score": 63.0,
         "analyzed": 400,
-        "total": 22792,
+        "total": 22802,
         "video_id": "c51ND9Hdbw0"
       },
       "composite": 81.8,
@@ -51,89 +51,16 @@
       }
     },
     {
-      "title": "Leviticus",
-      "release_date": "2026-06-19",
-      "poster": "https://image.tmdb.org/t/p/w342/cu0XnXLzJGPeI0msCoJKgnEecKz.jpg",
-      "buzz": {
-        "pos": 37,
-        "neu": 39,
-        "neg": 24,
-        "score": 54.0,
-        "analyzed": 119,
-        "total": 430,
-        "video_id": "gfkLVd23T64"
-      },
-      "composite": 81.3,
-      "spread": 22,
-      "contested": false,
-      "sources": {
-        "tmdb": 70,
-        "metacritic": 83,
-        "rotten_tomatoes": 92,
-        "rt_audience": 81,
-        "letterboxd": 75.8
-      }
-    },
-    {
-      "title": "Tuner",
-      "release_date": "2026-05-22",
-      "poster": "https://image.tmdb.org/t/p/w342/5OvA3i9wZs5jHu0DCrfmXlzAM67.jpg",
-      "buzz": {
-        "pos": 53,
-        "neu": 34,
-        "neg": 13,
-        "score": 63.5,
-        "analyzed": 138,
-        "total": 221,
-        "video_id": "AKfGU0kUHQc"
-      },
-      "composite": 80.9,
-      "spread": 23,
-      "contested": false,
-      "sources": {
-        "tmdb": 71,
-        "imdb": 75,
-        "rotten_tomatoes": 94,
-        "metacritic": 75,
-        "rt_audience": 94,
-        "letterboxd": 75.0
-      }
-    },
-    {
-      "title": "Pressure",
-      "release_date": "2026-05-25",
-      "poster": "https://image.tmdb.org/t/p/w342/gFjEggtrejCN79r6SXRjM269OtG.jpg",
-      "buzz": {
-        "pos": 64,
-        "neu": 26,
-        "neg": 10,
-        "score": 68.5,
-        "analyzed": 400,
-        "total": 2360,
-        "video_id": "zdM4tdLQBg0"
-      },
-      "composite": 78.9,
-      "spread": 26,
-      "contested": true,
-      "sources": {
-        "tmdb": 75,
-        "metacritic": 69,
-        "rotten_tomatoes": 87,
-        "rt_audience": 95,
-        "letterboxd": 70.2
-      }
-    },
-    {
       "title": "Voicemails for Isabelle",
       "release_date": "2026-06-20",
       "poster": "https://image.tmdb.org/t/p/w342/canZTWSxACSnAluir3dCtMxKpA1.jpg",
       "buzz": {
-        "pos": 74,
+        "pos": 75,
         "neu": 18,
-        "neg": 8,
-        "score": 74.0,
+        "neg": 7,
+        "score": 74.9,
         "analyzed": 400,
-        "total": 1068,
+        "total": 1076,
         "video_id": "9mi3YVYm3ZU"
       },
       "composite": 77.4,
@@ -152,12 +79,12 @@
       "release_date": "2026-05-29",
       "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
       "buzz": {
-        "pos": 44,
-        "neu": 40,
+        "pos": 45,
+        "neu": 39,
         "neg": 16,
-        "score": 59.3,
+        "score": 59.7,
         "analyzed": 400,
-        "total": 38265,
+        "total": 38213,
         "video_id": "0HjdiohVOik"
       },
       "composite": 75.3,
@@ -176,36 +103,59 @@
       "release_date": "2026-06-26",
       "poster": "https://image.tmdb.org/t/p/w342/tfgccePxnswMqhmtxafliLlcCVR.jpg",
       "buzz": {
-        "pos": 42,
-        "neu": 35,
-        "neg": 23,
-        "score": 56.3,
+        "pos": 46,
+        "neu": 32,
+        "neg": 21,
+        "score": 58.7,
         "analyzed": 400,
-        "total": 6766,
+        "total": 6780,
         "video_id": "sNwzFhGwA94"
       },
-      "composite": 74.8,
+      "composite": 74.6,
       "spread": 25,
       "contested": true,
       "sources": {
         "tmdb": 66,
         "metacritic": 63,
         "rotten_tomatoes": 88,
-        "rt_audience": 85,
+        "rt_audience": 84,
         "letterboxd": 70.4
+      }
+    },
+    {
+      "title": "Moana",
+      "release_date": "2026-07-10",
+      "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "buzz": {
+        "pos": 34,
+        "neu": 40,
+        "neg": 25,
+        "score": 53.2,
+        "analyzed": 400,
+        "total": 619,
+        "video_id": "-NN2q4OYCgE"
+      },
+      "composite": 72.5,
+      "spread": 32,
+      "contested": true,
+      "sources": {
+        "tmdb": 55,
+        "metacritic": 81,
+        "rotten_tomatoes": 87,
+        "rt_audience": 57
       }
     },
     {
       "title": "Disclosure Day",
       "release_date": "2026-06-12",
-      "poster": "https://image.tmdb.org/t/p/w342/7RYO0KTXIJ0rS0LqnCQLxeNR3P3.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg",
       "buzz": {
-        "pos": 44,
+        "pos": 46,
         "neu": 40,
-        "neg": 16,
-        "score": 58.5,
+        "neg": 15,
+        "score": 59.8,
         "analyzed": 400,
-        "total": 8515,
+        "total": 8523,
         "video_id": "SCYT8vb2siQ"
       },
       "composite": 71.0,
@@ -224,22 +174,22 @@
       "release_date": "2026-07-03",
       "poster": "https://image.tmdb.org/t/p/w342/ntW9zzhDmbt3sXDyPXb7SHVuDdB.jpg",
       "buzz": {
-        "pos": 63,
-        "neu": 27,
+        "pos": 65,
+        "neu": 26,
         "neg": 10,
-        "score": 67.8,
+        "score": 68.7,
         "analyzed": 400,
-        "total": 2602,
+        "total": 2629,
         "video_id": "-s8mqW03geo"
       },
-      "composite": 64.6,
-      "spread": 44,
+      "composite": 65.4,
+      "spread": 43,
       "contested": true,
       "sources": {
-        "tmdb": 81,
+        "tmdb": 86,
         "metacritic": 49,
-        "rotten_tomatoes": 60,
-        "rt_audience": 93,
+        "rotten_tomatoes": 61,
+        "rt_audience": 92,
         "letterboxd": 52.4
       }
     },
@@ -248,12 +198,12 @@
       "release_date": "2026-06-19",
       "poster": "https://image.tmdb.org/t/p/w342/13MmRwmG5NmaMfU8qNrtgGXisiD.jpg",
       "buzz": {
-        "pos": 38,
-        "neu": 43,
-        "neg": 19,
-        "score": 56.0,
+        "pos": 40,
+        "neu": 41,
+        "neg": 18,
+        "score": 57.0,
         "analyzed": 400,
-        "total": 5794,
+        "total": 5795,
         "video_id": "tlSDDuWxO_0"
       },
       "composite": 62.0,
@@ -272,19 +222,19 @@
       "release_date": "2026-06-26",
       "poster": "https://image.tmdb.org/t/p/w342/A56e359GzpasjuYRajkDBhLncEW.jpg",
       "buzz": {
-        "pos": 40,
-        "neu": 49,
-        "neg": 12,
-        "score": 60.0,
-        "analyzed": 86,
-        "total": 115,
+        "pos": 41,
+        "neu": 48,
+        "neg": 11,
+        "score": 60.3,
+        "analyzed": 88,
+        "total": 119,
         "video_id": "oB6HNuKxLmo"
       },
-      "composite": 55.0,
-      "spread": 17,
+      "composite": 55.2,
+      "spread": 18,
       "contested": false,
       "sources": {
-        "tmdb": 66,
+        "tmdb": 67,
         "metacritic": 49,
         "rotten_tomatoes": 52,
         "letterboxd": 57.4
@@ -295,12 +245,12 @@
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
       "buzz": {
-        "pos": 52,
-        "neu": 31,
-        "neg": 17,
-        "score": 61.1,
+        "pos": 54,
+        "neu": 30,
+        "neg": 16,
+        "score": 61.7,
         "analyzed": 400,
-        "total": 15424,
+        "total": 15423,
         "video_id": "0fZ58S-7QP0"
       },
       "composite": 48.9,
@@ -319,12 +269,12 @@
       "release_date": "2026-06-19",
       "poster": "https://image.tmdb.org/t/p/w342/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
       "buzz": {
-        "pos": 48,
+        "pos": 50,
         "neu": 39,
-        "neg": 13,
-        "score": 60.7,
+        "neg": 11,
+        "score": 61.9,
         "analyzed": 400,
-        "total": 8196,
+        "total": 8307,
         "video_id": "fVxmjwaPEFU"
       },
       "composite": 47.4,
@@ -342,19 +292,19 @@
       "release_date": "2026-06-05",
       "poster": "https://image.tmdb.org/t/p/w342/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
       "buzz": {
-        "pos": 59,
-        "neu": 32,
+        "pos": 61,
+        "neu": 31,
         "neg": 8,
-        "score": 68.5,
+        "score": 69.5,
         "analyzed": 400,
-        "total": 11956,
+        "total": 11960,
         "video_id": "X21JsHLHnY8"
       },
-      "composite": 44.3,
-      "spread": 48,
+      "composite": 44.1,
+      "spread": 47,
       "contested": true,
       "sources": {
-        "tmdb": 70,
+        "tmdb": 69,
         "metacritic": 35,
         "rotten_tomatoes": 22,
         "rt_audience": 41,
@@ -364,14 +314,14 @@
     {
       "title": "Supergirl",
       "release_date": "2026-06-26",
-      "poster": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/moejGxR2haap29d9NQ7qe8x4eGj.jpg",
       "buzz": {
-        "pos": 43,
-        "neu": 41,
+        "pos": 45,
+        "neu": 40,
         "neg": 16,
-        "score": 58.8,
+        "score": 59.7,
         "analyzed": 400,
-        "total": 1592,
+        "total": 1602,
         "video_id": "PI9e89dyLt4"
       },
       "composite": 40.8,
@@ -393,8 +343,8 @@
         "pos": 26,
         "neu": 37,
         "neg": 37,
-        "score": 46.6,
-        "analyzed": 158,
+        "score": 46.4,
+        "analyzed": 159,
         "total": 249,
         "video_id": "VUdPlZgXOjE"
       },
