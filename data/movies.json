@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20 15:29 UTC",
+  "generated_at": "2026-07-21 15:23 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,24 +7,24 @@
       "release_date": "2026-07-17",
       "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "buzz": {
-        "pos": 36,
-        "neu": 48,
+        "pos": 40,
+        "neu": 45,
         "neg": 15,
-        "score": 56.2,
+        "score": 57.4,
         "analyzed": 400,
-        "total": 48363,
+        "total": 48651,
         "video_id": "f_bKjZeJBBI"
       },
-      "composite": 88.6,
-      "spread": 19,
+      "composite": 88.7,
+      "spread": 18,
       "contested": false,
       "sources": {
-        "tmdb": 78,
+        "tmdb": 79,
         "imdb": 83,
         "metacritic": 89,
         "rotten_tomatoes": 95,
         "rt_audience": 97,
-        "letterboxd": 87.0
+        "letterboxd": 87.2
       }
     },
     {
@@ -32,15 +32,15 @@
       "release_date": "2026-06-26",
       "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "buzz": {
-        "pos": 52,
+        "pos": 54,
         "neu": 36,
-        "neg": 12,
-        "score": 63.2,
+        "neg": 10,
+        "score": 64.3,
         "analyzed": 400,
-        "total": 2279,
+        "total": 2286,
         "video_id": "OJ19I9q_hOQ"
       },
-      "composite": 85.0,
+      "composite": 84.9,
       "spread": 19,
       "contested": false,
       "sources": {
@@ -49,7 +49,7 @@
         "metacritic": 82,
         "rotten_tomatoes": 97,
         "rt_audience": 91,
-        "letterboxd": 82.2
+        "letterboxd": 82.0
       }
     },
     {
@@ -57,15 +57,15 @@
       "release_date": "2026-06-19",
       "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
       "buzz": {
-        "pos": 52,
-        "neu": 37,
+        "pos": 51,
+        "neu": 38,
         "neg": 12,
-        "score": 62.8,
+        "score": 62.3,
         "analyzed": 400,
-        "total": 22956,
+        "total": 22957,
         "video_id": "c51ND9Hdbw0"
       },
-      "composite": 80.5,
+      "composite": 80.4,
       "spread": 22,
       "contested": false,
       "sources": {
@@ -74,7 +74,7 @@
         "rotten_tomatoes": 92,
         "metacritic": 73,
         "rt_audience": 95,
-        "letterboxd": 74.2
+        "letterboxd": 74.0
       }
     },
     {
@@ -82,10 +82,10 @@
       "release_date": "2026-06-20",
       "poster": "https://image.tmdb.org/t/p/w342/canZTWSxACSnAluir3dCtMxKpA1.jpg",
       "buzz": {
-        "pos": 77,
-        "neu": 17,
-        "neg": 6,
-        "score": 75.6,
+        "pos": 75,
+        "neu": 16,
+        "neg": 8,
+        "score": 74.7,
         "analyzed": 400,
         "total": 1137,
         "video_id": "9mi3YVYm3ZU"
@@ -103,48 +103,23 @@
       }
     },
     {
-      "title": "Girls Like Girls",
-      "release_date": "2026-06-19",
-      "poster": "https://image.tmdb.org/t/p/w342/m1hSTBv3qLeywznEGsnqVSln1Tg.jpg",
-      "buzz": {
-        "pos": 52,
-        "neu": 34,
-        "neg": 14,
-        "score": 62.6,
-        "analyzed": 400,
-        "total": 2573,
-        "video_id": "ZC1kEknG2ro"
-      },
-      "composite": 74.7,
-      "spread": 24.6,
-      "contested": false,
-      "sources": {
-        "tmdb": 71,
-        "imdb": 69,
-        "metacritic": 70,
-        "rotten_tomatoes": 86,
-        "rt_audience": 89,
-        "letterboxd": 64.4
-      }
-    },
-    {
       "title": "Backrooms",
       "release_date": "2026-05-29",
       "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
       "buzz": {
         "pos": 44,
-        "neu": 41,
-        "neg": 15,
-        "score": 59.2,
+        "neu": 40,
+        "neg": 16,
+        "score": 59.1,
         "analyzed": 400,
-        "total": 38631,
+        "total": 38628,
         "video_id": "0HjdiohVOik"
       },
-      "composite": 74.5,
+      "composite": 74.6,
       "spread": 19.8,
       "contested": false,
       "sources": {
-        "tmdb": 70,
+        "tmdb": 71,
         "imdb": 70,
         "metacritic": 77,
         "rotten_tomatoes": 87,
@@ -153,40 +128,41 @@
       }
     },
     {
-      "title": "Moana",
-      "release_date": "2026-07-10",
-      "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "title": "Girls Like Girls",
+      "release_date": "2026-06-19",
+      "poster": "https://image.tmdb.org/t/p/w342/m1hSTBv3qLeywznEGsnqVSln1Tg.jpg",
       "buzz": {
-        "pos": 41,
-        "neu": 43,
-        "neg": 16,
-        "score": 57.0,
+        "pos": 52,
+        "neu": 35,
+        "neg": 14,
+        "score": 62.8,
         "analyzed": 400,
-        "total": 15679,
-        "video_id": "n7f6hlKsxxo"
+        "total": 2572,
+        "video_id": "ZC1kEknG2ro"
       },
-      "composite": 70.4,
-      "spread": 30,
-      "contested": true,
+      "composite": 74.6,
+      "spread": 24.8,
+      "contested": false,
       "sources": {
-        "tmdb": 58,
-        "metacritic": 81,
-        "rotten_tomatoes": 87,
-        "rt_audience": 57,
-        "letterboxd": 61.4
+        "tmdb": 71,
+        "imdb": 69,
+        "metacritic": 70,
+        "rotten_tomatoes": 86,
+        "rt_audience": 89,
+        "letterboxd": 64.2
       }
     },
     {
       "title": "Disclosure Day",
       "release_date": "2026-06-12",
-      "poster": "https://image.tmdb.org/t/p/w342/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/9XKXO68h0KGMCQ9ZZEdP0DWfcXS.jpg",
       "buzz": {
-        "pos": 40,
-        "neu": 42,
+        "pos": 42,
+        "neu": 40,
         "neg": 17,
-        "score": 57.4,
+        "score": 57.9,
         "analyzed": 400,
-        "total": 8608,
+        "total": 8619,
         "video_id": "SCYT8vb2siQ"
       },
       "composite": 70.3,
@@ -202,16 +178,40 @@
       }
     },
     {
+      "title": "Moana",
+      "release_date": "2026-07-10",
+      "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "buzz": {
+        "pos": 44,
+        "neu": 40,
+        "neg": 16,
+        "score": 58.3,
+        "analyzed": 400,
+        "total": 15688,
+        "video_id": "n7f6hlKsxxo"
+      },
+      "composite": 70.1,
+      "spread": 30,
+      "contested": true,
+      "sources": {
+        "tmdb": 57,
+        "metacritic": 81,
+        "rotten_tomatoes": 87,
+        "rt_audience": 57,
+        "letterboxd": 60.8
+      }
+    },
+    {
       "title": "Stop! That! Train!",
       "release_date": "2026-06-12",
       "poster": "https://image.tmdb.org/t/p/w342/w90dGS6D2lVO4aO5rdQ8QECrUGY.jpg",
       "buzz": {
-        "pos": 45,
-        "neu": 36,
+        "pos": 44,
+        "neu": 37,
         "neg": 19,
         "score": 58.8,
         "analyzed": 400,
-        "total": 660,
+        "total": 661,
         "video_id": "yx2YuoAnwlQ"
       },
       "composite": 68.0,
@@ -230,23 +230,23 @@
       "release_date": "2026-07-10",
       "poster": "https://image.tmdb.org/t/p/w342/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
       "buzz": {
-        "pos": 38,
-        "neu": 25,
-        "neg": 37,
-        "score": 48.6,
+        "pos": 36,
+        "neu": 26,
+        "neg": 38,
+        "score": 47.0,
         "analyzed": 400,
-        "total": 2681,
+        "total": 2690,
         "video_id": "TnHby2cxJzs"
       },
-      "composite": 67.0,
+      "composite": 67.1,
       "spread": 23,
       "contested": false,
       "sources": {
         "tmdb": 68,
         "metacritic": 54,
-        "rotten_tomatoes": 71,
+        "rotten_tomatoes": 72,
         "rt_audience": 77,
-        "letterboxd": 67.2
+        "letterboxd": 66.8
       }
     },
     {
@@ -254,14 +254,14 @@
       "release_date": "2026-07-01",
       "poster": "https://image.tmdb.org/t/p/w342/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "buzz": null,
-      "composite": 66.6,
-      "spread": 4,
+      "composite": 66.3,
+      "spread": 5,
       "contested": false,
       "sources": {
-        "tmdb": 65,
+        "tmdb": 64,
         "imdb": 66,
         "metacritic": 69,
-        "letterboxd": 65.6
+        "letterboxd": 65.4
       }
     },
     {
@@ -277,14 +277,14 @@
         "total": 132,
         "video_id": "oB6HNuKxLmo"
       },
-      "composite": 53.0,
+      "composite": 52.9,
       "spread": 15,
       "contested": false,
       "sources": {
         "tmdb": 63,
         "metacritic": 49,
         "rotten_tomatoes": 48,
-        "letterboxd": 56.0
+        "letterboxd": 55.8
       }
     },
     {
@@ -292,12 +292,12 @@
       "release_date": "2026-06-19",
       "poster": "https://image.tmdb.org/t/p/w342/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
       "buzz": {
-        "pos": 49,
+        "pos": 48,
         "neu": 40,
         "neg": 12,
-        "score": 61.4,
+        "score": 61.0,
         "analyzed": 400,
-        "total": 9024,
+        "total": 9042,
         "video_id": "fVxmjwaPEFU"
       },
       "composite": 50.5,
@@ -308,27 +308,27 @@
         "imdb": 62,
         "rotten_tomatoes": 10,
         "rt_audience": 91,
-        "letterboxd": 39.2
+        "letterboxd": 39.0
       }
     },
     {
       "title": "Supergirl",
       "release_date": "2026-06-26",
-      "poster": "https://image.tmdb.org/t/p/w342/xhei2GX9L2H1eQlrHeFw44VNLd1.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
       "buzz": {
-        "pos": 52,
+        "pos": 53,
         "neu": 34,
-        "neg": 14,
-        "score": 63.2,
+        "neg": 13,
+        "score": 63.8,
         "analyzed": 400,
-        "total": 19280,
+        "total": 19284,
         "video_id": "s1-pfiVMKAs"
       },
-      "composite": 44.5,
-      "spread": 43,
+      "composite": 44.4,
+      "spread": 42.4,
       "contested": true,
       "sources": {
-        "tmdb": 62,
+        "tmdb": 61,
         "imdb": 61,
         "metacritic": 41,
         "rotten_tomatoes": 19,
