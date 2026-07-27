@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26 14:50 UTC",
+  "generated_at": "2026-07-27 16:00 UTC",
   "sample": false,
   "movies": [
     {
@@ -8,12 +8,12 @@
       "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "buzz": {
         "pos": 39,
-        "neu": 44,
-        "neg": 17,
-        "score": 56.6,
+        "neu": 50,
+        "neg": 10,
+        "score": 58.3,
         "analyzed": 400,
-        "total": 49337,
-        "video_id": "f_bKjZeJBBI"
+        "total": 43761,
+        "video_id": "Mzw2ttJD2qQ"
       },
       "composite": 88.6,
       "spread": 17,
@@ -24,7 +24,7 @@
         "metacritic": 88,
         "rotten_tomatoes": 94,
         "rt_audience": 97,
-        "letterboxd": 87.6
+        "letterboxd": 88.0
       }
     },
     {
@@ -32,15 +32,15 @@
       "release_date": "2026-06-26",
       "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "buzz": {
-        "pos": 54,
-        "neu": 36,
+        "pos": 52,
+        "neu": 39,
         "neg": 10,
-        "score": 64.5,
+        "score": 63.8,
         "analyzed": 400,
-        "total": 2322,
+        "total": 2349,
         "video_id": "OJ19I9q_hOQ"
       },
-      "composite": 84.6,
+      "composite": 84.5,
       "spread": 19,
       "contested": false,
       "sources": {
@@ -49,7 +49,7 @@
         "metacritic": 82,
         "rotten_tomatoes": 97,
         "rt_audience": 89,
-        "letterboxd": 81.6
+        "letterboxd": 81.4
       }
     },
     {
@@ -59,21 +59,21 @@
       "buzz": {
         "pos": 40,
         "neu": 46,
-        "neg": 14,
+        "neg": 13,
         "score": 59.0,
         "analyzed": 400,
-        "total": 23276,
+        "total": 23354,
         "video_id": "7b20GRFZBFE"
       },
       "composite": 83.0,
-      "spread": 28,
+      "spread": 27,
       "contested": true,
       "sources": {
-        "tmdb": 93,
+        "tmdb": 94,
         "metacritic": 68,
-        "rotten_tomatoes": 86,
-        "rt_audience": 96,
-        "letterboxd": 78.6
+        "rotten_tomatoes": 87,
+        "rt_audience": 95,
+        "letterboxd": 78.0
       }
     },
     {
@@ -82,11 +82,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
       "buzz": {
         "pos": 51,
-        "neu": 37,
+        "neu": 38,
         "neg": 12,
-        "score": 62.5,
+        "score": 62.6,
         "analyzed": 400,
-        "total": 22956,
+        "total": 22967,
         "video_id": "c51ND9Hdbw0"
       },
       "composite": 80.3,
@@ -107,11 +107,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/canZTWSxACSnAluir3dCtMxKpA1.jpg",
       "buzz": {
         "pos": 76,
-        "neu": 17,
-        "neg": 8,
-        "score": 74.8,
+        "neu": 18,
+        "neg": 6,
+        "score": 75.6,
         "analyzed": 400,
-        "total": 1149,
+        "total": 1151,
         "video_id": "9mi3YVYm3ZU"
       },
       "composite": 76.7,
@@ -129,26 +129,26 @@
     {
       "title": "Girls Like Girls",
       "release_date": "2026-06-19",
-      "poster": "https://image.tmdb.org/t/p/w342/m1hSTBv3qLeywznEGsnqVSln1Tg.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/gbP30EOIwUW0HZY9BwQMTRrk8uX.jpg",
       "buzz": {
         "pos": 51,
         "neu": 35,
         "neg": 14,
-        "score": 62.7,
+        "score": 62.4,
         "analyzed": 400,
-        "total": 2576,
+        "total": 2578,
         "video_id": "ZC1kEknG2ro"
       },
-      "composite": 74.9,
-      "spread": 24.8,
-      "contested": false,
+      "composite": 74.8,
+      "spread": 25.0,
+      "contested": true,
       "sources": {
         "tmdb": 73,
         "imdb": 69,
         "metacritic": 70,
         "rotten_tomatoes": 86,
         "rt_audience": 89,
-        "letterboxd": 64.2
+        "letterboxd": 64.0
       }
     },
     {
@@ -157,15 +157,15 @@
       "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
       "buzz": {
         "pos": 44,
-        "neu": 40,
-        "neg": 16,
-        "score": 59.0,
+        "neu": 41,
+        "neg": 15,
+        "score": 59.4,
         "analyzed": 400,
-        "total": 38714,
+        "total": 38729,
         "video_id": "0HjdiohVOik"
       },
       "composite": 74.6,
-      "spread": 19.8,
+      "spread": 20.0,
       "contested": false,
       "sources": {
         "tmdb": 71,
@@ -173,7 +173,7 @@
         "metacritic": 77,
         "rotten_tomatoes": 87,
         "rt_audience": 74,
-        "letterboxd": 67.2
+        "letterboxd": 67.0
       }
     },
     {
@@ -181,22 +181,23 @@
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/sqhfUrPEeAlFf684FsVa8v1GYCD.jpg",
       "buzz": {
-        "pos": 36,
-        "neu": 37,
-        "neg": 26,
-        "score": 53.0,
-        "analyzed": 400,
-        "total": 935,
-        "video_id": "uApioBmGpAc"
+        "pos": 33,
+        "neu": 35,
+        "neg": 31,
+        "score": 51.3,
+        "analyzed": 213,
+        "total": 342,
+        "video_id": "QMV5gZveHZI"
       },
-      "composite": 71.6,
-      "spread": 26.2,
-      "contested": true,
+      "composite": 70.1,
+      "spread": 24.2,
+      "contested": false,
       "sources": {
-        "tmdb": 83,
+        "tmdb": 80,
         "imdb": 76,
         "rotten_tomatoes": 75,
-        "letterboxd": 56.8
+        "rt_audience": 67,
+        "letterboxd": 55.8
       }
     },
     {
@@ -204,15 +205,15 @@
       "release_date": "2026-07-10",
       "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "buzz": {
-        "pos": 44,
-        "neu": 41,
-        "neg": 16,
-        "score": 58.0,
+        "pos": 43,
+        "neu": 42,
+        "neg": 15,
+        "score": 57.9,
         "analyzed": 400,
-        "total": 15734,
+        "total": 15739,
         "video_id": "n7f6hlKsxxo"
       },
-      "composite": 69.9,
+      "composite": 69.6,
       "spread": 30,
       "contested": true,
       "sources": {
@@ -220,31 +221,7 @@
         "rotten_tomatoes": 87,
         "metacritic": 81,
         "rt_audience": 57,
-        "letterboxd": 58.4
-      }
-    },
-    {
-      "title": "Evil Dead Burn",
-      "release_date": "2026-07-10",
-      "poster": "https://image.tmdb.org/t/p/w342/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-      "buzz": {
-        "pos": 37,
-        "neu": 26,
-        "neg": 37,
-        "score": 47.7,
-        "analyzed": 400,
-        "total": 2743,
-        "video_id": "TnHby2cxJzs"
-      },
-      "composite": 66.4,
-      "spread": 21,
-      "contested": false,
-      "sources": {
-        "tmdb": 68,
-        "metacritic": 54,
-        "rotten_tomatoes": 72,
-        "rt_audience": 75,
-        "letterboxd": 65.2
+        "letterboxd": 57.2
       }
     },
     {
@@ -252,14 +229,38 @@
       "release_date": "2026-07-01",
       "poster": "https://image.tmdb.org/t/p/w342/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "buzz": null,
-      "composite": 66.3,
+      "composite": 66.2,
       "spread": 5,
       "contested": false,
       "sources": {
         "tmdb": 64,
         "imdb": 66,
         "metacritic": 69,
-        "letterboxd": 65.2
+        "letterboxd": 65.0
+      }
+    },
+    {
+      "title": "Evil Dead Burn",
+      "release_date": "2026-07-10",
+      "poster": "https://image.tmdb.org/t/p/w342/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "buzz": {
+        "pos": 42,
+        "neu": 26,
+        "neg": 32,
+        "score": 51.4,
+        "analyzed": 400,
+        "total": 2748,
+        "video_id": "TnHby2cxJzs"
+      },
+      "composite": 66.2,
+      "spread": 21,
+      "contested": false,
+      "sources": {
+        "tmdb": 68,
+        "metacritic": 54,
+        "rotten_tomatoes": 72,
+        "rt_audience": 75,
+        "letterboxd": 64.4
       }
     },
     {
@@ -268,18 +269,18 @@
       "poster": "https://image.tmdb.org/t/p/w342/13MmRwmG5NmaMfU8qNrtgGXisiD.jpg",
       "buzz": {
         "pos": 40,
-        "neu": 40,
-        "neg": 20,
+        "neu": 42,
+        "neg": 19,
         "score": 56.5,
         "analyzed": 400,
-        "total": 5917,
+        "total": 5923,
         "video_id": "tlSDDuWxO_0"
       },
-      "composite": 64.3,
+      "composite": 64.1,
       "spread": 18,
       "contested": false,
       "sources": {
-        "tmdb": 68,
+        "tmdb": 67,
         "imdb": 74,
         "metacritic": 60,
         "rotten_tomatoes": 66,
@@ -292,24 +293,24 @@
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/lGovcOtxugJPhfJjFKud9EbWtOA.jpg",
       "buzz": {
-        "pos": 40,
-        "neu": 40,
+        "pos": 41,
+        "neu": 39,
         "neg": 20,
-        "score": 57.1,
-        "analyzed": 228,
-        "total": 313,
+        "score": 57.4,
+        "analyzed": 235,
+        "total": 321,
         "video_id": "t6RklhKu9os"
       },
-      "composite": 61.3,
-      "spread": 18,
+      "composite": 61.6,
+      "spread": 11.8,
       "contested": false,
       "sources": {
-        "tmdb": 52,
+        "tmdb": 59,
         "imdb": 58,
-        "rotten_tomatoes": 65,
+        "rotten_tomatoes": 64,
         "metacritic": 63,
-        "rt_audience": 70,
-        "letterboxd": 58.0
+        "rt_audience": 69,
+        "letterboxd": 57.2
       }
     },
     {
@@ -326,13 +327,13 @@
         "video_id": "oB6HNuKxLmo"
       },
       "composite": 52.7,
-      "spread": 15,
+      "spread": 16,
       "contested": false,
       "sources": {
-        "tmdb": 63,
+        "tmdb": 64,
         "metacritic": 49,
         "rotten_tomatoes": 48,
-        "letterboxd": 54.8
+        "letterboxd": 54.4
       }
     },
     {
@@ -341,14 +342,14 @@
       "poster": "https://image.tmdb.org/t/p/w342/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
       "buzz": {
         "pos": 48,
-        "neu": 40,
+        "neu": 39,
         "neg": 12,
-        "score": 60.7,
+        "score": 61.1,
         "analyzed": 400,
-        "total": 9179,
+        "total": 9211,
         "video_id": "fVxmjwaPEFU"
       },
-      "composite": 50.3,
+      "composite": 50.2,
       "spread": 81,
       "contested": true,
       "sources": {
@@ -356,7 +357,7 @@
         "imdb": 62,
         "rotten_tomatoes": 10,
         "rt_audience": 91,
-        "letterboxd": 38.0
+        "letterboxd": 37.6
       }
     },
     {
@@ -364,19 +365,19 @@
       "release_date": "2026-06-26",
       "poster": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
       "buzz": {
-        "pos": 51,
-        "neu": 35,
+        "pos": 54,
+        "neu": 32,
         "neg": 14,
-        "score": 63.1,
+        "score": 63.9,
         "analyzed": 400,
-        "total": 19308,
+        "total": 19318,
         "video_id": "s1-pfiVMKAs"
       },
-      "composite": 44.4,
-      "spread": 42.2,
+      "composite": 44.5,
+      "spread": 43,
       "contested": true,
       "sources": {
-        "tmdb": 61,
+        "tmdb": 62,
         "imdb": 61,
         "rotten_tomatoes": 19,
         "metacritic": 41,
@@ -389,24 +390,24 @@
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/kiFacg75KVjy0AM3S4QmbPas8zL.jpg",
       "buzz": {
-        "pos": 39,
-        "neu": 41,
+        "pos": 40,
+        "neu": 40,
         "neg": 20,
-        "score": 56.4,
-        "analyzed": 262,
-        "total": 418,
+        "score": 56.6,
+        "analyzed": 269,
+        "total": 430,
         "video_id": "C7E-0t1TfzM"
       },
-      "composite": 42.1,
-      "spread": 10.8,
+      "composite": 42.6,
+      "spread": 24,
       "contested": false,
       "sources": {
-        "tmdb": 45,
+        "tmdb": 56,
         "imdb": 38,
         "metacritic": 44,
-        "rotten_tomatoes": 43,
-        "rt_audience": 36,
-        "letterboxd": 46.8
+        "rotten_tomatoes": 42,
+        "rt_audience": 32,
+        "letterboxd": 47.0
       }
     }
   ]
