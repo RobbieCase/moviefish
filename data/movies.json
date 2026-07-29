@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28 15:43 UTC",
+  "generated_at": "2026-07-29 15:31 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,12 +7,12 @@
       "release_date": "2026-07-17",
       "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "buzz": {
-        "pos": 40,
-        "neu": 46,
-        "neg": 14,
-        "score": 57.4,
+        "pos": 41,
+        "neu": 44,
+        "neg": 15,
+        "score": 57.5,
         "analyzed": 400,
-        "total": 49610,
+        "total": 49702,
         "video_id": "f_bKjZeJBBI"
       },
       "composite": 88.6,
@@ -24,7 +24,7 @@
         "metacritic": 88,
         "rotten_tomatoes": 94,
         "rt_audience": 97,
-        "letterboxd": 87.8
+        "letterboxd": 88.0
       }
     },
     {
@@ -33,14 +33,14 @@
       "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "buzz": {
         "pos": 54,
-        "neu": 38,
-        "neg": 9,
-        "score": 64.9,
+        "neu": 35,
+        "neg": 11,
+        "score": 64.7,
         "analyzed": 400,
-        "total": 2359,
+        "total": 2366,
         "video_id": "OJ19I9q_hOQ"
       },
-      "composite": 84.5,
+      "composite": 84.4,
       "spread": 19,
       "contested": false,
       "sources": {
@@ -49,7 +49,7 @@
         "metacritic": 82,
         "rotten_tomatoes": 97,
         "rt_audience": 89,
-        "letterboxd": 81.2
+        "letterboxd": 81.0
       }
     },
     {
@@ -57,98 +57,46 @@
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
       "buzz": {
-        "pos": 42,
-        "neu": 45,
-        "neg": 13,
-        "score": 59.7,
+        "pos": 40,
+        "neu": 46,
+        "neg": 14,
+        "score": 58.8,
         "analyzed": 400,
-        "total": 23409,
+        "total": 23455,
         "video_id": "7b20GRFZBFE"
       },
-      "composite": 83.2,
-      "spread": 27,
+      "composite": 84.2,
+      "spread": 32,
       "contested": true,
       "sources": {
         "tmdb": 94,
         "metacritic": 68,
-        "rotten_tomatoes": 88,
-        "rt_audience": 95,
-        "letterboxd": 77.6
+        "rotten_tomatoes": 89,
+        "rt_audience": 100,
+        "letterboxd": 77.2
       }
     },
     {
-      "title": "Toy Story 5",
-      "release_date": "2026-06-19",
-      "poster": "https://image.tmdb.org/t/p/w342/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+      "title": "Spider-Man: Brand New Day",
+      "release_date": "2026-07-31",
+      "poster": "https://image.tmdb.org/t/p/w342/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
       "buzz": {
-        "pos": 50,
+        "pos": 40,
         "neu": 38,
-        "neg": 12,
-        "score": 62.3,
+        "neg": 23,
+        "score": 55.3,
         "analyzed": 400,
-        "total": 22971,
-        "video_id": "c51ND9Hdbw0"
+        "total": 3902,
+        "video_id": "P3uI5sLosKU"
       },
-      "composite": 80.3,
+      "composite": 79.2,
       "spread": 21,
       "contested": false,
       "sources": {
-        "tmdb": 74,
-        "imdb": 75,
-        "rotten_tomatoes": 92,
-        "metacritic": 73,
-        "rt_audience": 94,
-        "letterboxd": 73.8
-      }
-    },
-    {
-      "title": "Voicemails for Isabelle",
-      "release_date": "2026-06-20",
-      "poster": "https://image.tmdb.org/t/p/w342/canZTWSxACSnAluir3dCtMxKpA1.jpg",
-      "buzz": {
-        "pos": 75,
-        "neu": 18,
-        "neg": 6,
-        "score": 75.1,
-        "analyzed": 400,
-        "total": 1152,
-        "video_id": "9mi3YVYm3ZU"
-      },
-      "composite": 76.7,
-      "spread": 26,
-      "contested": true,
-      "sources": {
-        "tmdb": 84,
-        "imdb": 74,
-        "metacritic": 62,
-        "rotten_tomatoes": 88,
-        "rt_audience": 87,
-        "letterboxd": 70.2
-      }
-    },
-    {
-      "title": "Girls Like Girls",
-      "release_date": "2026-06-19",
-      "poster": "https://image.tmdb.org/t/p/w342/gbP30EOIwUW0HZY9BwQMTRrk8uX.jpg",
-      "buzz": {
-        "pos": 51,
-        "neu": 35,
-        "neg": 14,
-        "score": 62.4,
-        "analyzed": 400,
-        "total": 2578,
-        "video_id": "ZC1kEknG2ro"
-      },
-      "composite": 74.8,
-      "spread": 25.0,
-      "contested": true,
-      "sources": {
-        "tmdb": 73,
-        "imdb": 69,
+        "tmdb": 76,
         "metacritic": 70,
-        "rotten_tomatoes": 86,
-        "rt_audience": 89,
-        "letterboxd": 64.0
+        "rotten_tomatoes": 91,
+        "letterboxd": 78.4
       }
     },
     {
@@ -157,11 +105,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
       "buzz": {
         "pos": 44,
-        "neu": 41,
-        "neg": 16,
-        "score": 59.0,
+        "neu": 40,
+        "neg": 15,
+        "score": 59.3,
         "analyzed": 400,
-        "total": 38744,
+        "total": 38760,
         "video_id": "0HjdiohVOik"
       },
       "composite": 74.6,
@@ -177,51 +125,52 @@
       }
     },
     {
-      "title": "Pinocchio: Unstrung",
-      "release_date": "2026-07-24",
-      "poster": "https://image.tmdb.org/t/p/w342/sqhfUrPEeAlFf684FsVa8v1GYCD.jpg",
-      "buzz": {
-        "pos": 33,
-        "neu": 36,
-        "neg": 31,
-        "score": 51.5,
-        "analyzed": 216,
-        "total": 347,
-        "video_id": "QMV5gZveHZI"
-      },
-      "composite": 70.5,
-      "spread": 24.6,
-      "contested": false,
-      "sources": {
-        "tmdb": 80,
-        "imdb": 76,
-        "rotten_tomatoes": 77,
-        "rt_audience": 67,
-        "letterboxd": 55.4
-      }
-    },
-    {
       "title": "Moana",
       "release_date": "2026-07-10",
       "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "buzz": {
-        "pos": 44,
-        "neu": 41,
+        "pos": 43,
+        "neu": 42,
         "neg": 15,
-        "score": 58.5,
+        "score": 57.8,
         "analyzed": 400,
-        "total": 15741,
+        "total": 15743,
         "video_id": "n7f6hlKsxxo"
       },
-      "composite": 69.6,
-      "spread": 30,
+      "composite": 69.3,
+      "spread": 31.0,
       "contested": true,
       "sources": {
         "tmdb": 59,
         "rotten_tomatoes": 87,
         "metacritic": 81,
         "rt_audience": 57,
-        "letterboxd": 57.2
+        "letterboxd": 56.0
+      }
+    },
+    {
+      "title": "Pinocchio: Unstrung",
+      "release_date": "2026-07-24",
+      "poster": "https://image.tmdb.org/t/p/w342/r0hCOPsYHFc7qok51canND9TVoN.jpg",
+      "buzz": {
+        "pos": 33,
+        "neu": 36,
+        "neg": 31,
+        "score": 51.5,
+        "analyzed": 217,
+        "total": 348,
+        "video_id": "QMV5gZveHZI"
+      },
+      "composite": 66.9,
+      "spread": 37,
+      "contested": true,
+      "sources": {
+        "tmdb": 87,
+        "imdb": 76,
+        "metacritic": 50,
+        "rotten_tomatoes": 74,
+        "rt_audience": 68,
+        "letterboxd": 54.4
       }
     },
     {
@@ -236,7 +185,7 @@
         "tmdb": 64,
         "imdb": 66,
         "metacritic": 69,
-        "letterboxd": 65.0
+        "letterboxd": 64.8
       }
     },
     {
@@ -245,14 +194,14 @@
       "poster": "https://image.tmdb.org/t/p/w342/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
       "buzz": {
         "pos": 38,
-        "neu": 27,
-        "neg": 35,
-        "score": 48.9,
+        "neu": 25,
+        "neg": 38,
+        "score": 48.0,
         "analyzed": 400,
-        "total": 2756,
+        "total": 2761,
         "video_id": "TnHby2cxJzs"
       },
-      "composite": 65.9,
+      "composite": 65.8,
       "spread": 21,
       "contested": false,
       "sources": {
@@ -260,32 +209,7 @@
         "metacritic": 54,
         "rotten_tomatoes": 71,
         "rt_audience": 75,
-        "letterboxd": 64.0
-      }
-    },
-    {
-      "title": "The Death of Robin Hood",
-      "release_date": "2026-06-19",
-      "poster": "https://image.tmdb.org/t/p/w342/13MmRwmG5NmaMfU8qNrtgGXisiD.jpg",
-      "buzz": {
-        "pos": 38,
-        "neu": 44,
-        "neg": 18,
-        "score": 56.7,
-        "analyzed": 400,
-        "total": 5928,
-        "video_id": "tlSDDuWxO_0"
-      },
-      "composite": 64.1,
-      "spread": 18,
-      "contested": false,
-      "sources": {
-        "tmdb": 67,
-        "imdb": 74,
-        "metacritic": 60,
-        "rotten_tomatoes": 66,
-        "rt_audience": 56,
-        "letterboxd": 61.4
+        "letterboxd": 63.6
       }
     },
     {
@@ -293,24 +217,24 @@
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/lGovcOtxugJPhfJjFKud9EbWtOA.jpg",
       "buzz": {
-        "pos": 41,
-        "neu": 38,
+        "pos": 42,
+        "neu": 37,
         "neg": 21,
-        "score": 57.2,
-        "analyzed": 249,
-        "total": 354,
+        "score": 57.6,
+        "analyzed": 260,
+        "total": 368,
         "video_id": "t6RklhKu9os"
       },
-      "composite": 61.0,
-      "spread": 14,
+      "composite": 60.5,
+      "spread": 9.4,
       "contested": false,
       "sources": {
-        "tmdb": 54,
+        "tmdb": 57,
         "imdb": 58,
-        "rotten_tomatoes": 64,
+        "rotten_tomatoes": 62,
         "metacritic": 63,
-        "rt_audience": 68,
-        "letterboxd": 57.4
+        "rt_audience": 66,
+        "letterboxd": 56.6
       }
     },
     {
@@ -333,56 +257,32 @@
         "tmdb": 64,
         "metacritic": 49,
         "rotten_tomatoes": 48,
-        "letterboxd": 54.0
-      }
-    },
-    {
-      "title": "Citizen Vigilante",
-      "release_date": "2026-06-19",
-      "poster": "https://image.tmdb.org/t/p/w342/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
-      "buzz": {
-        "pos": 47,
-        "neu": 41,
-        "neg": 12,
-        "score": 60.6,
-        "analyzed": 400,
-        "total": 9241,
-        "video_id": "fVxmjwaPEFU"
-      },
-      "composite": 50.0,
-      "spread": 81,
-      "contested": true,
-      "sources": {
-        "tmdb": 63,
-        "imdb": 62,
-        "rotten_tomatoes": 10,
-        "rt_audience": 91,
-        "letterboxd": 37.4
+        "letterboxd": 53.8
       }
     },
     {
       "title": "Supergirl",
       "release_date": "2026-06-26",
-      "poster": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
       "buzz": {
         "pos": 53,
         "neu": 34,
         "neg": 13,
-        "score": 64.0,
+        "score": 63.9,
         "analyzed": 400,
-        "total": 19343,
+        "total": 19333,
         "video_id": "s1-pfiVMKAs"
       },
-      "composite": 44.9,
-      "spread": 47,
+      "composite": 45.0,
+      "spread": 48,
       "contested": true,
       "sources": {
-        "tmdb": 66,
+        "tmdb": 67,
         "imdb": 61,
         "rotten_tomatoes": 19,
         "metacritic": 41,
         "rt_audience": 26,
-        "letterboxd": 61.2
+        "letterboxd": 61.0
       }
     },
     {
@@ -393,21 +293,21 @@
         "pos": 40,
         "neu": 39,
         "neg": 21,
-        "score": 56.4,
-        "analyzed": 274,
-        "total": 440,
+        "score": 56.5,
+        "analyzed": 280,
+        "total": 449,
         "video_id": "C7E-0t1TfzM"
       },
-      "composite": 41.6,
-      "spread": 17,
+      "composite": 42.8,
+      "spread": 20,
       "contested": false,
       "sources": {
-        "tmdb": 49,
+        "tmdb": 54,
         "imdb": 38,
         "metacritic": 44,
-        "rotten_tomatoes": 41,
-        "rt_audience": 32,
-        "letterboxd": 46.8
+        "rotten_tomatoes": 43,
+        "rt_audience": 34,
+        "letterboxd": 46.6
       }
     }
   ]
