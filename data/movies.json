@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04 15:56 UTC",
+  "generated_at": "2026-08-05 15:39 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,12 +7,12 @@
       "release_date": "2026-07-17",
       "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "buzz": {
-        "pos": 42,
+        "pos": 41,
         "neu": 44,
         "neg": 15,
-        "score": 58.1,
+        "score": 57.8,
         "analyzed": 400,
-        "total": 50085,
+        "total": 50125,
         "video_id": "f_bKjZeJBBI"
       },
       "composite": 89.0,
@@ -32,12 +32,12 @@
       "release_date": "2026-06-26",
       "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "buzz": {
-        "pos": 54,
-        "neu": 36,
+        "pos": 56,
+        "neu": 35,
         "neg": 10,
-        "score": 64.6,
+        "score": 65.4,
         "analyzed": 400,
-        "total": 2396,
+        "total": 2398,
         "video_id": "OJ19I9q_hOQ"
       },
       "composite": 84.3,
@@ -59,13 +59,13 @@
       "buzz": {
         "pos": 43,
         "neu": 44,
-        "neg": 13,
-        "score": 59.8,
+        "neg": 14,
+        "score": 59.9,
         "analyzed": 400,
-        "total": 23547,
+        "total": 23556,
         "video_id": "7b20GRFZBFE"
       },
-      "composite": 83.4,
+      "composite": 83.3,
       "spread": 32,
       "contested": true,
       "sources": {
@@ -73,7 +73,7 @@
         "metacritic": 67,
         "rotten_tomatoes": 89,
         "rt_audience": 99,
-        "letterboxd": 75.8
+        "letterboxd": 75.6
       }
     },
     {
@@ -81,24 +81,24 @@
       "release_date": "2026-07-31",
       "poster": "https://image.tmdb.org/t/p/w342/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
       "buzz": {
-        "pos": 34,
-        "neu": 40,
-        "neg": 25,
-        "score": 53.4,
+        "pos": 36,
+        "neu": 42,
+        "neg": 22,
+        "score": 54.7,
         "analyzed": 400,
-        "total": 746,
+        "total": 761,
         "video_id": "1eONa8Nx_jQ"
       },
-      "composite": 82.6,
+      "composite": 82.8,
       "spread": 32,
       "contested": true,
       "sources": {
         "tmdb": 80,
         "imdb": 82,
         "metacritic": 66,
-        "rotten_tomatoes": 89,
+        "rotten_tomatoes": 90,
         "rt_audience": 98,
-        "letterboxd": 82.8
+        "letterboxd": 82.6
       }
     },
     {
@@ -106,13 +106,13 @@
       "release_date": "2026-05-29",
       "poster": "https://image.tmdb.org/t/p/w342/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
       "buzz": {
-        "pos": 45,
-        "neu": 40,
-        "neg": 16,
-        "score": 59.6,
+        "pos": 15,
+        "neu": 72,
+        "neg": 14,
+        "score": 51.4,
         "analyzed": 400,
-        "total": 38827,
-        "video_id": "0HjdiohVOik"
+        "total": 2443,
+        "video_id": "CY2BZv1IozU"
       },
       "composite": 74.6,
       "spread": 20.2,
@@ -131,23 +131,23 @@
       "release_date": "2026-07-10",
       "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "buzz": {
-        "pos": 44,
+        "pos": 46,
         "neu": 40,
-        "neg": 16,
-        "score": 58.4,
+        "neg": 15,
+        "score": 58.8,
         "analyzed": 400,
-        "total": 15762,
+        "total": 15764,
         "video_id": "n7f6hlKsxxo"
       },
-      "composite": 68.9,
-      "spread": 32.4,
+      "composite": 68.8,
+      "spread": 32.6,
       "contested": true,
       "sources": {
         "tmdb": 58,
         "rotten_tomatoes": 87,
         "metacritic": 81,
         "rt_audience": 57,
-        "letterboxd": 54.6
+        "letterboxd": 54.4
       }
     },
     {
@@ -155,16 +155,16 @@
       "release_date": "2026-07-31",
       "poster": "https://image.tmdb.org/t/p/w342/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
       "buzz": null,
-      "composite": 67.3,
-      "spread": 33,
+      "composite": 67.9,
+      "spread": 34,
       "contested": true,
       "sources": {
-        "tmdb": 60,
+        "tmdb": 61,
         "imdb": 56,
         "metacritic": 68,
-        "rotten_tomatoes": 89,
-        "rt_audience": 59,
-        "letterboxd": 67.4
+        "rotten_tomatoes": 90,
+        "rt_audience": 61,
+        "letterboxd": 67.0
       }
     },
     {
@@ -180,7 +180,7 @@
         "total": 367,
         "video_id": "QMV5gZveHZI"
       },
-      "composite": 67.0,
+      "composite": 66.8,
       "spread": 36,
       "contested": true,
       "sources": {
@@ -188,8 +188,32 @@
         "imdb": 76,
         "metacritic": 50,
         "rotten_tomatoes": 76,
-        "rt_audience": 69,
+        "rt_audience": 68,
         "letterboxd": 52.8
+      }
+    },
+    {
+      "title": "Evil Dead Burn",
+      "release_date": "2026-07-10",
+      "poster": "https://image.tmdb.org/t/p/w342/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
+      "buzz": {
+        "pos": 38,
+        "neu": 27,
+        "neg": 34,
+        "score": 49.6,
+        "analyzed": 400,
+        "total": 2789,
+        "video_id": "TnHby2cxJzs"
+      },
+      "composite": 66.7,
+      "spread": 24,
+      "contested": false,
+      "sources": {
+        "tmdb": 78,
+        "metacritic": 54,
+        "rotten_tomatoes": 71,
+        "rt_audience": 74,
+        "letterboxd": 62.6
       }
     },
     {
@@ -204,31 +228,7 @@
         "tmdb": 64,
         "imdb": 66,
         "metacritic": 69,
-        "letterboxd": 64.6
-      }
-    },
-    {
-      "title": "Evil Dead Burn",
-      "release_date": "2026-07-10",
-      "poster": "https://image.tmdb.org/t/p/w342/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-      "buzz": {
-        "pos": 38,
-        "neu": 26,
-        "neg": 36,
-        "score": 48.4,
-        "analyzed": 400,
-        "total": 2773,
-        "video_id": "TnHby2cxJzs"
-      },
-      "composite": 65.4,
-      "spread": 20,
-      "contested": false,
-      "sources": {
-        "tmdb": 68,
-        "metacritic": 54,
-        "rotten_tomatoes": 71,
-        "rt_audience": 74,
-        "letterboxd": 62.6
+        "letterboxd": 64.4
       }
     },
     {
@@ -237,11 +237,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/lGovcOtxugJPhfJjFKud9EbWtOA.jpg",
       "buzz": {
         "pos": 42,
-        "neu": 38,
+        "neu": 37,
         "neg": 20,
         "score": 57.7,
-        "analyzed": 279,
-        "total": 396,
+        "analyzed": 281,
+        "total": 403,
         "video_id": "t6RklhKu9os"
       },
       "composite": 60.2,
@@ -257,54 +257,6 @@
       }
     },
     {
-      "title": "The Get Out",
-      "release_date": "2026-06-26",
-      "poster": "https://image.tmdb.org/t/p/w342/zlkeH0s7dDxcnuPcHBqAyXFUxqN.jpg",
-      "buzz": {
-        "pos": 44,
-        "neu": 46,
-        "neg": 11,
-        "score": 61.7,
-        "analyzed": 101,
-        "total": 138,
-        "video_id": "oB6HNuKxLmo"
-      },
-      "composite": 52.3,
-      "spread": 16,
-      "contested": false,
-      "sources": {
-        "tmdb": 64,
-        "metacritic": 49,
-        "rotten_tomatoes": 48,
-        "letterboxd": 53.0
-      }
-    },
-    {
-      "title": "Supergirl",
-      "release_date": "2026-06-26",
-      "poster": "https://image.tmdb.org/t/p/w342/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
-      "buzz": {
-        "pos": 53,
-        "neu": 34,
-        "neg": 14,
-        "score": 63.9,
-        "analyzed": 400,
-        "total": 19429,
-        "video_id": "s1-pfiVMKAs"
-      },
-      "composite": 44.5,
-      "spread": 48,
-      "contested": true,
-      "sources": {
-        "tmdb": 67,
-        "imdb": 59,
-        "rotten_tomatoes": 19,
-        "metacritic": 41,
-        "rt_audience": 26,
-        "letterboxd": 60.4
-      }
-    },
-    {
       "title": "Her Private Hell",
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/kiFacg75KVjy0AM3S4QmbPas8zL.jpg",
@@ -314,7 +266,7 @@
         "neg": 21,
         "score": 56.7,
         "analyzed": 288,
-        "total": 474,
+        "total": 475,
         "video_id": "C7E-0t1TfzM"
       },
       "composite": 42.3,
@@ -327,6 +279,29 @@
         "rotten_tomatoes": 42,
         "rt_audience": 36,
         "letterboxd": 45.8
+      }
+    },
+    {
+      "title": "Ice Cream Man",
+      "release_date": "2026-08-03",
+      "poster": "https://image.tmdb.org/t/p/w342/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
+      "buzz": {
+        "pos": 34,
+        "neu": 36,
+        "neg": 31,
+        "score": 50.8,
+        "analyzed": 400,
+        "total": 1581,
+        "video_id": "2JeUjIqK_4c"
+      },
+      "composite": 38.1,
+      "spread": 13,
+      "contested": false,
+      "sources": {
+        "tmdb": 32,
+        "metacritic": 41,
+        "rt_audience": 45,
+        "letterboxd": 33.2
       }
     }
   ]
