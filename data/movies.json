@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13 14:38 UTC",
+  "generated_at": "2026-08-14 14:32 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,12 +7,12 @@
       "release_date": "2026-07-17",
       "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "buzz": {
-        "pos": 42,
+        "pos": 43,
         "neu": 42,
         "neg": 15,
-        "score": 58.2,
+        "score": 58.5,
         "analyzed": 400,
-        "total": 50399,
+        "total": 50427,
         "video_id": "f_bKjZeJBBI"
       },
       "composite": 88.9,
@@ -32,19 +32,19 @@
       "release_date": "2026-06-26",
       "poster": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "buzz": {
-        "pos": 55,
-        "neu": 36,
+        "pos": 54,
+        "neu": 35,
         "neg": 10,
-        "score": 65.1,
+        "score": 64.8,
         "analyzed": 400,
-        "total": 2459,
+        "total": 2464,
         "video_id": "OJ19I9q_hOQ"
       },
-      "composite": 84.0,
-      "spread": 23,
+      "composite": 84.1,
+      "spread": 22,
       "contested": false,
       "sources": {
-        "tmdb": 74,
+        "tmdb": 75,
         "imdb": 78,
         "metacritic": 82,
         "rotten_tomatoes": 97,
@@ -58,14 +58,14 @@
       "poster": "https://image.tmdb.org/t/p/w342/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
       "buzz": {
         "pos": 44,
-        "neu": 42,
-        "neg": 14,
-        "score": 60.2,
+        "neu": 43,
+        "neg": 13,
+        "score": 60.4,
         "analyzed": 400,
-        "total": 23628,
+        "total": 23632,
         "video_id": "7b20GRFZBFE"
       },
-      "composite": 83.5,
+      "composite": 83.4,
       "spread": 31,
       "contested": true,
       "sources": {
@@ -73,32 +73,7 @@
         "metacritic": 68,
         "rotten_tomatoes": 89,
         "rt_audience": 99,
-        "letterboxd": 75.2
-      }
-    },
-    {
-      "title": "Teenage Sex and Death at Camp Miasma",
-      "release_date": "2026-08-07",
-      "poster": "https://image.tmdb.org/t/p/w342/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
-      "buzz": {
-        "pos": 38,
-        "neu": 40,
-        "neg": 22,
-        "score": 55.3,
-        "analyzed": 320,
-        "total": 509,
-        "video_id": "dimCiC_hdoA"
-      },
-      "composite": 82.5,
-      "spread": 26,
-      "contested": true,
-      "sources": {
-        "tmdb": 73,
-        "imdb": 71,
-        "metacritic": 89,
-        "rotten_tomatoes": 97,
-        "rt_audience": 83,
-        "letterboxd": 78.4
+        "letterboxd": 75.0
       }
     },
     {
@@ -106,12 +81,12 @@
       "release_date": "2026-07-31",
       "poster": "https://image.tmdb.org/t/p/w342/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
       "buzz": {
-        "pos": 37,
-        "neu": 40,
+        "pos": 36,
+        "neu": 42,
         "neg": 22,
-        "score": 54.8,
+        "score": 54.5,
         "analyzed": 400,
-        "total": 800,
+        "total": 802,
         "video_id": "1eONa8Nx_jQ"
       },
       "composite": 82.3,
@@ -123,7 +98,32 @@
         "metacritic": 66,
         "rotten_tomatoes": 90,
         "rt_audience": 98,
-        "letterboxd": 81.8
+        "letterboxd": 81.6
+      }
+    },
+    {
+      "title": "Teenage Sex and Death at Camp Miasma",
+      "release_date": "2026-08-07",
+      "poster": "https://image.tmdb.org/t/p/w342/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
+      "buzz": {
+        "pos": 38,
+        "neu": 39,
+        "neg": 23,
+        "score": 55.3,
+        "analyzed": 328,
+        "total": 520,
+        "video_id": "dimCiC_hdoA"
+      },
+      "composite": 82.3,
+      "spread": 25,
+      "contested": true,
+      "sources": {
+        "tmdb": 75,
+        "imdb": 71,
+        "metacritic": 89,
+        "rotten_tomatoes": 96,
+        "rt_audience": 81,
+        "letterboxd": 78.4
       }
     },
     {
@@ -131,12 +131,12 @@
       "release_date": "2026-08-07",
       "poster": "https://image.tmdb.org/t/p/w342/3WN0JWwRI7oGH7Ni2R6poVWej05.jpg",
       "buzz": {
-        "pos": 46,
-        "neu": 40,
+        "pos": 49,
+        "neu": 37,
         "neg": 14,
-        "score": 60.3,
+        "score": 61.6,
         "analyzed": 400,
-        "total": 2377,
+        "total": 2394,
         "video_id": "k1MVnzd2aVc"
       },
       "composite": 73.5,
@@ -164,36 +164,37 @@
         "total": 10,
         "video_id": "sLbsmjqwdek"
       },
-      "composite": 72.2,
-      "spread": 26.6,
+      "composite": 72.5,
+      "spread": 27.8,
       "contested": true,
       "sources": {
         "tmdb": 74,
-        "rotten_tomatoes": 85,
-        "letterboxd": 58.4
+        "rotten_tomatoes": 86,
+        "letterboxd": 58.2
       }
     },
     {
       "title": "The End of Oak Street",
       "release_date": "2026-08-14",
-      "poster": "https://image.tmdb.org/t/p/w342/3SifFCwwFzXdU1Ew0nA4Z92Bs15.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
       "buzz": {
-        "pos": 52,
-        "neu": 36,
-        "neg": 12,
-        "score": 62.8,
+        "pos": 55,
+        "neu": 34,
+        "neg": 11,
+        "score": 64.1,
         "analyzed": 400,
-        "total": 8596,
+        "total": 8707,
         "video_id": "3oB9AxspVow"
       },
-      "composite": 71.2,
-      "spread": 20.8,
+      "composite": 71.8,
+      "spread": 20.4,
       "contested": false,
       "sources": {
-        "tmdb": 70,
-        "metacritic": 67,
+        "tmdb": 71,
+        "metacritic": 68,
         "rotten_tomatoes": 84,
-        "letterboxd": 63.2
+        "rt_audience": 72,
+        "letterboxd": 63.6
       }
     },
     {
@@ -201,12 +202,12 @@
       "release_date": "2026-07-10",
       "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "buzz": {
-        "pos": 43,
-        "neu": 42,
-        "neg": 16,
-        "score": 57.8,
+        "pos": 45,
+        "neu": 40,
+        "neg": 15,
+        "score": 58.5,
         "analyzed": 400,
-        "total": 15782,
+        "total": 15783,
         "video_id": "n7f6hlKsxxo"
       },
       "composite": 69.0,
@@ -218,23 +219,6 @@
         "metacritic": 81,
         "rt_audience": 57,
         "letterboxd": 54.2
-      }
-    },
-    {
-      "title": "Gail Daughtry and the Celebrity Sex Pass",
-      "release_date": "2026-07-10",
-      "poster": "https://image.tmdb.org/t/p/w342/98T4bnMjJs71WOVZoeY8edZhfgZ.jpg",
-      "buzz": null,
-      "composite": 68.8,
-      "spread": 25,
-      "contested": true,
-      "sources": {
-        "tmdb": 56,
-        "imdb": 64,
-        "metacritic": 66,
-        "rotten_tomatoes": 76,
-        "rt_audience": 81,
-        "letterboxd": 67.0
       }
     },
     {
@@ -266,10 +250,10 @@
       "buzz": {
         "pos": 40,
         "neu": 26,
-        "neg": 33,
-        "score": 50.6,
+        "neg": 34,
+        "score": 50.4,
         "analyzed": 400,
-        "total": 2876,
+        "total": 2879,
         "video_id": "TnHby2cxJzs"
       },
       "composite": 66.7,
@@ -290,17 +274,17 @@
       "buzz": {
         "pos": 34,
         "neu": 34,
-        "neg": 31,
-        "score": 51.6,
-        "analyzed": 232,
-        "total": 369,
+        "neg": 32,
+        "score": 51.5,
+        "analyzed": 233,
+        "total": 370,
         "video_id": "QMV5gZveHZI"
       },
-      "composite": 66.4,
-      "spread": 33,
+      "composite": 66.7,
+      "spread": 35,
       "contested": true,
       "sources": {
-        "tmdb": 83,
+        "tmdb": 85,
         "imdb": 76,
         "metacritic": 50,
         "rotten_tomatoes": 76,
@@ -313,12 +297,12 @@
       "release_date": "2026-07-10",
       "poster": "https://image.tmdb.org/t/p/w342/cvj1d5avMYRxK8FVpq07UqLrcbZ.jpg",
       "buzz": {
-        "pos": 18,
-        "neu": 47,
-        "neg": 35,
-        "score": 46.3,
-        "analyzed": 34,
-        "total": 64,
+        "pos": 20,
+        "neu": 46,
+        "neg": 34,
+        "score": 47.2,
+        "analyzed": 35,
+        "total": 65,
         "video_id": "JP8Xj5_6VSE"
       },
       "composite": 61.4,
@@ -339,22 +323,22 @@
       "buzz": {
         "pos": 33,
         "neu": 49,
-        "neg": 18,
-        "score": 56.5,
-        "analyzed": 165,
-        "total": 304,
+        "neg": 17,
+        "score": 56.6,
+        "analyzed": 168,
+        "total": 311,
         "video_id": "AvKoSR3O4NQ"
       },
-      "composite": 57.3,
-      "spread": 33,
+      "composite": 57.1,
+      "spread": 32,
       "contested": true,
       "sources": {
         "tmdb": 68,
         "imdb": 64,
         "metacritic": 42,
         "rotten_tomatoes": 46,
-        "rt_audience": 75,
-        "letterboxd": 56.8
+        "rt_audience": 74,
+        "letterboxd": 56.4
       }
     },
     {
@@ -387,23 +371,23 @@
       "release_date": "2026-08-03",
       "poster": "https://image.tmdb.org/t/p/w342/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
       "buzz": {
-        "pos": 38,
-        "neu": 33,
+        "pos": 36,
+        "neu": 35,
         "neg": 29,
-        "score": 52.6,
+        "score": 52.0,
         "analyzed": 400,
-        "total": 1778,
+        "total": 1783,
         "video_id": "2JeUjIqK_4c"
       },
       "composite": 38.0,
-      "spread": 22.2,
+      "spread": 22.4,
       "contested": false,
       "sources": {
         "tmdb": 51,
         "imdb": 38,
         "metacritic": 34,
         "rt_audience": 45,
-        "letterboxd": 28.8
+        "letterboxd": 28.6
       }
     }
   ]
