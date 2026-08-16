@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15 13:53 UTC",
+  "generated_at": "2026-08-16 13:54 UTC",
   "sample": false,
   "movies": [
     {
@@ -8,11 +8,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "buzz": {
         "pos": 43,
-        "neu": 43,
+        "neu": 42,
         "neg": 14,
         "score": 58.6,
         "analyzed": 400,
-        "total": 50451,
+        "total": 50496,
         "video_id": "f_bKjZeJBBI"
       },
       "composite": 88.9,
@@ -35,9 +35,9 @@
         "pos": 55,
         "neu": 35,
         "neg": 10,
-        "score": 65.2,
+        "score": 64.8,
         "analyzed": 400,
-        "total": 2478,
+        "total": 2498,
         "video_id": "OJ19I9q_hOQ"
       },
       "composite": 83.9,
@@ -57,12 +57,12 @@
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
       "buzz": {
-        "pos": 45,
-        "neu": 42,
-        "neg": 14,
-        "score": 60.4,
+        "pos": 44,
+        "neu": 43,
+        "neg": 13,
+        "score": 60.2,
         "analyzed": 400,
-        "total": 23639,
+        "total": 23640,
         "video_id": "7b20GRFZBFE"
       },
       "composite": 83.4,
@@ -83,10 +83,10 @@
       "buzz": {
         "pos": 37,
         "neu": 40,
-        "neg": 22,
-        "score": 54.6,
+        "neg": 23,
+        "score": 54.5,
         "analyzed": 400,
-        "total": 803,
+        "total": 805,
         "video_id": "1eONa8Nx_jQ"
       },
       "composite": 82.1,
@@ -106,23 +106,23 @@
       "release_date": "2026-08-07",
       "poster": "https://image.tmdb.org/t/p/w342/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
       "buzz": {
-        "pos": 39,
+        "pos": 38,
         "neu": 38,
-        "neg": 23,
-        "score": 55.2,
-        "analyzed": 334,
-        "total": 531,
+        "neg": 24,
+        "score": 54.9,
+        "analyzed": 343,
+        "total": 540,
         "video_id": "dimCiC_hdoA"
       },
-      "composite": 82.0,
+      "composite": 81.6,
       "spread": 25,
       "contested": true,
       "sources": {
-        "tmdb": 75,
+        "tmdb": 73,
         "imdb": 71,
         "metacritic": 89,
         "rotten_tomatoes": 96,
-        "rt_audience": 79,
+        "rt_audience": 78,
         "letterboxd": 78.4
       }
     },
@@ -131,19 +131,19 @@
       "release_date": "2026-08-07",
       "poster": "https://image.tmdb.org/t/p/w342/3WN0JWwRI7oGH7Ni2R6poVWej05.jpg",
       "buzz": {
-        "pos": 51,
-        "neu": 34,
+        "pos": 48,
+        "neu": 38,
         "neg": 14,
-        "score": 62.1,
+        "score": 61.2,
         "analyzed": 400,
-        "total": 2400,
+        "total": 2412,
         "video_id": "k1MVnzd2aVc"
       },
-      "composite": 73.6,
+      "composite": 73.4,
       "spread": 19.2,
       "contested": false,
       "sources": {
-        "tmdb": 76,
+        "tmdb": 75,
         "imdb": 77,
         "metacritic": 75,
         "rotten_tomatoes": 76,
@@ -156,23 +156,64 @@
       "release_date": "2026-08-14",
       "poster": "https://image.tmdb.org/t/p/w342/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
       "buzz": {
-        "pos": 54,
-        "neu": 35,
+        "pos": 52,
+        "neu": 37,
         "neg": 10,
-        "score": 64.2,
+        "score": 63.3,
         "analyzed": 400,
-        "total": 8824,
+        "total": 8952,
         "video_id": "3oB9AxspVow"
       },
-      "composite": 72.6,
-      "spread": 20.8,
+      "composite": 72.8,
+      "spread": 23.0,
       "contested": false,
       "sources": {
-        "tmdb": 70,
+        "tmdb": 68,
         "metacritic": 68,
-        "rotten_tomatoes": 84,
+        "rotten_tomatoes": 86,
         "rt_audience": 78,
-        "letterboxd": 63.2
+        "letterboxd": 63.0
+      }
+    },
+    {
+      "title": "Gail Daughtry and the Celebrity Sex Pass",
+      "release_date": "2026-07-10",
+      "poster": "https://image.tmdb.org/t/p/w342/98T4bnMjJs71WOVZoeY8edZhfgZ.jpg",
+      "buzz": null,
+      "composite": 69.8,
+      "spread": 17,
+      "contested": false,
+      "sources": {
+        "tmdb": 66,
+        "imdb": 64,
+        "metacritic": 66,
+        "rotten_tomatoes": 76,
+        "rt_audience": 81,
+        "letterboxd": 66.4
+      }
+    },
+    {
+      "title": "PAW Patrol: The Dino Movie",
+      "release_date": "2026-08-14",
+      "poster": "https://image.tmdb.org/t/p/w342/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
+      "buzz": {
+        "pos": 43,
+        "neu": 43,
+        "neg": 14,
+        "score": 58.3,
+        "analyzed": 7,
+        "total": 11,
+        "video_id": "sLbsmjqwdek"
+      },
+      "composite": 69.3,
+      "spread": 49,
+      "contested": true,
+      "sources": {
+        "tmdb": 70,
+        "metacritic": 47,
+        "rotten_tomatoes": 81,
+        "rt_audience": 96,
+        "letterboxd": 58.2
       }
     },
     {
@@ -180,12 +221,12 @@
       "release_date": "2026-07-10",
       "poster": "https://image.tmdb.org/t/p/w342/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "buzz": {
-        "pos": 45,
-        "neu": 40,
+        "pos": 46,
+        "neu": 39,
         "neg": 15,
-        "score": 58.5,
+        "score": 59.1,
         "analyzed": 400,
-        "total": 15783,
+        "total": 15786,
         "video_id": "n7f6hlKsxxo"
       },
       "composite": 69.0,
@@ -209,7 +250,7 @@
         "neg": 17,
         "score": 63.4,
         "analyzed": 29,
-        "total": 41,
+        "total": 42,
         "video_id": "3eVoGaI8mpo"
       },
       "composite": 67.8,
@@ -227,11 +268,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
       "buzz": {
         "pos": 39,
-        "neu": 25,
-        "neg": 36,
-        "score": 49.2,
+        "neu": 26,
+        "neg": 35,
+        "score": 49.6,
         "analyzed": 400,
-        "total": 2879,
+        "total": 2883,
         "video_id": "TnHby2cxJzs"
       },
       "composite": 66.7,
@@ -242,7 +283,7 @@
         "metacritic": 54,
         "rotten_tomatoes": 71,
         "rt_audience": 74,
-        "letterboxd": 62.0
+        "letterboxd": 61.8
       }
     },
     {
@@ -271,31 +312,16 @@
       }
     },
     {
-      "title": "PAW Patrol: The Dino Movie",
-      "release_date": "2026-08-14",
-      "poster": "https://image.tmdb.org/t/p/w342/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
-      "buzz": null,
-      "composite": 65.7,
-      "spread": 41,
-      "contested": true,
-      "sources": {
-        "tmdb": 72,
-        "metacritic": 47,
-        "rotten_tomatoes": 88,
-        "letterboxd": 58.2
-      }
-    },
-    {
       "title": "Night Nurse",
       "release_date": "2026-07-10",
       "poster": "https://image.tmdb.org/t/p/w342/cvj1d5avMYRxK8FVpq07UqLrcbZ.jpg",
       "buzz": {
         "pos": 19,
-        "neu": 44,
-        "neg": 36,
-        "score": 46.4,
-        "analyzed": 36,
-        "total": 67,
+        "neu": 46,
+        "neg": 35,
+        "score": 46.5,
+        "analyzed": 37,
+        "total": 68,
         "video_id": "JP8Xj5_6VSE"
       },
       "composite": 60.0,
@@ -306,7 +332,7 @@
         "imdb": 58,
         "metacritic": 66,
         "rotten_tomatoes": 65,
-        "letterboxd": 54.8
+        "letterboxd": 54.6
       }
     },
     {
@@ -317,9 +343,9 @@
         "pos": 33,
         "neu": 49,
         "neg": 17,
-        "score": 56.6,
-        "analyzed": 174,
-        "total": 319,
+        "score": 56.7,
+        "analyzed": 178,
+        "total": 327,
         "video_id": "AvKoSR3O4NQ"
       },
       "composite": 57.1,
@@ -347,15 +373,15 @@
         "total": 483,
         "video_id": "C7E-0t1TfzM"
       },
-      "composite": 42.0,
-      "spread": 15,
+      "composite": 41.9,
+      "spread": 16,
       "contested": false,
       "sources": {
         "tmdb": 51,
         "imdb": 38,
         "metacritic": 44,
         "rotten_tomatoes": 40,
-        "rt_audience": 36,
+        "rt_audience": 35,
         "letterboxd": 45.4
       }
     },
@@ -364,12 +390,12 @@
       "release_date": "2026-08-03",
       "poster": "https://image.tmdb.org/t/p/w342/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
       "buzz": {
-        "pos": 37,
-        "neu": 33,
+        "pos": 35,
+        "neu": 35,
         "neg": 30,
-        "score": 52.2,
+        "score": 51.6,
         "analyzed": 400,
-        "total": 1789,
+        "total": 1800,
         "video_id": "2JeUjIqK_4c"
       },
       "composite": 38.0,
