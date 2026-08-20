@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19 14:07 UTC",
+  "generated_at": "2026-08-20 14:09 UTC",
   "sample": false,
   "movies": [
     {
@@ -7,13 +7,13 @@
       "release_date": "2026-07-17",
       "poster": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "buzz": {
-        "pos": 42,
-        "neu": 48,
-        "neg": 10,
-        "score": 60.0,
+        "pos": 43,
+        "neu": 42,
+        "neg": 15,
+        "score": 58.5,
         "analyzed": 400,
-        "total": 45093,
-        "video_id": "Mzw2ttJD2qQ"
+        "total": 50568,
+        "video_id": "f_bKjZeJBBI"
       },
       "composite": 88.9,
       "spread": 17,
@@ -34,8 +34,8 @@
       "buzz": {
         "pos": 46,
         "neu": 42,
-        "neg": 12,
-        "score": 61.3,
+        "neg": 13,
+        "score": 61.1,
         "analyzed": 400,
         "total": 23648,
         "video_id": "7b20GRFZBFE"
@@ -48,7 +48,7 @@
         "metacritic": 68,
         "rotten_tomatoes": 90,
         "rt_audience": 99,
-        "letterboxd": 75.0
+        "letterboxd": 74.8
       }
     },
     {
@@ -59,9 +59,9 @@
         "pos": 36,
         "neu": 42,
         "neg": 22,
-        "score": 54.9,
+        "score": 54.7,
         "analyzed": 400,
-        "total": 811,
+        "total": 817,
         "video_id": "1eONa8Nx_jQ"
       },
       "composite": 82.3,
@@ -81,24 +81,24 @@
       "release_date": "2026-08-07",
       "poster": "https://image.tmdb.org/t/p/w342/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
       "buzz": {
-        "pos": 38,
-        "neu": 38,
+        "pos": 39,
+        "neu": 37,
         "neg": 24,
         "score": 55.1,
-        "analyzed": 346,
-        "total": 558,
+        "analyzed": 355,
+        "total": 566,
         "video_id": "dimCiC_hdoA"
       },
-      "composite": 81.2,
-      "spread": 24,
-      "contested": false,
+      "composite": 81.4,
+      "spread": 25,
+      "contested": true,
       "sources": {
         "tmdb": 72,
         "imdb": 71,
         "metacritic": 89,
-        "rotten_tomatoes": 95,
+        "rotten_tomatoes": 96,
         "rt_audience": 78,
-        "letterboxd": 78.0
+        "letterboxd": 77.8
       }
     },
     {
@@ -106,38 +106,30 @@
       "release_date": "2026-08-14",
       "poster": "https://image.tmdb.org/t/p/w342/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
       "buzz": {
-        "pos": 58,
-        "neu": 32,
+        "pos": 56,
+        "neu": 35,
         "neg": 10,
-        "score": 65.6,
+        "score": 64.7,
         "analyzed": 400,
-        "total": 9218,
+        "total": 9249,
         "video_id": "3oB9AxspVow"
       },
-      "composite": 72.4,
-      "spread": 22.4,
+      "composite": 72.0,
+      "spread": 22.6,
       "contested": false,
       "sources": {
-        "tmdb": 66,
+        "tmdb": 65,
         "metacritic": 69,
         "rotten_tomatoes": 85,
-        "rt_audience": 78,
-        "letterboxd": 62.6
+        "rt_audience": 77,
+        "letterboxd": 62.4
       }
     },
     {
       "title": "PAW Patrol: The Dino Movie",
       "release_date": "2026-08-14",
       "poster": "https://image.tmdb.org/t/p/w342/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
-      "buzz": {
-        "pos": 45,
-        "neu": 45,
-        "neg": 9,
-        "score": 59.8,
-        "analyzed": 11,
-        "total": 16,
-        "video_id": "sLbsmjqwdek"
-      },
+      "buzz": null,
       "composite": 67.7,
       "spread": 47,
       "contested": true,
@@ -151,6 +143,31 @@
       }
     },
     {
+      "title": "The Brink of War",
+      "release_date": "2026-08-14",
+      "poster": "https://image.tmdb.org/t/p/w342/hFborW6HmffKL05GIWlkTFdvVpN.jpg",
+      "buzz": {
+        "pos": 44,
+        "neu": 26,
+        "neg": 31,
+        "score": 54.5,
+        "analyzed": 62,
+        "total": 110,
+        "video_id": "ATdMxG1QwEM"
+      },
+      "composite": 67.1,
+      "spread": 36,
+      "contested": true,
+      "sources": {
+        "tmdb": 77,
+        "imdb": 68,
+        "metacritic": 51,
+        "rotten_tomatoes": 73,
+        "rt_audience": 87,
+        "letterboxd": 54.8
+      }
+    },
+    {
       "title": "Pinocchio: Unstrung",
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/r0hCOPsYHFc7qok51canND9TVoN.jpg",
@@ -160,7 +177,7 @@
         "neg": 32,
         "score": 51.5,
         "analyzed": 234,
-        "total": 371,
+        "total": 372,
         "video_id": "QMV5gZveHZI"
       },
       "composite": 66.7,
@@ -176,28 +193,48 @@
       }
     },
     {
-      "title": "The Brink of War",
-      "release_date": "2026-08-14",
-      "poster": "https://image.tmdb.org/t/p/w342/hFborW6HmffKL05GIWlkTFdvVpN.jpg",
+      "title": "Insidious: Out of the Further",
+      "release_date": "2026-08-21",
+      "poster": "https://image.tmdb.org/t/p/w342/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
       "buzz": {
-        "pos": 43,
-        "neu": 25,
-        "neg": 32,
-        "score": 54.4,
-        "analyzed": 60,
-        "total": 107,
-        "video_id": "ATdMxG1QwEM"
+        "pos": 46,
+        "neu": 37,
+        "neg": 16,
+        "score": 60.3,
+        "analyzed": 400,
+        "total": 5762,
+        "video_id": "jxU8FU3o75A"
       },
-      "composite": 63.9,
-      "spread": 36,
+      "composite": 58.3,
+      "spread": 17,
+      "contested": false,
+      "sources": {
+        "tmdb": 56,
+        "metacritic": 50,
+        "rotten_tomatoes": 67,
+        "letterboxd": 59.2
+      }
+    },
+    {
+      "title": "Mutiny",
+      "release_date": "2026-08-21",
+      "poster": "https://image.tmdb.org/t/p/w342/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
+      "buzz": {
+        "pos": 46,
+        "neu": 42,
+        "neg": 12,
+        "score": 60.7,
+        "analyzed": 400,
+        "total": 7845,
+        "video_id": "FKSdXH89jbo"
+      },
+      "composite": 57.5,
+      "spread": 27,
       "contested": true,
       "sources": {
-        "tmdb": 50,
-        "imdb": 68,
-        "metacritic": 51,
-        "rotten_tomatoes": 72,
-        "rt_audience": 86,
-        "letterboxd": 55.0
+        "tmdb": 76,
+        "metacritic": 55,
+        "rotten_tomatoes": 49
       }
     },
     {
@@ -209,42 +246,20 @@
         "neu": 49,
         "neg": 17,
         "score": 56.8,
-        "analyzed": 183,
-        "total": 348,
+        "analyzed": 184,
+        "total": 349,
         "video_id": "AvKoSR3O4NQ"
       },
-      "composite": 57.3,
-      "spread": 34,
+      "composite": 57.2,
+      "spread": 33,
       "contested": true,
       "sources": {
         "tmdb": 68,
         "imdb": 64,
         "metacritic": 42,
         "rotten_tomatoes": 46,
-        "rt_audience": 76,
+        "rt_audience": 75,
         "letterboxd": 56.0
-      }
-    },
-    {
-      "title": "Mutiny",
-      "release_date": "2026-08-21",
-      "poster": "https://image.tmdb.org/t/p/w342/pVMxkaViouALWwc1EdZBaiZJTxJ.jpg",
-      "buzz": {
-        "pos": 47,
-        "neu": 40,
-        "neg": 13,
-        "score": 60.5,
-        "analyzed": 400,
-        "total": 7742,
-        "video_id": "FKSdXH89jbo"
-      },
-      "composite": 56.5,
-      "spread": 62,
-      "contested": true,
-      "sources": {
-        "tmdb": 98,
-        "metacritic": 52,
-        "rotten_tomatoes": 36
       }
     },
     {
@@ -252,13 +267,13 @@
       "release_date": "2026-07-24",
       "poster": "https://image.tmdb.org/t/p/w342/kiFacg75KVjy0AM3S4QmbPas8zL.jpg",
       "buzz": {
-        "pos": 41,
-        "neu": 38,
-        "neg": 20,
-        "score": 57.2,
-        "analyzed": 294,
-        "total": 484,
-        "video_id": "C7E-0t1TfzM"
+        "pos": 29,
+        "neu": 58,
+        "neg": 14,
+        "score": 54.8,
+        "analyzed": 73,
+        "total": 119,
+        "video_id": "dekh9G7wZmw"
       },
       "composite": 42.1,
       "spread": 16,
@@ -280,20 +295,20 @@
         "pos": 36,
         "neu": 34,
         "neg": 30,
-        "score": 52.3,
+        "score": 51.7,
         "analyzed": 400,
-        "total": 1810,
+        "total": 1815,
         "video_id": "2JeUjIqK_4c"
       },
-      "composite": 37.8,
-      "spread": 21.8,
+      "composite": 37.7,
+      "spread": 22.0,
       "contested": false,
       "sources": {
         "tmdb": 50,
         "imdb": 38,
         "metacritic": 34,
         "rt_audience": 45,
-        "letterboxd": 28.2
+        "letterboxd": 28.0
       }
     }
   ]
