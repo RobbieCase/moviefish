@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12 16:27 UTC",
+  "generated_at": "2026-09-13 17:02 UTC",
   "sample": false,
   "movies": [
     {
@@ -12,7 +12,7 @@
         "neg": 11,
         "score": 64.5,
         "analyzed": 400,
-        "total": 2121,
+        "total": 2125,
         "video_id": "fY_gBf8QVR0"
       },
       "composite": 82.9,
@@ -32,13 +32,13 @@
       "release_date": "2026-07-31",
       "poster": "https://image.tmdb.org/t/p/w342/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
       "buzz": {
-        "pos": 44,
-        "neu": 35,
-        "neg": 21,
-        "score": 58.6,
+        "pos": 37,
+        "neu": 41,
+        "neg": 22,
+        "score": 54.9,
         "analyzed": 400,
-        "total": 17207,
-        "video_id": "daXaTug8rL4"
+        "total": 827,
+        "video_id": "1eONa8Nx_jQ"
       },
       "composite": 81.9,
       "spread": 31,
@@ -57,24 +57,24 @@
       "release_date": "2026-08-28",
       "poster": "https://image.tmdb.org/t/p/w342/6Lh4ZlsAISFQFVfLZ90sE9ycVnN.jpg",
       "buzz": {
-        "pos": 27,
-        "neu": 49,
-        "neg": 24,
-        "score": 50.6,
-        "analyzed": 45,
-        "total": 68,
-        "video_id": "VJgMKF92RoI"
+        "pos": 41,
+        "neu": 42,
+        "neg": 17,
+        "score": 57.5,
+        "analyzed": 400,
+        "total": 1511,
+        "video_id": "O1fNEHX9tSM"
       },
-      "composite": 76.1,
-      "spread": 26.4,
+      "composite": 76.0,
+      "spread": 26.6,
       "contested": true,
       "sources": {
-        "tmdb": 81,
+        "tmdb": 80,
         "imdb": 71,
         "rotten_tomatoes": 89,
         "metacritic": 76,
         "rt_audience": 80,
-        "letterboxd": 62.6
+        "letterboxd": 62.4
       }
     },
     {
@@ -85,20 +85,20 @@
         "pos": 38,
         "neu": 44,
         "neg": 18,
-        "score": 57.3,
+        "score": 57.1,
         "analyzed": 400,
-        "total": 2390,
+        "total": 2424,
         "video_id": "zz4rsZLcauY"
       },
-      "composite": 70.7,
+      "composite": 71.0,
       "spread": 45,
       "contested": true,
       "sources": {
-        "tmdb": 78,
+        "tmdb": 79,
         "imdb": 66,
         "metacritic": 55,
         "rotten_tomatoes": 100,
-        "letterboxd": 57.6
+        "letterboxd": 58.4
       }
     },
     {
@@ -109,16 +109,16 @@
         "pos": 60,
         "neu": 30,
         "neg": 10,
-        "score": 66.0,
+        "score": 65.9,
         "analyzed": 400,
-        "total": 9596,
+        "total": 9602,
         "video_id": "3oB9AxspVow"
       },
-      "composite": 70.5,
+      "composite": 70.6,
       "spread": 24.8,
       "contested": false,
       "sources": {
-        "tmdb": 63,
+        "tmdb": 64,
         "imdb": 66,
         "rotten_tomatoes": 86,
         "metacritic": 69,
@@ -131,11 +131,11 @@
       "release_date": "2026-08-14",
       "poster": "https://image.tmdb.org/t/p/w342/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
       "buzz": null,
-      "composite": 67.7,
+      "composite": 68.1,
       "spread": 48,
       "contested": true,
       "sources": {
-        "tmdb": 69,
+        "tmdb": 73,
         "imdb": 62,
         "rotten_tomatoes": 82,
         "metacritic": 47,
@@ -148,23 +148,48 @@
       "release_date": "2026-09-04",
       "poster": "https://image.tmdb.org/t/p/w342/f4hdIed8vh10O8TkQ1CkHS8MQ3G.jpg",
       "buzz": {
-        "pos": 47,
+        "pos": 48,
         "neu": 39,
         "neg": 14,
-        "score": 60.5,
+        "score": 60.6,
         "analyzed": 400,
-        "total": 2507,
+        "total": 2517,
         "video_id": "ej8pjisr0Pc"
       },
-      "composite": 63.7,
-      "spread": 42,
+      "composite": 63.5,
+      "spread": 41,
       "contested": true,
       "sources": {
         "tmdb": 81,
         "rotten_tomatoes": 47,
         "metacritic": 50,
-        "rt_audience": 89,
+        "rt_audience": 88,
         "letterboxd": 63.6
+      }
+    },
+    {
+      "title": "The Wrong Girls",
+      "release_date": "2026-08-14",
+      "poster": "https://image.tmdb.org/t/p/w342/iEJshwO6g4WKTP4HJgCHRTJMWEd.jpg",
+      "buzz": {
+        "pos": 50,
+        "neu": 35,
+        "neg": 15,
+        "score": 61.6,
+        "analyzed": 300,
+        "total": 449,
+        "video_id": "zrcg8YHSys8"
+      },
+      "composite": 60.9,
+      "spread": 14,
+      "contested": false,
+      "sources": {
+        "tmdb": 60,
+        "imdb": 54,
+        "rotten_tomatoes": 61,
+        "metacritic": 59,
+        "rt_audience": 68,
+        "letterboxd": 64.6
       }
     },
     {
@@ -180,13 +205,13 @@
         "total": 159,
         "video_id": "LlAajeOoFBo"
       },
-      "composite": 60.8,
-      "spread": 29.2,
+      "composite": 60.2,
+      "spread": 30.0,
       "contested": true,
       "sources": {
-        "tmdb": 62,
+        "tmdb": 61,
         "imdb": 75,
-        "letterboxd": 45.8
+        "letterboxd": 45.0
       }
     },
     {
@@ -194,15 +219,15 @@
       "release_date": "2026-09-04",
       "poster": "https://image.tmdb.org/t/p/w342/cOGtvhc6Ij9KvzM6jZsfQyg0B0O.jpg",
       "buzz": {
-        "pos": 44,
-        "neu": 39,
-        "neg": 17,
-        "score": 58.4,
+        "pos": 41,
+        "neu": 42,
+        "neg": 16,
+        "score": 57.5,
         "analyzed": 400,
-        "total": 6607,
-        "video_id": "AMLCbpM1fRQ"
+        "total": 4671,
+        "video_id": "L24CYVpQ-LI"
       },
-      "composite": 59.6,
+      "composite": 59.5,
       "spread": 5,
       "contested": false,
       "sources": {
@@ -211,6 +236,30 @@
         "rotten_tomatoes": 59,
         "metacritic": 57,
         "rt_audience": 61,
+        "letterboxd": 58.0
+      }
+    },
+    {
+      "title": "The Uprising",
+      "release_date": "2026-09-10",
+      "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+      "buzz": {
+        "pos": 46,
+        "neu": 41,
+        "neg": 14,
+        "score": 60.4,
+        "analyzed": 400,
+        "total": 8661,
+        "video_id": "ZVkrhHebz1Q"
+      },
+      "composite": 58.9,
+      "spread": 21,
+      "contested": false,
+      "sources": {
+        "tmdb": 72,
+        "metacritic": 57,
+        "rotten_tomatoes": 51,
+        "rt_audience": 62,
         "letterboxd": 58.2
       }
     },
@@ -224,7 +273,7 @@
         "neg": 14,
         "score": 60.7,
         "analyzed": 400,
-        "total": 8419,
+        "total": 8426,
         "video_id": "FKSdXH89jbo"
       },
       "composite": 58.8,
@@ -247,9 +296,9 @@
         "pos": 48,
         "neu": 34,
         "neg": 18,
-        "score": 60.4,
+        "score": 60.1,
         "analyzed": 400,
-        "total": 6255,
+        "total": 6294,
         "video_id": "jxU8FU3o75A"
       },
       "composite": 58.4,
@@ -269,46 +318,23 @@
       "release_date": "2026-09-11",
       "poster": "https://image.tmdb.org/t/p/w342/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
       "buzz": {
-        "pos": 64,
-        "neu": 26,
-        "neg": 10,
-        "score": 70.3,
+        "pos": 62,
+        "neu": 20,
+        "neg": 19,
+        "score": 66.4,
         "analyzed": 400,
-        "total": 2167,
-        "video_id": "iSWP2feb4rw"
+        "total": 1788,
+        "video_id": "Ho10_4IX1jE"
       },
-      "composite": 57.5,
-      "spread": 57,
+      "composite": 57.8,
+      "spread": 53,
       "contested": true,
       "sources": {
         "tmdb": 63,
         "metacritic": 44,
-        "rotten_tomatoes": 36,
-        "rt_audience": 93,
-        "letterboxd": 60.6
-      }
-    },
-    {
-      "title": "The Uprising",
-      "release_date": "2026-09-10",
-      "poster": "https://image.tmdb.org/t/p/w342/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
-      "buzz": {
-        "pos": 45,
-        "neu": 41,
-        "neg": 14,
-        "score": 60.4,
-        "analyzed": 400,
-        "total": 8628,
-        "video_id": "ZVkrhHebz1Q"
-      },
-      "composite": 57.1,
-      "spread": 7,
-      "contested": false,
-      "sources": {
-        "metacritic": 57,
-        "rotten_tomatoes": 53,
-        "rt_audience": 60,
-        "letterboxd": 58.8
+        "rotten_tomatoes": 39,
+        "rt_audience": 92,
+        "letterboxd": 60.0
       }
     },
     {
@@ -319,9 +345,9 @@
         "pos": 48,
         "neu": 37,
         "neg": 16,
-        "score": 60.6,
+        "score": 60.5,
         "analyzed": 400,
-        "total": 1081,
+        "total": 1085,
         "video_id": "-xSxaE1ClEE"
       },
       "composite": 56.7,
@@ -346,10 +372,10 @@
         "neg": 18,
         "score": 56.6,
         "analyzed": 218,
-        "total": 426,
+        "total": 430,
         "video_id": "AvKoSR3O4NQ"
       },
-      "composite": 56.5,
+      "composite": 56.4,
       "spread": 34,
       "contested": true,
       "sources": {
@@ -358,7 +384,7 @@
         "rotten_tomatoes": 43,
         "metacritic": 42,
         "rt_audience": 76,
-        "letterboxd": 56.0
+        "letterboxd": 55.8
       }
     },
     {
@@ -366,24 +392,24 @@
       "release_date": "2026-09-02",
       "poster": "https://image.tmdb.org/t/p/w342/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
       "buzz": {
-        "pos": 41,
-        "neu": 40,
+        "pos": 42,
+        "neu": 39,
         "neg": 19,
-        "score": 57.3,
+        "score": 57.4,
         "analyzed": 400,
-        "total": 2495,
+        "total": 2503,
         "video_id": "Krs0VDIjhmE"
       },
-      "composite": 55.6,
-      "spread": 19.8,
+      "composite": 55.7,
+      "spread": 21.0,
       "contested": false,
       "sources": {
-        "tmdb": 66,
+        "tmdb": 67,
         "imdb": 57,
         "rotten_tomatoes": 54,
         "metacritic": 54,
         "rt_audience": 62,
-        "letterboxd": 46.2
+        "letterboxd": 46.0
       }
     },
     {
@@ -409,31 +435,6 @@
       }
     },
     {
-      "title": "Ice Cream Man",
-      "release_date": "2026-08-03",
-      "poster": "https://image.tmdb.org/t/p/w342/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
-      "buzz": {
-        "pos": 34,
-        "neu": 36,
-        "neg": 30,
-        "score": 51.3,
-        "analyzed": 400,
-        "total": 1855,
-        "video_id": "2JeUjIqK_4c"
-      },
-      "composite": 34.5,
-      "spread": 20,
-      "contested": false,
-      "sources": {
-        "tmdb": 44,
-        "imdb": 38,
-        "rotten_tomatoes": 25,
-        "metacritic": 33,
-        "rt_audience": 45,
-        "letterboxd": 27.8
-      }
-    },
-    {
       "title": "Hot Spot",
       "release_date": "2026-08-21",
       "poster": "https://image.tmdb.org/t/p/w342/42egzT6e4CIEdrEo4Xc31DKyGjA.jpg",
@@ -441,12 +442,12 @@
         "pos": 36,
         "neu": 47,
         "neg": 17,
-        "score": 56.1,
-        "analyzed": 232,
-        "total": 331,
+        "score": 56.0,
+        "analyzed": 235,
+        "total": 335,
         "video_id": "x54MPGBWXA8"
       },
-      "composite": 34.3,
+      "composite": 34.1,
       "spread": 30,
       "contested": true,
       "sources": {
@@ -454,7 +455,7 @@
         "imdb": 46,
         "rotten_tomatoes": 17,
         "metacritic": 28,
-        "rt_audience": 26,
+        "rt_audience": 25,
         "letterboxd": 45.0
       }
     }
