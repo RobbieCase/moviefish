@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06 20:03 UTC",
+  "generated_at": "2026-11-07 18:12 UTC",
   "sample": false,
   "movies": [
     {
@@ -10,9 +10,9 @@
         "pos": 38,
         "neu": 39,
         "neg": 22,
-        "score": 55.1,
+        "score": 55.3,
         "analyzed": 400,
-        "total": 8409,
+        "total": 8439,
         "video_id": "HvW_N5p1q44"
       },
       "composite": 91.5,
@@ -34,9 +34,9 @@
         "pos": 66,
         "neu": 24,
         "neg": 10,
-        "score": 70.4,
+        "score": 70.5,
         "analyzed": 400,
-        "total": 6440,
+        "total": 6463,
         "video_id": "dtr5JL1zkiM"
       },
       "composite": 86.9,
@@ -50,49 +50,26 @@
       }
     },
     {
-      "title": "Wild Horse Nine",
-      "release_date": "2026-11-06",
-      "poster": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
-      "buzz": {
-        "pos": 57,
-        "neu": 36,
-        "neg": 7,
-        "score": 66.6,
-        "analyzed": 400,
-        "total": 1108,
-        "video_id": "Haw_sznA5aQ"
-      },
-      "composite": 84.3,
-      "spread": 15,
-      "contested": false,
-      "sources": {
-        "tmdb": 83,
-        "rotten_tomatoes": 93,
-        "metacritic": 78,
-        "letterboxd": 82.8
-      }
-    },
-    {
       "title": "Your Mother Your Mother Your Mother",
       "release_date": "2026-09-25",
       "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
       "buzz": {
-        "pos": 52,
-        "neu": 40,
-        "neg": 9,
-        "score": 63.4,
+        "pos": 53,
+        "neu": 38,
+        "neg": 10,
+        "score": 63.9,
         "analyzed": 400,
-        "total": 1279,
+        "total": 1286,
         "video_id": "uEcoV-ngH38"
       },
-      "composite": 83.6,
-      "spread": 23,
-      "contested": false,
+      "composite": 83.0,
+      "spread": 26,
+      "contested": true,
       "sources": {
-        "tmdb": 73,
+        "tmdb": 70,
         "rotten_tomatoes": 96,
         "metacritic": 83,
-        "letterboxd": 78.0
+        "letterboxd": 77.8
       }
     },
     {
@@ -100,12 +77,12 @@
       "release_date": "2026-05-15",
       "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
       "buzz": {
-        "pos": 49,
-        "neu": 29,
+        "pos": 50,
+        "neu": 28,
         "neg": 22,
-        "score": 59.3,
+        "score": 59.4,
         "analyzed": 400,
-        "total": 9034,
+        "total": 9036,
         "video_id": "gMC8kkwbIQQ"
       },
       "composite": 82.2,
@@ -120,25 +97,46 @@
       }
     },
     {
+      "title": "Wild Horse Nine",
+      "release_date": "2026-11-06",
+      "poster": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
+      "buzz": {
+        "pos": 60,
+        "neu": 34,
+        "neg": 6,
+        "score": 67.9,
+        "analyzed": 400,
+        "total": 1122,
+        "video_id": "Haw_sznA5aQ"
+      },
+      "composite": 80.6,
+      "spread": 6,
+      "contested": false,
+      "sources": {
+        "tmdb": 83,
+        "metacritic": 77,
+        "letterboxd": 82.8
+      }
+    },
+    {
       "title": "Sense and Sensibility",
       "release_date": "2026-10-14",
       "poster": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
       "buzz": {
-        "pos": 65,
-        "neu": 24,
-        "neg": 10,
-        "score": 69.6,
+        "pos": 66,
+        "neu": 23,
+        "neg": 11,
+        "score": 69.8,
         "analyzed": 400,
-        "total": 2232,
+        "total": 2233,
         "video_id": "mcrwcvad84U"
       },
-      "composite": 77.8,
+      "composite": 77.4,
       "spread": 12,
       "contested": false,
       "sources": {
         "tmdb": 72,
         "imdb": 72,
-        "rotten_tomatoes": 79,
         "metacritic": 84,
         "letterboxd": 79.6
       }
@@ -148,47 +146,22 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
       "buzz": {
-        "pos": 43,
+        "pos": 42,
         "neu": 46,
         "neg": 11,
         "score": 60.2,
-        "analyzed": 237,
-        "total": 432,
+        "analyzed": 238,
+        "total": 436,
         "video_id": "3FqCH-Q_3TM"
       },
-      "composite": 77.3,
-      "spread": 22,
+      "composite": 73.1,
+      "spread": 6,
       "contested": false,
       "sources": {
-        "tmdb": 77,
+        "tmdb": 76,
         "imdb": 74,
-        "rotten_tomatoes": 92,
         "metacritic": 70,
         "letterboxd": 73.4
-      }
-    },
-    {
-      "title": "Buddy",
-      "release_date": "2026-08-28",
-      "poster": "https://image.tmdb.org/t/p/w342/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
-      "buzz": {
-        "pos": 42,
-        "neu": 35,
-        "neg": 23,
-        "score": 56.5,
-        "analyzed": 400,
-        "total": 2036,
-        "video_id": "O1fNEHX9tSM"
-      },
-      "composite": 73.6,
-      "spread": 26.4,
-      "contested": true,
-      "sources": {
-        "tmdb": 70,
-        "imdb": 71,
-        "rotten_tomatoes": 88,
-        "metacritic": 76,
-        "letterboxd": 61.6
       }
     },
     {
@@ -196,12 +169,12 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
       "buzz": {
-        "pos": 39,
+        "pos": 40,
         "neu": 31,
-        "neg": 30,
-        "score": 52.1,
+        "neg": 29,
+        "score": 53.1,
         "analyzed": 400,
-        "total": 15545,
+        "total": 15558,
         "video_id": "OGO4Mqvo3jI"
       },
       "composite": 69.9,
@@ -215,26 +188,26 @@
       }
     },
     {
-      "title": "Digger",
-      "release_date": "2026-10-02",
-      "poster": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "title": "Buddy",
+      "release_date": "2026-08-28",
+      "poster": "https://image.tmdb.org/t/p/w342/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
       "buzz": {
-        "pos": 53,
+        "pos": 43,
         "neu": 35,
-        "neg": 12,
-        "score": 64.3,
+        "neg": 22,
+        "score": 57.0,
         "analyzed": 400,
-        "total": 3177,
-        "video_id": "job8V254NAE"
+        "total": 2043,
+        "video_id": "O1fNEHX9tSM"
       },
-      "composite": 66.4,
-      "spread": 26.2,
-      "contested": true,
+      "composite": 69.4,
+      "spread": 14.4,
+      "contested": false,
       "sources": {
-        "tmdb": 75,
-        "rotten_tomatoes": 52,
-        "metacritic": 64,
-        "letterboxd": 78.2
+        "tmdb": 69,
+        "imdb": 71,
+        "metacritic": 76,
+        "letterboxd": 61.6
       }
     },
     {
@@ -242,12 +215,12 @@
       "release_date": "2026-10-09",
       "poster": "https://image.tmdb.org/t/p/w342/iISM36voS1E8gX9BM0DVK0kgi3E.jpg",
       "buzz": {
-        "pos": 48,
-        "neu": 36,
+        "pos": 52,
+        "neu": 32,
         "neg": 16,
-        "score": 60.5,
+        "score": 62.3,
         "analyzed": 400,
-        "total": 1319,
+        "total": 1320,
         "video_id": "mlBfQJ8oxB0"
       },
       "composite": 60.3,
@@ -262,24 +235,47 @@
     {
       "title": "The Cat in the Hat",
       "release_date": "2026-11-06",
-      "poster": "https://image.tmdb.org/t/p/w342/tYH4rQZlHtuFSeDS0bsV17khvJC.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
       "buzz": {
-        "pos": 39,
-        "neu": 37,
+        "pos": 41,
+        "neu": 35,
         "neg": 24,
-        "score": 55.2,
+        "score": 56.2,
         "analyzed": 400,
-        "total": 2880,
+        "total": 2890,
         "video_id": "Vuv0kqGWjno"
       },
-      "composite": 53.8,
-      "spread": 53,
+      "composite": 53.2,
+      "spread": 51,
       "contested": true,
       "sources": {
-        "tmdb": 72,
+        "tmdb": 70,
         "imdb": 67,
         "metacritic": 19,
-        "letterboxd": 64.6
+        "letterboxd": 63.4
+      }
+    },
+    {
+      "title": "Crawlers",
+      "release_date": "2026-10-16",
+      "poster": "https://image.tmdb.org/t/p/w342/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
+      "buzz": {
+        "pos": 34,
+        "neu": 44,
+        "neg": 22,
+        "score": 53.9,
+        "analyzed": 400,
+        "total": 1239,
+        "video_id": "4DowjB87tRE"
+      },
+      "composite": 52.6,
+      "spread": 16.2,
+      "contested": false,
+      "sources": {
+        "tmdb": 61,
+        "imdb": 48,
+        "metacritic": 60,
+        "letterboxd": 44.8
       }
     },
     {
@@ -292,7 +288,7 @@
         "neg": 12,
         "score": 63.4,
         "analyzed": 400,
-        "total": 25670,
+        "total": 25675,
         "video_id": "Xt4X4FvXk2A"
       },
       "composite": 52.6,
@@ -306,70 +302,25 @@
       }
     },
     {
-      "title": "Crawlers",
-      "release_date": "2026-10-16",
-      "poster": "https://image.tmdb.org/t/p/w342/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
-      "buzz": {
-        "pos": 30,
-        "neu": 46,
-        "neg": 23,
-        "score": 52.4,
-        "analyzed": 400,
-        "total": 1234,
-        "video_id": "4DowjB87tRE"
-      },
-      "composite": 52.4,
-      "spread": 15.2,
-      "contested": false,
-      "sources": {
-        "tmdb": 60,
-        "imdb": 48,
-        "metacritic": 60,
-        "letterboxd": 44.8
-      }
-    },
-    {
       "title": "The Mongoose",
       "release_date": "2026-10-30",
       "poster": "https://image.tmdb.org/t/p/w342/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
       "buzz": {
         "pos": 46,
-        "neu": 44,
-        "neg": 10,
-        "score": 60.7,
+        "neu": 43,
+        "neg": 11,
+        "score": 60.8,
         "analyzed": 400,
-        "total": 771,
+        "total": 787,
         "video_id": "aHrMFtt40_Q"
       },
-      "composite": 50.8,
-      "spread": 14.4,
+      "composite": 50.3,
+      "spread": 12.6,
       "contested": false,
       "sources": {
-        "tmdb": 61,
+        "tmdb": 59,
         "metacritic": 49,
-        "letterboxd": 46.6
-      }
-    },
-    {
-      "title": "Ali G: Who Iz I?",
-      "release_date": "2026-10-23",
-      "poster": "https://image.tmdb.org/t/p/w342/uTyVxPeWX8Ai30IQoyDDQONNcq.jpg",
-      "buzz": {
-        "pos": 44,
-        "neu": 42,
-        "neg": 15,
-        "score": 59.4,
-        "analyzed": 400,
-        "total": 3946,
-        "video_id": "6t7C4qaHihE"
-      },
-      "composite": 47.4,
-      "spread": 21,
-      "contested": false,
-      "sources": {
-        "tmdb": 58,
-        "metacritic": 37,
-        "letterboxd": 51.4
+        "letterboxd": 46.4
       }
     },
     {
@@ -377,12 +328,12 @@
       "release_date": "2026-10-02",
       "poster": "https://image.tmdb.org/t/p/w342/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
       "buzz": {
-        "pos": 31,
-        "neu": 54,
+        "pos": 34,
+        "neu": 52,
         "neg": 15,
-        "score": 55.2,
+        "score": 56.3,
         "analyzed": 400,
-        "total": 3956,
+        "total": 3965,
         "video_id": "xdPMKhjMSFs"
       },
       "composite": 47.1,
@@ -396,16 +347,38 @@
       }
     },
     {
+      "title": "Ali G: Who Iz I?",
+      "release_date": "2026-10-23",
+      "poster": "https://image.tmdb.org/t/p/w342/uTyVxPeWX8Ai30IQoyDDQONNcq.jpg",
+      "buzz": {
+        "pos": 43,
+        "neu": 42,
+        "neg": 15,
+        "score": 59.4,
+        "analyzed": 400,
+        "total": 3949,
+        "video_id": "6t7C4qaHihE"
+      },
+      "composite": 47.1,
+      "spread": 20,
+      "contested": false,
+      "sources": {
+        "tmdb": 57,
+        "metacritic": 37,
+        "letterboxd": 51.2
+      }
+    },
+    {
       "title": "Other Mommy",
       "release_date": "2026-10-09",
       "poster": "https://image.tmdb.org/t/p/w342/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
       "buzz": {
-        "pos": 40,
-        "neu": 37,
-        "neg": 23,
-        "score": 54.8,
+        "pos": 42,
+        "neu": 38,
+        "neg": 21,
+        "score": 56.5,
         "analyzed": 400,
-        "total": 8268,
+        "total": 8273,
         "video_id": "bEpTgowZ1dI"
       },
       "composite": 45.2,
