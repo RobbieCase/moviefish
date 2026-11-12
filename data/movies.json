@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11 20:19 UTC",
+  "generated_at": "2026-11-12 21:01 UTC",
   "sample": false,
   "movies": [
     {
@@ -9,10 +9,10 @@
       "buzz": {
         "pos": 37,
         "neu": 40,
-        "neg": 23,
-        "score": 54.8,
+        "neg": 24,
+        "score": 54.5,
         "analyzed": 400,
-        "total": 8556,
+        "total": 8568,
         "video_id": "HvW_N5p1q44"
       },
       "composite": 89.2,
@@ -32,10 +32,10 @@
       "buzz": {
         "pos": 68,
         "neu": 24,
-        "neg": 8,
+        "neg": 9,
         "score": 71.7,
         "analyzed": 400,
-        "total": 6592,
+        "total": 6605,
         "video_id": "dtr5JL1zkiM"
       },
       "composite": 86.9,
@@ -49,30 +49,6 @@
       }
     },
     {
-      "title": "Obsession",
-      "release_date": "2026-05-15",
-      "poster": "https://image.tmdb.org/t/p/w342/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "buzz": {
-        "pos": 50,
-        "neu": 28,
-        "neg": 21,
-        "score": 60.1,
-        "analyzed": 400,
-        "total": 9060,
-        "video_id": "gMC8kkwbIQQ"
-      },
-      "composite": 82.2,
-      "spread": 16,
-      "contested": false,
-      "sources": {
-        "tmdb": 82,
-        "imdb": 78,
-        "rotten_tomatoes": 93,
-        "metacritic": 77,
-        "letterboxd": 81.0
-      }
-    },
-    {
       "title": "Wild Horse Nine",
       "release_date": "2026-11-06",
       "poster": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
@@ -80,18 +56,18 @@
         "pos": 62,
         "neu": 32,
         "neg": 6,
-        "score": 68.9,
+        "score": 69.2,
         "analyzed": 400,
-        "total": 1205,
+        "total": 1183,
         "video_id": "Haw_sznA5aQ"
       },
       "composite": 80.2,
-      "spread": 6.0,
+      "spread": 5.8,
       "contested": false,
       "sources": {
         "tmdb": 81,
         "metacritic": 77,
-        "letterboxd": 83.0
+        "letterboxd": 82.8
       }
     },
     {
@@ -99,13 +75,13 @@
       "release_date": "2026-10-16",
       "poster": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
       "buzz": {
-        "pos": 57,
-        "neu": 29,
-        "neg": 14,
-        "score": 68.3,
-        "analyzed": 21,
-        "total": 33,
-        "video_id": "baNI9MiKxSM"
+        "pos": 66,
+        "neu": 23,
+        "neg": 11,
+        "score": 69.9,
+        "analyzed": 400,
+        "total": 2242,
+        "video_id": "mcrwcvad84U"
       },
       "composite": 77.4,
       "spread": 12,
@@ -118,28 +94,6 @@
       }
     },
     {
-      "title": "Your Mother Your Mother Your Mother",
-      "release_date": "2026-09-25",
-      "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-      "buzz": {
-        "pos": 54,
-        "neu": 36,
-        "neg": 9,
-        "score": 64.5,
-        "analyzed": 400,
-        "total": 1304,
-        "video_id": "uEcoV-ngH38"
-      },
-      "composite": 77.2,
-      "spread": 16,
-      "contested": false,
-      "sources": {
-        "tmdb": 67,
-        "metacritic": 83,
-        "letterboxd": 77.4
-      }
-    },
-    {
       "title": "Wicker",
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
@@ -147,16 +101,16 @@
         "pos": 43,
         "neu": 45,
         "neg": 12,
-        "score": 60.1,
-        "analyzed": 245,
-        "total": 453,
+        "score": 59.9,
+        "analyzed": 246,
+        "total": 454,
         "video_id": "3FqCH-Q_3TM"
       },
-      "composite": 73.0,
-      "spread": 6,
+      "composite": 72.8,
+      "spread": 5,
       "contested": false,
       "sources": {
-        "tmdb": 76,
+        "tmdb": 75,
         "imdb": 74,
         "metacritic": 70,
         "letterboxd": 73.2
@@ -167,12 +121,12 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
       "buzz": {
-        "pos": 39,
-        "neu": 32,
-        "neg": 30,
-        "score": 52.6,
+        "pos": 40,
+        "neu": 31,
+        "neg": 29,
+        "score": 53.1,
         "analyzed": 400,
-        "total": 15578,
+        "total": 15576,
         "video_id": "OGO4Mqvo3jI"
       },
       "composite": 69.9,
@@ -190,13 +144,13 @@
       "release_date": "2026-10-16",
       "poster": "https://image.tmdb.org/t/p/w342/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
       "buzz": {
-        "pos": 35,
-        "neu": 47,
-        "neg": 18,
-        "score": 56.0,
+        "pos": 45,
+        "neu": 35,
+        "neg": 20,
+        "score": 57.5,
         "analyzed": 400,
-        "total": 1406,
-        "video_id": "Dw-5ZGapGTQ"
+        "total": 2536,
+        "video_id": "rN9F6-tbySY"
       },
       "composite": 62.6,
       "spread": 7,
@@ -208,16 +162,38 @@
       }
     },
     {
+      "title": "Ebenezer",
+      "release_date": "2026-11-13",
+      "poster": "https://image.tmdb.org/t/p/w342/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
+      "buzz": {
+        "pos": 66,
+        "neu": 26,
+        "neg": 8,
+        "score": 70.6,
+        "analyzed": 400,
+        "total": 2315,
+        "video_id": "l_Ozo1xUgbU"
+      },
+      "composite": 62.5,
+      "spread": 38,
+      "contested": true,
+      "sources": {
+        "tmdb": 85,
+        "metacritic": 47,
+        "letterboxd": 64.4
+      }
+    },
+    {
       "title": "Animals",
       "release_date": "2026-10-09",
       "poster": "https://image.tmdb.org/t/p/w342/iISM36voS1E8gX9BM0DVK0kgi3E.jpg",
       "buzz": {
-        "pos": 53,
+        "pos": 52,
         "neu": 32,
         "neg": 16,
-        "score": 62.9,
+        "score": 62.6,
         "analyzed": 400,
-        "total": 1327,
+        "total": 1329,
         "video_id": "mlBfQJ8oxB0"
       },
       "composite": 60.3,
@@ -230,49 +206,48 @@
       }
     },
     {
+      "title": "Ghost Soldier",
+      "release_date": "2026-11-11",
+      "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
+      "buzz": {
+        "pos": 58,
+        "neu": 31,
+        "neg": 11,
+        "score": 65.4,
+        "analyzed": 400,
+        "total": 3424,
+        "video_id": "l0pTZqZWs-c"
+      },
+      "composite": 57.9,
+      "spread": 49,
+      "contested": true,
+      "sources": {
+        "tmdb": 90,
+        "metacritic": 41,
+        "letterboxd": 55.6
+      }
+    },
+    {
       "title": "The Cat in the Hat",
       "release_date": "2026-11-06",
       "poster": "https://image.tmdb.org/t/p/w342/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
       "buzz": {
-        "pos": 42,
-        "neu": 34,
-        "neg": 24,
-        "score": 56.9,
+        "pos": 41,
+        "neu": 36,
+        "neg": 23,
+        "score": 56.8,
         "analyzed": 400,
-        "total": 2928,
+        "total": 2933,
         "video_id": "Vuv0kqGWjno"
       },
-      "composite": 53.3,
-      "spread": 54,
+      "composite": 53.2,
+      "spread": 53,
       "contested": true,
       "sources": {
-        "tmdb": 73,
+        "tmdb": 72,
         "imdb": 67,
         "metacritic": 19,
         "letterboxd": 62.2
-      }
-    },
-    {
-      "title": "Crawlers",
-      "release_date": "2026-10-16",
-      "poster": "https://image.tmdb.org/t/p/w342/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
-      "buzz": {
-        "pos": 34,
-        "neu": 45,
-        "neg": 22,
-        "score": 54.0,
-        "analyzed": 400,
-        "total": 1259,
-        "video_id": "4DowjB87tRE"
-      },
-      "composite": 52.6,
-      "spread": 16.4,
-      "contested": false,
-      "sources": {
-        "tmdb": 61,
-        "imdb": 48,
-        "metacritic": 60,
-        "letterboxd": 44.6
       }
     },
     {
@@ -280,12 +255,12 @@
       "release_date": "2026-10-16",
       "poster": "https://image.tmdb.org/t/p/w342/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
       "buzz": {
-        "pos": 54,
+        "pos": 56,
         "neu": 34,
         "neg": 11,
-        "score": 64.0,
+        "score": 64.5,
         "analyzed": 400,
-        "total": 25668,
+        "total": 25667,
         "video_id": "Xt4X4FvXk2A"
       },
       "composite": 52.6,
@@ -299,45 +274,90 @@
       }
     },
     {
+      "title": "Crawlers",
+      "release_date": "2026-10-16",
+      "poster": "https://image.tmdb.org/t/p/w342/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
+      "buzz": {
+        "pos": 33,
+        "neu": 45,
+        "neg": 22,
+        "score": 53.5,
+        "analyzed": 400,
+        "total": 1262,
+        "video_id": "4DowjB87tRE"
+      },
+      "composite": 52.6,
+      "spread": 16.4,
+      "contested": false,
+      "sources": {
+        "tmdb": 61,
+        "imdb": 48,
+        "metacritic": 60,
+        "letterboxd": 44.6
+      }
+    },
+    {
       "title": "The Mongoose",
       "release_date": "2026-10-30",
       "poster": "https://image.tmdb.org/t/p/w342/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
       "buzz": {
-        "pos": 47,
-        "neu": 43,
-        "neg": 10,
-        "score": 61.0,
-        "analyzed": 400,
-        "total": 825,
-        "video_id": "aHrMFtt40_Q"
+        "pos": 0,
+        "neu": 100,
+        "neg": 0,
+        "score": 50.0,
+        "analyzed": 1,
+        "total": 1,
+        "video_id": "kGOrf4g2qtE"
       },
-      "composite": 50.0,
-      "spread": 13.4,
+      "composite": 50.5,
+      "spread": 15.4,
       "contested": false,
       "sources": {
-        "tmdb": 59,
+        "tmdb": 61,
         "metacritic": 49,
         "letterboxd": 45.6
       }
     },
     {
+      "title": "How to Rob a Bank",
+      "release_date": "2026-11-13",
+      "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+      "buzz": {
+        "pos": 33,
+        "neu": 56,
+        "neg": 11,
+        "score": 57.9,
+        "analyzed": 18,
+        "total": 24,
+        "video_id": "pAurASykAYs"
+      },
+      "composite": 50.5,
+      "spread": 42,
+      "contested": true,
+      "sources": {
+        "tmdb": 69,
+        "metacritic": 27,
+        "letterboxd": 62.8
+      }
+    },
+    {
       "title": "Other Mommy",
       "release_date": "2026-10-09",
-      "poster": "https://image.tmdb.org/t/p/w342/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/kNxRgcTeqeU5jauBackTERoO2De.jpg",
       "buzz": {
-        "pos": 42,
-        "neu": 36,
+        "pos": 40,
+        "neu": 38,
         "neg": 22,
-        "score": 56.2,
+        "score": 55.8,
         "analyzed": 400,
-        "total": 8307,
+        "total": 8322,
         "video_id": "bEpTgowZ1dI"
       },
-      "composite": 45.2,
-      "spread": 19,
+      "composite": 45.4,
+      "spread": 20,
       "contested": false,
       "sources": {
-        "tmdb": 58,
+        "tmdb": 59,
         "metacritic": 39,
         "letterboxd": 43.6
       }
