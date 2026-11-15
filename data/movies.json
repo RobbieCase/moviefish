@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14 18:49 UTC",
+  "generated_at": "2026-11-15 19:27 UTC",
   "sample": false,
   "movies": [
     {
@@ -8,11 +8,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
       "buzz": {
         "pos": 38,
-        "neu": 40,
-        "neg": 22,
-        "score": 55.5,
+        "neu": 39,
+        "neg": 23,
+        "score": 54.9,
         "analyzed": 400,
-        "total": 8621,
+        "total": 8646,
         "video_id": "HvW_N5p1q44"
       },
       "composite": 89.2,
@@ -32,20 +32,20 @@
       "buzz": {
         "pos": 66,
         "neu": 24,
-        "neg": 9,
+        "neg": 10,
         "score": 71.1,
         "analyzed": 400,
-        "total": 6646,
+        "total": 6672,
         "video_id": "dtr5JL1zkiM"
       },
-      "composite": 86.9,
-      "spread": 2.8,
+      "composite": 86.8,
+      "spread": 2.6,
       "contested": false,
       "sources": {
         "tmdb": 85,
         "imdb": 87,
         "metacritic": 87,
-        "letterboxd": 87.8
+        "letterboxd": 87.6
       }
     },
     {
@@ -54,18 +54,18 @@
       "poster": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
       "buzz": {
         "pos": 62,
-        "neu": 32,
-        "neg": 6,
-        "score": 69.1,
+        "neu": 31,
+        "neg": 7,
+        "score": 69.4,
         "analyzed": 400,
-        "total": 1207,
+        "total": 1217,
         "video_id": "Haw_sznA5aQ"
       },
-      "composite": 80.2,
+      "composite": 79.8,
       "spread": 6.0,
       "contested": false,
       "sources": {
-        "tmdb": 81,
+        "tmdb": 79,
         "metacritic": 77,
         "letterboxd": 83.0
       }
@@ -76,11 +76,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
       "buzz": {
         "pos": 66,
-        "neu": 24,
+        "neu": 23,
         "neg": 11,
-        "score": 69.8,
+        "score": 70.3,
         "analyzed": 400,
-        "total": 2244,
+        "total": 2245,
         "video_id": "mcrwcvad84U"
       },
       "composite": 77.4,
@@ -98,12 +98,12 @@
       "release_date": "2026-09-25",
       "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
       "buzz": {
-        "pos": 54,
-        "neu": 36,
+        "pos": 56,
+        "neu": 34,
         "neg": 10,
-        "score": 64.3,
+        "score": 65.1,
         "analyzed": 400,
-        "total": 1315,
+        "total": 1316,
         "video_id": "uEcoV-ngH38"
       },
       "composite": 77.1,
@@ -120,12 +120,12 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
       "buzz": {
-        "pos": 43,
+        "pos": 42,
         "neu": 45,
         "neg": 13,
-        "score": 59.8,
-        "analyzed": 247,
-        "total": 462,
+        "score": 59.6,
+        "analyzed": 246,
+        "total": 464,
         "video_id": "3FqCH-Q_3TM"
       },
       "composite": 72.8,
@@ -143,10 +143,10 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
       "buzz": {
-        "pos": 41,
+        "pos": 40,
         "neu": 30,
-        "neg": 29,
-        "score": 53.4,
+        "neg": 30,
+        "score": 52.9,
         "analyzed": 400,
         "total": 15587,
         "video_id": "OGO4Mqvo3jI"
@@ -162,45 +162,23 @@
       }
     },
     {
-      "title": "Whalefall",
-      "release_date": "2026-10-16",
-      "poster": "https://image.tmdb.org/t/p/w342/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-      "buzz": {
-        "pos": 35,
-        "neu": 46,
-        "neg": 18,
-        "score": 56.0,
-        "analyzed": 400,
-        "total": 1411,
-        "video_id": "Dw-5ZGapGTQ"
-      },
-      "composite": 62.6,
-      "spread": 7,
-      "contested": false,
-      "sources": {
-        "tmdb": 66,
-        "metacritic": 59,
-        "letterboxd": 64.2
-      }
-    },
-    {
       "title": "Ebenezer",
       "release_date": "2026-11-13",
       "poster": "https://image.tmdb.org/t/p/w342/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
       "buzz": {
-        "pos": 43,
-        "neu": 29,
-        "neg": 29,
-        "score": 52.5,
-        "analyzed": 7,
-        "total": 12,
-        "video_id": "H0o3Ab7YMTQ"
+        "pos": 66,
+        "neu": 26,
+        "neg": 8,
+        "score": 71.1,
+        "analyzed": 400,
+        "total": 2480,
+        "video_id": "l_Ozo1xUgbU"
       },
-      "composite": 61.2,
-      "spread": 33,
+      "composite": 60.9,
+      "spread": 32,
       "contested": true,
       "sources": {
-        "tmdb": 79,
+        "tmdb": 78,
         "metacritic": 46,
         "letterboxd": 65.6
       }
@@ -210,34 +188,34 @@
       "release_date": "2026-11-11",
       "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
       "buzz": {
-        "pos": 57,
-        "neu": 32,
+        "pos": 60,
+        "neu": 29,
         "neg": 11,
-        "score": 65.1,
+        "score": 66.0,
         "analyzed": 400,
-        "total": 3482,
+        "total": 3513,
         "video_id": "l0pTZqZWs-c"
       },
-      "composite": 56.1,
+      "composite": 56.0,
       "spread": 46,
       "contested": true,
       "sources": {
         "tmdb": 87,
         "metacritic": 41,
-        "letterboxd": 52.6
+        "letterboxd": 52.4
       }
     },
     {
       "title": "Street Fighter",
       "release_date": "2026-10-16",
-      "poster": "https://image.tmdb.org/t/p/w342/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/8nP4lF51Ea861YfHEEqhZBLYv3e.jpg",
       "buzz": {
         "pos": 55,
         "neu": 33,
         "neg": 12,
-        "score": 63.8,
+        "score": 64.1,
         "analyzed": 400,
-        "total": 25675,
+        "total": 25676,
         "video_id": "Xt4X4FvXk2A"
       },
       "composite": 52.6,
@@ -255,12 +233,12 @@
       "release_date": "2026-11-06",
       "poster": "https://image.tmdb.org/t/p/w342/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
       "buzz": {
-        "pos": 40,
-        "neu": 36,
-        "neg": 25,
-        "score": 56.0,
+        "pos": 42,
+        "neu": 35,
+        "neg": 23,
+        "score": 57.0,
         "analyzed": 400,
-        "total": 2942,
+        "total": 2953,
         "video_id": "Vuv0kqGWjno"
       },
       "composite": 52.6,
@@ -270,7 +248,7 @@
         "tmdb": 69,
         "imdb": 67,
         "metacritic": 19,
-        "letterboxd": 62.0
+        "letterboxd": 61.8
       }
     },
     {
@@ -278,12 +256,12 @@
       "release_date": "2026-10-16",
       "poster": "https://image.tmdb.org/t/p/w342/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
       "buzz": {
-        "pos": 32,
-        "neu": 46,
-        "neg": 22,
-        "score": 53.1,
+        "pos": 34,
+        "neu": 43,
+        "neg": 23,
+        "score": 53.3,
         "analyzed": 400,
-        "total": 1265,
+        "total": 1267,
         "video_id": "4DowjB87tRE"
       },
       "composite": 52.6,
@@ -301,21 +279,44 @@
       "release_date": "2026-10-30",
       "poster": "https://image.tmdb.org/t/p/w342/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
       "buzz": {
-        "pos": 48,
-        "neu": 42,
-        "neg": 10,
-        "score": 61.3,
+        "pos": 46,
+        "neu": 43,
+        "neg": 11,
+        "score": 60.5,
         "analyzed": 400,
         "total": 830,
         "video_id": "aHrMFtt40_Q"
       },
-      "composite": 50.9,
-      "spread": 17.4,
+      "composite": 50.6,
+      "spread": 16.6,
       "contested": false,
       "sources": {
-        "tmdb": 63,
+        "tmdb": 62,
         "metacritic": 49,
-        "letterboxd": 45.6
+        "letterboxd": 45.4
+      }
+    },
+    {
+      "title": "The Beast",
+      "release_date": "2026-10-09",
+      "poster": "https://image.tmdb.org/t/p/w342/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
+      "buzz": {
+        "pos": 48,
+        "neu": 37,
+        "neg": 15,
+        "score": 60.1,
+        "analyzed": 400,
+        "total": 848,
+        "video_id": "5ckqV_uf8E0"
+      },
+      "composite": 49.8,
+      "spread": 5,
+      "contested": false,
+      "sources": {
+        "tmdb": 48,
+        "rotten_tomatoes": 52,
+        "metacritic": 47,
+        "letterboxd": 51.6
       }
     },
     {
@@ -323,21 +324,21 @@
       "release_date": "2026-11-13",
       "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
       "buzz": {
-        "pos": 48,
-        "neu": 37,
-        "neg": 15,
-        "score": 60.5,
+        "pos": 49,
+        "neu": 34,
+        "neg": 17,
+        "score": 60.0,
         "analyzed": 400,
-        "total": 2669,
+        "total": 2699,
         "video_id": "ORxw68y3lyw"
       },
-      "composite": 49.4,
-      "spread": 38,
+      "composite": 49.1,
+      "spread": 37,
       "contested": true,
       "sources": {
-        "tmdb": 65,
+        "tmdb": 64,
         "metacritic": 27,
-        "letterboxd": 62.4
+        "letterboxd": 62.2
       }
     },
     {
@@ -345,12 +346,12 @@
       "release_date": "2026-10-09",
       "poster": "https://image.tmdb.org/t/p/w342/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
       "buzz": {
-        "pos": 40,
-        "neu": 36,
-        "neg": 24,
-        "score": 55.1,
+        "pos": 42,
+        "neu": 37,
+        "neg": 22,
+        "score": 56.3,
         "analyzed": 400,
-        "total": 8342,
+        "total": 8351,
         "video_id": "bEpTgowZ1dI"
       },
       "composite": 46.3,
