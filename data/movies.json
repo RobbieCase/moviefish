@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-18 21:32 UTC",
+  "generated_at": "2026-11-19 21:44 UTC",
   "sample": false,
   "movies": [
     {
       "title": "You Can See Everything",
       "release_date": "2026-10-16",
-      "poster": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/mVh3qkw2NUFxWWyF0G1hg2Wh0K5.jpg",
       "buzz": {
-        "pos": 0,
-        "neu": 100,
-        "neg": 0,
-        "score": 50.0,
-        "analyzed": 1,
-        "total": 1,
-        "video_id": "esewdV410k0"
+        "pos": 38,
+        "neu": 40,
+        "neg": 22,
+        "score": 55.2,
+        "analyzed": 400,
+        "total": 8720,
+        "video_id": "HvW_N5p1q44"
       },
       "composite": 89.0,
       "spread": 18,
@@ -30,12 +30,12 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
       "buzz": {
-        "pos": 69,
-        "neu": 22,
+        "pos": 66,
+        "neu": 24,
         "neg": 9,
-        "score": 72.2,
+        "score": 71.0,
         "analyzed": 400,
-        "total": 6729,
+        "total": 6735,
         "video_id": "dtr5JL1zkiM"
       },
       "composite": 86.8,
@@ -53,19 +53,19 @@
       "release_date": "2026-11-06",
       "poster": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
       "buzz": {
-        "pos": 65,
-        "neu": 29,
+        "pos": 63,
+        "neu": 31,
         "neg": 6,
-        "score": 70.8,
+        "score": 69.7,
         "analyzed": 400,
-        "total": 1247,
+        "total": 1251,
         "video_id": "Haw_sznA5aQ"
       },
-      "composite": 80.0,
+      "composite": 79.8,
       "spread": 6.0,
       "contested": false,
       "sources": {
-        "tmdb": 80,
+        "tmdb": 79,
         "metacritic": 77,
         "letterboxd": 83.0
       }
@@ -78,7 +78,7 @@
         "pos": 66,
         "neu": 23,
         "neg": 11,
-        "score": 70.2,
+        "score": 70.0,
         "analyzed": 400,
         "total": 2245,
         "video_id": "mcrwcvad84U"
@@ -98,43 +98,43 @@
       "release_date": "2026-09-25",
       "poster": "https://image.tmdb.org/t/p/w342/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
       "buzz": {
-        "pos": 57,
-        "neu": 34,
-        "neg": 9,
-        "score": 65.9,
-        "analyzed": 400,
-        "total": 1323,
-        "video_id": "uEcoV-ngH38"
+        "pos": 75,
+        "neu": 11,
+        "neg": 14,
+        "score": 75.3,
+        "analyzed": 28,
+        "total": 38,
+        "video_id": "zOFfjhARQCY"
       },
-      "composite": 76.8,
-      "spread": 17,
+      "composite": 76.4,
+      "spread": 16,
       "contested": false,
       "sources": {
         "tmdb": 66,
-        "metacritic": 83,
+        "metacritic": 82,
         "letterboxd": 77.0
       }
     },
     {
-      "title": "The Only Living Pickpocket in New York",
-      "release_date": "2026-10-16",
-      "poster": "https://image.tmdb.org/t/p/w342/pNdB9va2AEPQe9UfhKAdIt8nus9.jpg",
+      "title": "I Play Rocky",
+      "release_date": "2026-11-06",
+      "poster": "https://image.tmdb.org/t/p/w342/xE5tY3lppZUyG7WKKThsuYHuAHr.jpg",
       "buzz": {
-        "pos": 57,
-        "neu": 31,
-        "neg": 12,
-        "score": 64.7,
+        "pos": 62,
+        "neu": 30,
+        "neg": 7,
+        "score": 68.7,
         "analyzed": 400,
-        "total": 1753,
-        "video_id": "iXA7BmrBBxs"
+        "total": 9637,
+        "video_id": "V_g_Ut0jO-0"
       },
-      "composite": 75.4,
-      "spread": 13.0,
+      "composite": 75.2,
+      "spread": 16,
       "contested": false,
       "sources": {
-        "tmdb": 75,
-        "metacritic": 82,
-        "letterboxd": 69.0
+        "tmdb": 85,
+        "metacritic": 69,
+        "letterboxd": 75.6
       }
     },
     {
@@ -145,9 +145,9 @@
         "pos": 43,
         "neu": 44,
         "neg": 13,
-        "score": 59.9,
-        "analyzed": 250,
-        "total": 468,
+        "score": 60.1,
+        "analyzed": 253,
+        "total": 473,
         "video_id": "3FqCH-Q_3TM"
       },
       "composite": 72.8,
@@ -163,23 +163,23 @@
     {
       "title": "The Hunger Games: Sunrise on the Reaping",
       "release_date": "2026-11-20",
-      "poster": "https://image.tmdb.org/t/p/w342/j1MNyNNgNQL6f27cb3m3uKaPKd6.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/nzIXSQNgYZwFOMrmv0d0I3ulvkM.jpg",
       "buzz": {
-        "pos": 41,
-        "neu": 35,
-        "neg": 24,
-        "score": 55.6,
+        "pos": 50,
+        "neu": 28,
+        "neg": 23,
+        "score": 59.0,
         "analyzed": 400,
-        "total": 3443,
-        "video_id": "lYXtL5TreOE"
+        "total": 5865,
+        "video_id": "fS35YSjopjE"
       },
-      "composite": 70.7,
-      "spread": 25.0,
+      "composite": 70.0,
+      "spread": 27.0,
       "contested": true,
       "sources": {
-        "tmdb": 78,
-        "metacritic": 56,
-        "letterboxd": 81.0
+        "tmdb": 75,
+        "metacritic": 55,
+        "letterboxd": 82.0
       }
     },
     {
@@ -187,12 +187,12 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
       "buzz": {
-        "pos": 40,
+        "pos": 41,
         "neu": 30,
-        "neg": 30,
-        "score": 53.0,
+        "neg": 28,
+        "score": 53.5,
         "analyzed": 400,
-        "total": 15599,
+        "total": 15597,
         "video_id": "OGO4Mqvo3jI"
       },
       "composite": 69.9,
@@ -210,19 +210,19 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
       "buzz": {
-        "pos": 45,
-        "neu": 34,
-        "neg": 20,
-        "score": 58.7,
-        "analyzed": 143,
-        "total": 278,
+        "pos": 46,
+        "neu": 33,
+        "neg": 21,
+        "score": 58.5,
+        "analyzed": 147,
+        "total": 283,
         "video_id": "IzFgGhFrx0o"
       },
-      "composite": 66.5,
-      "spread": 8.4,
+      "composite": 65.5,
+      "spread": 4.4,
       "contested": false,
       "sources": {
-        "tmdb": 72,
+        "tmdb": 68,
         "metacritic": 66,
         "letterboxd": 63.6
       }
@@ -232,13 +232,13 @@
       "release_date": "2026-10-16",
       "poster": "https://image.tmdb.org/t/p/w342/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
       "buzz": {
-        "pos": 36,
-        "neu": 45,
-        "neg": 19,
-        "score": 56.2,
-        "analyzed": 400,
-        "total": 1416,
-        "video_id": "Dw-5ZGapGTQ"
+        "pos": 0,
+        "neu": 100,
+        "neg": 0,
+        "score": 50.0,
+        "analyzed": 6,
+        "total": 7,
+        "video_id": "lFFl1nP7UDI"
       },
       "composite": 62.6,
       "spread": 7,
@@ -254,12 +254,12 @@
       "release_date": "2026-11-13",
       "poster": "https://image.tmdb.org/t/p/w342/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
       "buzz": {
-        "pos": 69,
-        "neu": 24,
+        "pos": 66,
+        "neu": 26,
         "neg": 8,
-        "score": 72.6,
+        "score": 71.3,
         "analyzed": 400,
-        "total": 2630,
+        "total": 2649,
         "video_id": "l_Ozo1xUgbU"
       },
       "composite": 60.2,
@@ -272,94 +272,25 @@
       }
     },
     {
-      "title": "Victorian Psycho",
-      "release_date": "2026-11-13",
-      "poster": "https://image.tmdb.org/t/p/w342/9LHVZevgdsdbjJdkFr6bk9EwX7q.jpg",
-      "buzz": {
-        "pos": 36,
-        "neu": 42,
-        "neg": 22,
-        "score": 54.6,
-        "analyzed": 216,
-        "total": 362,
-        "video_id": "sDiFol_2j2I"
-      },
-      "composite": 58.2,
-      "spread": 7,
-      "contested": false,
-      "sources": {
-        "tmdb": 58,
-        "imdb": 61,
-        "metacritic": 54,
-        "letterboxd": 59.6
-      }
-    },
-    {
       "title": "Ghost Soldier",
       "release_date": "2026-11-11",
       "poster": "https://image.tmdb.org/t/p/w342/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
       "buzz": {
-        "pos": 60,
-        "neu": 27,
-        "neg": 12,
-        "score": 66.2,
+        "pos": 56,
+        "neu": 34,
+        "neg": 10,
+        "score": 66.0,
         "analyzed": 400,
-        "total": 3578,
-        "video_id": "l0pTZqZWs-c"
+        "total": 1698,
+        "video_id": "UKaWzMf9Ybc"
       },
-      "composite": 56.8,
-      "spread": 50,
+      "composite": 56.5,
+      "spread": 49,
       "contested": true,
       "sources": {
-        "tmdb": 91,
+        "tmdb": 90,
         "metacritic": 41,
         "letterboxd": 52.0
-      }
-    },
-    {
-      "title": "The Cat in the Hat",
-      "release_date": "2026-11-06",
-      "poster": "https://image.tmdb.org/t/p/w342/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
-      "buzz": {
-        "pos": 52,
-        "neu": 36,
-        "neg": 12,
-        "score": 62.9,
-        "analyzed": 400,
-        "total": 2361,
-        "video_id": "HT5JAp5z0-o"
-      },
-      "composite": 52.7,
-      "spread": 51,
-      "contested": true,
-      "sources": {
-        "tmdb": 70,
-        "imdb": 67,
-        "metacritic": 19,
-        "letterboxd": 61.6
-      }
-    },
-    {
-      "title": "Street Fighter",
-      "release_date": "2026-10-16",
-      "poster": "https://image.tmdb.org/t/p/w342/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
-      "buzz": {
-        "pos": 54,
-        "neu": 34,
-        "neg": 12,
-        "score": 63.4,
-        "analyzed": 400,
-        "total": 25672,
-        "video_id": "Xt4X4FvXk2A"
-      },
-      "composite": 52.6,
-      "spread": 29,
-      "contested": true,
-      "sources": {
-        "tmdb": 63,
-        "imdb": 62,
-        "metacritic": 34,
-        "letterboxd": 55.4
       }
     },
     {
@@ -367,10 +298,10 @@
       "release_date": "2026-10-16",
       "poster": "https://image.tmdb.org/t/p/w342/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
       "buzz": {
-        "pos": 32,
-        "neu": 46,
-        "neg": 21,
-        "score": 53.6,
+        "pos": 34,
+        "neu": 44,
+        "neg": 22,
+        "score": 54.2,
         "analyzed": 400,
         "total": 1269,
         "video_id": "4DowjB87tRE"
@@ -386,25 +317,93 @@
       }
     },
     {
+      "title": "Street Fighter",
+      "release_date": "2026-10-16",
+      "poster": "https://image.tmdb.org/t/p/w342/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
+      "buzz": {
+        "pos": 54,
+        "neu": 34,
+        "neg": 12,
+        "score": 63.7,
+        "analyzed": 400,
+        "total": 25674,
+        "video_id": "Xt4X4FvXk2A"
+      },
+      "composite": 52.3,
+      "spread": 28,
+      "contested": true,
+      "sources": {
+        "tmdb": 62,
+        "imdb": 62,
+        "metacritic": 34,
+        "letterboxd": 55.2
+      }
+    },
+    {
+      "title": "The Cat in the Hat",
+      "release_date": "2026-11-06",
+      "poster": "https://image.tmdb.org/t/p/w342/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
+      "buzz": {
+        "pos": 42,
+        "neu": 34,
+        "neg": 24,
+        "score": 57.1,
+        "analyzed": 400,
+        "total": 2965,
+        "video_id": "Vuv0kqGWjno"
+      },
+      "composite": 52.3,
+      "spread": 49,
+      "contested": true,
+      "sources": {
+        "tmdb": 68,
+        "imdb": 67,
+        "metacritic": 19,
+        "letterboxd": 61.6
+      }
+    },
+    {
       "title": "The Mongoose",
       "release_date": "2026-10-30",
       "poster": "https://image.tmdb.org/t/p/w342/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
       "buzz": {
         "pos": 46,
-        "neu": 42,
-        "neg": 12,
-        "score": 60.4,
+        "neu": 43,
+        "neg": 11,
+        "score": 60.8,
         "analyzed": 400,
-        "total": 838,
+        "total": 840,
         "video_id": "aHrMFtt40_Q"
       },
-      "composite": 51.0,
-      "spread": 18.8,
+      "composite": 50.9,
+      "spread": 19.0,
       "contested": false,
       "sources": {
         "tmdb": 64,
         "metacritic": 49,
-        "letterboxd": 45.2
+        "letterboxd": 45.0
+      }
+    },
+    {
+      "title": "Madden",
+      "release_date": "2026-11-18",
+      "poster": "https://image.tmdb.org/t/p/w342/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
+      "buzz": {
+        "pos": 46,
+        "neu": 37,
+        "neg": 17,
+        "score": 59.5,
+        "analyzed": 400,
+        "total": 1334,
+        "video_id": "xzh7HzLXXpk"
+      },
+      "composite": 48.8,
+      "spread": 52,
+      "contested": true,
+      "sources": {
+        "tmdb": 81,
+        "metacritic": 29,
+        "letterboxd": 49.2
       }
     },
     {
@@ -413,11 +412,11 @@
       "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
       "buzz": {
         "pos": 50,
-        "neu": 34,
+        "neu": 35,
         "neg": 16,
-        "score": 61.5,
+        "score": 61.1,
         "analyzed": 400,
-        "total": 2738,
+        "total": 2748,
         "video_id": "ORxw68y3lyw"
       },
       "composite": 48.4,
