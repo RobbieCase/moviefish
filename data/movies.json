@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26 22:31 UTC",
+  "generated_at": "2026-11-27 22:15 UTC",
   "sample": false,
   "movies": [
     {
@@ -10,9 +10,9 @@
         "pos": 66,
         "neu": 24,
         "neg": 10,
-        "score": 70.9,
+        "score": 71.1,
         "analyzed": 400,
-        "total": 6808,
+        "total": 6820,
         "video_id": "dtr5JL1zkiM"
       },
       "composite": 86.8,
@@ -30,12 +30,12 @@
       "release_date": "2026-11-06",
       "poster": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
       "buzz": {
-        "pos": 64,
-        "neu": 30,
-        "neg": 6,
-        "score": 70.3,
+        "pos": 66,
+        "neu": 27,
+        "neg": 7,
+        "score": 71.1,
         "analyzed": 400,
-        "total": 1281,
+        "total": 1282,
         "video_id": "Haw_sznA5aQ"
       },
       "composite": 79.7,
@@ -50,14 +50,14 @@
     {
       "title": "I Play Rocky",
       "release_date": "2026-11-06",
-      "poster": "https://image.tmdb.org/t/p/w342/8q8AF8xvV1drhACtEL2Iti5gJ8P.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/xE5tY3lppZUyG7WKKThsuYHuAHr.jpg",
       "buzz": {
-        "pos": 64,
-        "neu": 28,
+        "pos": 66,
+        "neu": 26,
         "neg": 8,
-        "score": 69.4,
+        "score": 70.6,
         "analyzed": 400,
-        "total": 9812,
+        "total": 9826,
         "video_id": "V_g_Ut0jO-0"
       },
       "composite": 74.8,
@@ -66,20 +66,43 @@
       "sources": {
         "tmdb": 83,
         "metacritic": 68,
-        "letterboxd": 76.6
+        "letterboxd": 76.8
+      }
+    },
+    {
+      "title": "Paper Tiger",
+      "release_date": "2026-11-13",
+      "poster": "https://image.tmdb.org/t/p/w342/p6oLmq5KmuWY6uRXBQBL2q30jia.jpg",
+      "buzz": {
+        "pos": 47,
+        "neu": 53,
+        "neg": 0,
+        "score": 66.4,
+        "analyzed": 17,
+        "total": 23,
+        "video_id": "QMBDrPr5f-g"
+      },
+      "composite": 74.0,
+      "spread": 13.0,
+      "contested": false,
+      "sources": {
+        "tmdb": 79,
+        "imdb": 70,
+        "metacritic": 81,
+        "letterboxd": 68.0
       }
     },
     {
       "title": "Wicker",
       "release_date": "2026-10-23",
-      "poster": "https://image.tmdb.org/t/p/w342/5sVi66aTT9X2uMldmIwu9JW3hZ2.jpg",
+      "poster": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
       "buzz": {
         "pos": 42,
         "neu": 44,
-        "neg": 13,
-        "score": 59.7,
-        "analyzed": 260,
-        "total": 490,
+        "neg": 14,
+        "score": 59.5,
+        "analyzed": 263,
+        "total": 494,
         "video_id": "3FqCH-Q_3TM"
       },
       "composite": 72.9,
@@ -93,26 +116,48 @@
       }
     },
     {
+      "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+      "release_date": "2026-11-25",
+      "poster": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+      "buzz": {
+        "pos": 25,
+        "neu": 42,
+        "neg": 32,
+        "score": 47.5,
+        "analyzed": 40,
+        "total": 53,
+        "video_id": "o9WWeKSbtAo"
+      },
+      "composite": 72.9,
+      "spread": 14,
+      "contested": false,
+      "sources": {
+        "tmdb": 82,
+        "metacritic": 68,
+        "letterboxd": 72.4
+      }
+    },
+    {
       "title": "The Hunger Games: Sunrise on the Reaping",
       "release_date": "2026-11-20",
       "poster": "https://image.tmdb.org/t/p/w342/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
       "buzz": {
         "pos": 50,
-        "neu": 28,
-        "neg": 22,
-        "score": 59.3,
+        "neu": 26,
+        "neg": 23,
+        "score": 59.5,
         "analyzed": 400,
-        "total": 6113,
+        "total": 6130,
         "video_id": "fS35YSjopjE"
       },
-      "composite": 71.6,
-      "spread": 24.8,
+      "composite": 71.5,
+      "spread": 24.6,
       "contested": false,
       "sources": {
         "tmdb": 78,
         "imdb": 76,
         "metacritic": 55,
-        "letterboxd": 79.8
+        "letterboxd": 79.6
       }
     },
     {
@@ -120,13 +165,13 @@
       "release_date": "2026-10-23",
       "poster": "https://image.tmdb.org/t/p/w342/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
       "buzz": {
-        "pos": 40,
-        "neu": 30,
-        "neg": 29,
-        "score": 53.1,
-        "analyzed": 400,
-        "total": 15591,
-        "video_id": "OGO4Mqvo3jI"
+        "pos": 0,
+        "neu": 50,
+        "neg": 50,
+        "score": 34.1,
+        "analyzed": 4,
+        "total": 13,
+        "video_id": "6PYQuoQNsOw"
       },
       "composite": 69.9,
       "spread": 17,
@@ -146,9 +191,9 @@
         "pos": 45,
         "neu": 35,
         "neg": 20,
-        "score": 58.7,
-        "analyzed": 157,
-        "total": 295,
+        "score": 58.8,
+        "analyzed": 158,
+        "total": 296,
         "video_id": "IzFgGhFrx0o"
       },
       "composite": 66.6,
@@ -173,36 +218,28 @@
         "total": 258,
         "video_id": "aQrxHLuqJCk"
       },
-      "composite": 65.6,
-      "spread": 12.0,
+      "composite": 65.4,
+      "spread": 12.4,
       "contested": false,
       "sources": {
         "tmdb": 70,
         "imdb": 71,
         "metacritic": 64,
-        "letterboxd": 59.0
+        "letterboxd": 58.6
       }
     },
     {
       "title": "Steps",
       "release_date": "2026-11-20",
       "poster": "https://image.tmdb.org/t/p/w342/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
-      "buzz": {
-        "pos": 35,
-        "neu": 43,
-        "neg": 22,
-        "score": 54.9,
-        "analyzed": 273,
-        "total": 541,
-        "video_id": "4zMUKwkcIrQ"
-      },
-      "composite": 62.8,
-      "spread": 16,
+      "buzz": null,
+      "composite": 62.5,
+      "spread": 15,
       "contested": false,
       "sources": {
-        "tmdb": 71,
+        "tmdb": 70,
         "metacritic": 55,
-        "letterboxd": 65.8
+        "letterboxd": 65.6
       }
     },
     {
@@ -210,43 +247,21 @@
       "release_date": "2026-11-13",
       "poster": "https://image.tmdb.org/t/p/w342/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
       "buzz": {
-        "pos": 66,
-        "neu": 26,
+        "pos": 69,
+        "neu": 24,
         "neg": 7,
-        "score": 71.8,
+        "score": 73.0,
         "analyzed": 400,
-        "total": 2748,
+        "total": 2761,
         "video_id": "l_Ozo1xUgbU"
       },
-      "composite": 59.8,
-      "spread": 29,
+      "composite": 60.0,
+      "spread": 30,
       "contested": true,
       "sources": {
-        "tmdb": 75,
+        "tmdb": 76,
         "metacritic": 46,
         "letterboxd": 64.4
-      }
-    },
-    {
-      "title": "Hexed",
-      "release_date": "2026-11-25",
-      "poster": "https://image.tmdb.org/t/p/w342/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
-      "buzz": {
-        "pos": 66,
-        "neu": 22,
-        "neg": 12,
-        "score": 69.2,
-        "analyzed": 400,
-        "total": 3739,
-        "video_id": "KXO21xZdUaM"
-      },
-      "composite": 59.2,
-      "spread": 6.6,
-      "contested": false,
-      "sources": {
-        "tmdb": 59,
-        "metacritic": 56,
-        "letterboxd": 62.6
       }
     },
     {
@@ -257,18 +272,40 @@
         "pos": 34,
         "neu": 42,
         "neg": 24,
-        "score": 52.8,
+        "score": 53.3,
         "analyzed": 400,
-        "total": 838,
+        "total": 861,
         "video_id": "CPFkLjHfKoc"
       },
-      "composite": 58.4,
-      "spread": 31,
+      "composite": 59.2,
+      "spread": 34,
       "contested": true,
       "sources": {
-        "tmdb": 74,
+        "tmdb": 77,
         "metacritic": 43,
-        "letterboxd": 64.4
+        "letterboxd": 64.6
+      }
+    },
+    {
+      "title": "Hexed",
+      "release_date": "2026-11-25",
+      "poster": "https://image.tmdb.org/t/p/w342/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
+      "buzz": {
+        "pos": 67,
+        "neu": 22,
+        "neg": 11,
+        "score": 70.0,
+        "analyzed": 400,
+        "total": 3757,
+        "video_id": "KXO21xZdUaM"
+      },
+      "composite": 58.2,
+      "spread": 7.2,
+      "contested": false,
+      "sources": {
+        "tmdb": 55,
+        "metacritic": 56,
+        "letterboxd": 62.2
       }
     },
     {
@@ -279,9 +316,9 @@
         "pos": 62,
         "neu": 27,
         "neg": 11,
-        "score": 67.2,
+        "score": 67.5,
         "analyzed": 400,
-        "total": 3647,
+        "total": 3654,
         "video_id": "l0pTZqZWs-c"
       },
       "composite": 56.2,
@@ -298,44 +335,21 @@
       "release_date": "2026-11-25",
       "poster": "https://image.tmdb.org/t/p/w342/iHJhSfqFpDMOyeMc6h6BOeHxse2.jpg",
       "buzz": {
-        "pos": 37,
-        "neu": 43,
+        "pos": 38,
+        "neu": 42,
         "neg": 20,
-        "score": 56.7,
+        "score": 57.7,
         "analyzed": 400,
-        "total": 5582,
+        "total": 5619,
         "video_id": "vyISuWUWcFs"
       },
       "composite": 55.8,
-      "spread": 30,
+      "spread": 31,
       "contested": true,
       "sources": {
-        "tmdb": 70,
+        "tmdb": 71,
         "metacritic": 40,
-        "letterboxd": 63.0
-      }
-    },
-    {
-      "title": "The Cat in the Hat",
-      "release_date": "2026-11-06",
-      "poster": "https://image.tmdb.org/t/p/w342/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
-      "buzz": {
-        "pos": 40,
-        "neu": 35,
-        "neg": 25,
-        "score": 55.9,
-        "analyzed": 400,
-        "total": 2992,
-        "video_id": "Vuv0kqGWjno"
-      },
-      "composite": 53.1,
-      "spread": 54,
-      "contested": true,
-      "sources": {
-        "tmdb": 73,
-        "imdb": 67,
-        "metacritic": 19,
-        "letterboxd": 61.2
+        "letterboxd": 62.4
       }
     },
     {
@@ -343,13 +357,13 @@
       "release_date": "2026-10-30",
       "poster": "https://image.tmdb.org/t/p/w342/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
       "buzz": {
-        "pos": 47,
-        "neu": 42,
-        "neg": 11,
-        "score": 61.0,
+        "pos": 44,
+        "neu": 44,
+        "neg": 12,
+        "score": 59.9,
         "analyzed": 400,
-        "total": 850,
-        "video_id": "aHrMFtt40_Q"
+        "total": 698,
+        "video_id": "8aUAbFdcijg"
       },
       "composite": 51.4,
       "spread": 21.0,
@@ -365,19 +379,19 @@
       "release_date": "2026-11-13",
       "poster": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
       "buzz": {
-        "pos": 47,
-        "neu": 37,
-        "neg": 16,
-        "score": 60.0,
+        "pos": 50,
+        "neu": 34,
+        "neg": 15,
+        "score": 61.4,
         "analyzed": 400,
-        "total": 2780,
+        "total": 2779,
         "video_id": "ORxw68y3lyw"
       },
-      "composite": 48.9,
-      "spread": 38,
+      "composite": 49.2,
+      "spread": 39,
       "contested": true,
       "sources": {
-        "tmdb": 65,
+        "tmdb": 66,
         "metacritic": 27,
         "letterboxd": 61.2
       }
@@ -387,21 +401,21 @@
       "release_date": "2026-11-18",
       "poster": "https://image.tmdb.org/t/p/w342/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
       "buzz": {
-        "pos": 48,
-        "neu": 36,
-        "neg": 17,
-        "score": 60.1,
+        "pos": 49,
+        "neu": 35,
+        "neg": 16,
+        "score": 60.8,
         "analyzed": 400,
-        "total": 1542,
+        "total": 1547,
         "video_id": "xzh7HzLXXpk"
       },
-      "composite": 42.9,
+      "composite": 42.8,
       "spread": 39,
       "contested": true,
       "sources": {
         "tmdb": 65,
         "metacritic": 26,
-        "letterboxd": 46.6
+        "letterboxd": 46.4
       }
     }
   ]
